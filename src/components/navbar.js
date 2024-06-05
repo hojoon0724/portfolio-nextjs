@@ -1,27 +1,29 @@
+import Link from 'next/link';
+
 export default function Navbar() {
   return (
     <div className="nav-bar-container flex center">
       <div className="nav-bar flex row">
         <div className="nav-bar-left">
-          <a href="/">
+          <Link href="/">
             <div className="logo">Hojoon Kim</div>
             <div className="subtitle">Design-centered Developer</div>
-          </a>
+          </Link>
         </div>
         <div className="nav-bar-right">
           <nav>
             <ul>
               <li>
-                <a href="#about">about</a>
+                <Link href="#about">about</Link>
               </li>
               <li>
-                <a href="#programming">programming</a>
+                <Link href="#programming">programming</Link>
               </li>
               <li>
-                <a href="#design">design</a>
+                <Link href="#design">design</Link>
               </li>
               <li>
-                <a href="#contact">contact</a>
+                <Link href="#contact">contact</Link>
               </li>
             </ul>
           </nav>
