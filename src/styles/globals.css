@@ -13,7 +13,7 @@
 
   --black: #0f0f0f;
   --dark: #1f1f1f;
-  --grey: #888888;
+  --grey: #666666;
   --white: #efefef;
   --aqua: oklch(87.69% 0.2245 175);
   --magenta: oklch(71.25% 0.355 330);
@@ -60,6 +60,13 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p {
+  text-wrap: pretty;
+  max-width: 72ch;
+  line-height: 1.5rem;
+  margin: 1rem 0rem;
 }
 
 img,
@@ -120,8 +127,12 @@ h4 {
   text-wrap: balance;
 }
 
-p {
-  text-wrap: pretty;
+button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Roboto Mono';
+  font-weight: 600;
+  border-radius: 8px;
 }
 
 .flex {
@@ -141,8 +152,41 @@ p {
   align-items: center;
 }
 
+.text-yellow {
+  color: var(--yellow);
+}
+
+.text-light-yellow {
+  color: var(--light-yellow);
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.text-light-blue {
+  color: var(--light-blue);
+}
+
+.text-pink {
+  color: var(--pink);
+}
+
+.text-light-green {
+  color: var(--light-green);
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
 .top-container {
   width: 100%;
+  height: 100%;
 }
 
 .top-container > * {
@@ -161,12 +205,12 @@ p {
   padding: 16px 32px;
 }
 
-.pri-accent {
+.pri-accent-btn {
   color: var(--black);
   background-color: var(--aqua);
 }
 
-.sec-accent {
+.sec-accent-btn {
   color: var(--white);
   background-color: var(--magenta);
 }
@@ -270,16 +314,64 @@ li {
 }
 
 .section {
+  display: flex;
   min-height: 600px;
   padding: 16px;
 }
 
+/* About Section */
 .about {
-  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-.programming {
-  display: grid;
+.hello-container {
+  font-family: 'Roboto Mono', monospace;
+  margin: 120px;
+}
+
+.hojoon {
+  font-family: 'Helvetica Neue';
+  font-size: var(--fs-900);
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: var(--fs-500);
+  margin-bottom: 100px;
+}
+
+.short-bio {
+  max-width: 72ch;
+  line-height: 1.5rem;
+}
+
+.tech {
+  display: flex;
+}
+
+.project-container {
+  justify-content: space-between;
+  background-color: var(--grey);
+  padding: 24px;
+  border-radius: 32px;
+}
+
+.project-screenshot {
+  position: absolute;
+}
+
+.project-title {
+  font-family: 'Helvetica Neue';
+  font-size: var(--fs-800);
+}
+
+.buttons-container > * {
+  margin: 0px 12px;
+}
+
+.buttons-container > *:first-child {
+  margin-left: 0px;
 }
 
 .design {

@@ -4,7 +4,7 @@ import '@/styles/globals.css';
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="top">
+    <div className="top flex column">
       <Navbar />
       <Component {...pageProps} />
       <Footer />

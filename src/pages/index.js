@@ -2,11 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
-import Navbar from '@/components/navbar';
 import About from '@/sections/about';
-import Programming from '@/sections/programming';
 import Design from '@/sections/design';
 import Contact from '@/sections/contact';
+import Tech from '@/sections/tech';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,7 +20,7 @@ export default function Home() {
       </Head>
       <div className="top-container flex column center">
         <About />
-        <Programming />
+        <Tech />
         <Design />
         <Contact />
       </div>

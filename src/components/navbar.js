@@ -17,13 +17,13 @@ export default function Navbar() {
                 <Link href="#about">about</Link>
               </li>
               <li>
-                <Link href="#programming">programming</Link>
+                <Link href="#contact">contact</Link>
+              </li>
+              <li>
+                <Link href="#tech">tech</Link>
               </li>
               <li>
                 <Link href="#design">design</Link>
-              </li>
-              <li>
-                <Link href="#contact">contact</Link>
               </li>
             </ul>
           </nav>
