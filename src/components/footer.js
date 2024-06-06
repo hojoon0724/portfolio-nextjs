@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="footer-container flex center">
+    <div className="footer-container roboto-mono flex center">
       <div className="footer flex center">
         <span style={{ color: 'var(--blue)' }}>&#91;&nbsp;</span>
         <span style={{ color: 'var(--pink)' }}>designed&nbsp;</span>
