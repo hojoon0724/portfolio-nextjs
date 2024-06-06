@@ -20,9 +20,9 @@ export default function Home() {
       </Head>
       <div className="top-container flex column center">
         <About />
+        <Contact />
         <Tech />
         <Design />
-        <Contact />
       </div>
     </>
   );

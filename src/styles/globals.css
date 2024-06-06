@@ -3,6 +3,7 @@
   --border-radius: 12px;
   --font-mono: 'Roboto Mono', monospace;
 
+  --fs-200: clamp(0.5rem, calc(0.5rem + 0.33vw), 0.98rem);
   --fs-300: clamp(0.6rem, calc(0.7rem + 0.33vw), 0.98rem);
   --fs-400: clamp(1.13rem, calc(1.06rem + 0.33vw), 1.31rem);
   --fs-500: clamp(1.35rem, calc(1.21rem + 0.69vw), 1.75rem);
@@ -267,8 +268,8 @@ button {
 }
 
 .subtitle {
-  font-size: var(--fs-300);
-  letter-spacing: 0.1ch;
+  font-size: var(--fs-200);
+  letter-spacing: 0.3ch;
   text-transform: uppercase;
 }
 
@@ -281,11 +282,15 @@ button {
 }
 .nav-bar-right > nav > ul > li {
   display: block;
-  margin: 0px 16px;
+  margin: 0px 8px;
   text-transform: lowercase;
-  letter-spacing: 0.2ch;
+  letter-spacing: 0.1ch;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: var(--tr-fast);
+  font-family: 'Roboto Mono';
+  padding: 8px 16px;
+  border-radius: 8px;
 }
 
 .nav-bar-right > nav > ul > li:last-child {
@@ -293,7 +298,8 @@ button {
 }
 
 .nav-bar-right > nav > ul > li:hover {
-  color: var(--aqua);
+  color: var(--black);
+  background-color: var(--aqua);
 }
 
 li {
@@ -346,6 +352,73 @@ li {
   line-height: 1.5rem;
 }
 
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: auto auto;
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
+.contact-title {
+  font-size: var(--fs-700);
+  display: flex;
+  align-items: flex-end;
+}
+
+.form-container,
+.form-container > form {
+  width: 100%;
+}
+
+.form-container > form > * {
+  margin: 8px 0px;
+  border: 0px;
+  padding: 8px;
+}
+
+.form-container > form > input,
+.form-container > form > textarea {
+  color: var(--white);
+  width: 100%;
+  background-color: var(--dark);
+  border: 1px solid var(--aqua);
+}
+
+.form-container > form > input {
+  min-height: 3rem;
+  border-radius: 8px;
+}
+
+.form-container > form > textarea {
+  border-radius: 8px;
+}
+
+.form-container > form > textarea {
+  min-height: 8rem;
+}
+
+.form-container > form > button {
+  width: auto;
+  padding: 0.75rem 1.5rem;
+}
+
+.social-links-container {
+  justify-content: start;
+}
+
+.social-links-container > * {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--aqua);
+  min-height: 3rem;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-family: 'Roboto Mono';
+}
+
 .tech {
   display: flex;
 }
@@ -375,10 +448,6 @@ li {
 }
 
 .design {
-  display: grid;
-}
-
-.contact {
   display: grid;
 }
 
