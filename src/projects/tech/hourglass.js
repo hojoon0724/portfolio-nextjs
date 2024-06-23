@@ -1,4 +1,4 @@
-import LinkButtons from '../linkButtons';
+import LinkButtons from '../../components/linkButtons';
 
 export default function Hourglass() {
   const projectDetails = {

@@ -13,13 +13,7 @@ export default function Navbar() {
         <div className="nav-bar-center">
           <div className="nav-btn-container flex center">
             <div className="nav-btn">
-              <Link href="#about">about</Link>
-            </div>
-            <div className="nav-btn-bg nav-active"></div>
-          </div>
-          <div className="nav-btn-container flex center">
-            <div className="nav-btn">
-              <Link href="#contact">contact</Link>
+              <Link href="#intro">intro</Link>
             </div>
             <div className="nav-btn-bg active"></div>
           </div>
@@ -32,6 +26,18 @@ export default function Navbar() {
           <div className="nav-btn-container flex center">
             <div className="nav-btn">
               <Link href="#design">design</Link>
+            </div>
+            <div className="nav-btn-bg active"></div>
+          </div>
+          <div className="nav-btn-container flex center">
+            <div className="nav-btn">
+              <Link href="#about">about</Link>
+            </div>
+            <div className="nav-btn-bg nav-active"></div>
+          </div>
+          <div className="nav-btn-container flex center">
+            <div className="nav-btn">
+              <Link href="#contact">contact</Link>
             </div>
             <div className="nav-btn-bg active"></div>
           </div>
