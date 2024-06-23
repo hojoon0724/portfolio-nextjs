@@ -13,7 +13,7 @@ export default function Intro() {
   );
 
   return (
-    <div className="section about" id="about">
+    <div className="section intro" id="intro">
       <div className="hello-container">
         <div className="hello roboto-mono">{`Hi, my name is`}</div>
         <div className="hojoon">{`Hojoon Kim`}</div>

@@ -343,8 +343,8 @@ li {
 
 /* About Section */
 .about {
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .hello-container {
@@ -358,8 +358,9 @@ li {
 }
 
 .intro {
-  font-size: var(--fs-500);
   margin-bottom: clamp(40px, 15vh, 100px);
+  justify-content: center;
+  align-items: center;
 }
 
 .short-bio {
@@ -448,7 +449,8 @@ li {
 .projects-scroll-container {
   overflow-x: scroll;
   column-gap: 16px;
-  padding: 0px calc(((100vw - var(--max-width)) / 2) + 16px);
+  padding: 0px calc(((100vw - var(--max-width)) / 2) + 0px);
+  margin: 16px;
 }
 
 .project-container {
@@ -456,7 +458,7 @@ li {
   background-color: var(--grey);
   padding: 24px;
   border-radius: 32px;
-  min-width: calc(var(--max-width) - 32px);
+  min-width: min(calc(var(--max-width) - 32px), calc(100vw - 32px));
   min-height: 600px;
 }
 
