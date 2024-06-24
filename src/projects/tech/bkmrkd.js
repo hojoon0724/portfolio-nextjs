@@ -1,3 +1,4 @@
+import ReactIcon from '@/components/stack/react';
 import LinkButtons from '../../components/linkButtons';
 
 export default function Bkmrkd() {
@@ -21,6 +22,9 @@ export default function Bkmrkd() {
           {projectDetails.text.split('\n').map((para, index) => (
             <p key={index}>{para}</p>
           ))}
+        </div>
+        <div className="stack-icons-container">
+          <ReactIcon />
         </div>
       </div>
       <div className="buttons-container">
