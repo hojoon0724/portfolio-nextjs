@@ -479,6 +479,17 @@ li {
   margin-left: 0px;
 }
 
+.stack-icons-container > * {
+  margin-right: 8px;
+  /* box-sizing: content-box; */
+}
+
+.stack-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+
 /* tablet portrait */
 @media only screen and (max-width: 1024px) {
 }

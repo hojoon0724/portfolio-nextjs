@@ -1,4 +1,4 @@
-import ReactIcon from '@/components/stack/react';
+import StackIcon from '@/components/stackIcon';
 import LinkButtons from '../../components/linkButtons';
 
 export default function Bkmrkd() {
@@ -23,8 +23,9 @@ export default function Bkmrkd() {
             <p key={index}>{para}</p>
           ))}
         </div>
-        <div className="stack-icons-container">
-          <ReactIcon />
+        <div className="stack-icons-container flex">
+          <StackIcon url={'/assets/icons/react-svgrepo-com.svg'} bgColor={'black'} padding={'8px'} />
+          <StackIcon url={'/assets/icons/html-5-svgrepo-com.svg'} bgColor={'white'} padding={'4px'} />
         </div>
       </div>
       <div className="buttons-container">
