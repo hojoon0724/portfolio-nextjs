@@ -1,11 +1,17 @@
 import StackIcon from '@/components/stackIcon';
-import LinkButtons from '../../components/linkButtons';
+import LinkButtons from '@/components/linkButtons';
 
 export default function BlackjackCount() {
   const projectDetails = {
     title: 'Blackjack Count Trainer',
 
     text: 'Write project description',
+
+    stack: [
+      { icon: 'react.svg', description: 'react icon', bgColor: 'black', padding: '8px' },
+      { icon: 'html5.svg', description: 'html5 icon', bgColor: 'white', padding: '8px' },
+      { icon: 'css3.svg', description: 'css3 icon', bgColor: 'white', padding: '8px' },
+    ],
 
     links: [{ button: 'Github', url: 'https://github.com/hojoon0724/hourglass' }],
   };
@@ -23,9 +29,15 @@ export default function BlackjackCount() {
         <div className="made-with">
           <div className="made-with-text">Made with:</div>
           <div className="stack-icons-container flex">
-            <StackIcon icon={'/react.svg'} bgColor={'black'} padding={'8px'} />
-            <StackIcon icon={'/html5.svg'} bgColor={'white'} padding={'8px'} />
-            <StackIcon icon={'/css3.svg'} bgColor={'white'} padding={'8px'} />
+            {projectDetails.stack.map((tech) => (
+              <StackIcon
+                key={tech.icon}
+                icon={tech.icon}
+                description={tech.description}
+                bgColor={tech.bgColor}
+                padding={tech.padding}
+              />
+            ))}
           </div>
         </div>
       </div>

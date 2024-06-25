@@ -144,6 +144,10 @@ button {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .column {
   flex-direction: column;
 }
@@ -212,11 +216,21 @@ button {
 }
 
 .pri-accent-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
   color: var(--black);
   background-color: var(--aqua);
 }
 
 .sec-accent-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
   color: var(--white);
   background-color: var(--magenta);
 }
@@ -479,6 +493,17 @@ li {
   margin-left: 0px;
 }
 
+.made-with {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: var(--fs-200);
+  margin-top: 16px;
+}
+
+.stack-icons-container {
+  margin: 8px 0px;
+}
+
 .stack-icons-container > * {
   margin-right: 8px;
   /* box-sizing: content-box; */
@@ -488,6 +513,13 @@ li {
   width: 48px;
   height: 48px;
   border-radius: 8px;
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  margin-right: 8px;
 }
 
 /* tablet portrait */

@@ -1,11 +1,19 @@
 import StackIcon from '@/components/stackIcon';
-import LinkButtons from '../../components/linkButtons';
+import LinkButtons from '@/components/linkButtons';
 
 export default function Bkmrkd() {
   const projectDetails = {
     title: 'bkmrkd',
 
     text: 'Description about bookmark saving full crud and user auth with JWT',
+
+    stack: [
+      { icon: 'react.svg', description: 'react icon', bgColor: 'black', padding: '8px' },
+      { icon: 'mongodb.svg', description: 'mongodb icon', bgColor: 'var(--dark)', padding: '6px' },
+      { icon: 'jwt.svg', description: 'jwt icon', bgColor: 'var(--dark)', padding: '8px' },
+      { icon: 'html5.svg', description: 'html5 icon', bgColor: 'white', padding: '8px' },
+      { icon: 'css3.svg', description: 'css3 icon', bgColor: 'white', padding: '8px' },
+    ],
 
     links: [
       { button: 'Github Front', icon: '/github.svg', url: 'https://github.com/hojoon0724/bkmrkd-frontend' },
@@ -26,11 +34,15 @@ export default function Bkmrkd() {
         <div className="made-with">
           <div className="made-with-text">Made with:</div>
           <div className="stack-icons-container flex">
-            <StackIcon icon={'/react.svg'} bgColor={'black'} padding={'8px'} />
-            <StackIcon icon={'/mongodb.svg'} bgColor={'var(--dark)'} padding={'6px'} />
-            <StackIcon icon={'/jwt.svg'} bgColor={'var(--dark)'} padding={'8px'} />
-            <StackIcon icon={'/html5.svg'} bgColor={'white'} padding={'8px'} />
-            <StackIcon icon={'/css3.svg'} bgColor={'white'} padding={'8px'} />
+            {projectDetails.stack.map((tech) => (
+              <StackIcon
+                key={tech.icon}
+                icon={tech.icon}
+                description={tech.description}
+                bgColor={tech.bgColor}
+                padding={tech.padding}
+              />
+            ))}
           </div>
         </div>
       </div>

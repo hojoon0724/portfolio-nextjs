@@ -1,19 +1,20 @@
-import Ensrq from '@/projects/design/ensrq';
-import Mongrel from '@/projects/design/mongrel';
-import PartnerEnergy from '@/projects/design/partnerEnergy';
-import Rcnm from '@/projects/design/rcnm';
+import DesignProjectCard from '@/components/designProjectCard';
+import { designProjectsData } from '@/projects/designProjectsData';
 
-export default function Design() {
+export default function Desig() {
+  const data = designProjectsData;
+
   return (
-    <div className="full-width-section design" id="design">
+    <div className="full-width-section tech" id="tech">
       <div className="max-width-block">
-        <h1>Design Projects</h1>
+        <h3 style={{ color: 'var(--aqua)', display: 'inline', padding: '4px', borderRadius: '4px' }}>
+          Design Projects
+        </h3>
       </div>
       <div className="projects-scroll-container flex">
-        <Rcnm />
-        <PartnerEnergy />
-        <Mongrel />
-        <Ensrq />
+        {data.map((project) => (
+          <DesignProjectCard key={project.title} project={project} />
+        ))}
       </div>
     </div>
   );
