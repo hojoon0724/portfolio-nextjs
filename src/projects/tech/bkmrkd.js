@@ -8,8 +8,8 @@ export default function Bkmrkd() {
     text: 'Description about bookmark saving full crud and user auth with JWT',
 
     links: [
-      { button: 'Github Front', url: 'https://github.com/hojoon0724/bkmrkd-frontend' },
-      { button: 'Github Back', url: 'https://github.com/hojoon0724/bkmrkd-backend' },
+      { button: 'Github Front', icon: '/github.svg', url: 'https://github.com/hojoon0724/bkmrkd-frontend' },
+      { button: 'Github Back', icon: '/github.svg', url: 'https://github.com/hojoon0724/bkmrkd-backend' },
     ],
   };
 
@@ -23,14 +23,20 @@ export default function Bkmrkd() {
             <p key={index}>{para}</p>
           ))}
         </div>
-        <div className="stack-icons-container flex">
-          <StackIcon url={'/assets/icons/react-svgrepo-com.svg'} bgColor={'black'} padding={'8px'} />
-          <StackIcon url={'/assets/icons/html-5-svgrepo-com.svg'} bgColor={'white'} padding={'4px'} />
+        <div className="made-with">
+          <div className="made-with-text">Made with:</div>
+          <div className="stack-icons-container flex">
+            <StackIcon icon={'/react.svg'} bgColor={'black'} padding={'8px'} />
+            <StackIcon icon={'/mongodb.svg'} bgColor={'var(--dark)'} padding={'6px'} />
+            <StackIcon icon={'/jwt.svg'} bgColor={'var(--dark)'} padding={'8px'} />
+            <StackIcon icon={'/html5.svg'} bgColor={'white'} padding={'8px'} />
+            <StackIcon icon={'/css3.svg'} bgColor={'white'} padding={'8px'} />
+          </div>
         </div>
       </div>
       <div className="buttons-container">
         {projectDetails.links.map((link) => (
-          <LinkButtons key={link.url} targetLink={link} />
+          <LinkButtons key={link.url} icon={link.icon} targetLink={link} />
         ))}
       </div>
     </div>

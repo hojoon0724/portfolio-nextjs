@@ -1,3 +1,4 @@
+import StackIcon from '@/components/stackIcon';
 import LinkButtons from '../../components/linkButtons';
 
 export default function Hourglass() {
@@ -21,6 +22,14 @@ export default function Hourglass() {
           {projectDetails.text.split('\n').map((para, index) => (
             <p key={index}>{para}</p>
           ))}
+        </div>
+        <div className="made-with">
+          <div className="made-with-text">Made with:</div>
+          <div className="stack-icons-container flex">
+            <StackIcon icon={'/swift.svg'} bgColor={'rgba(0,0,0,0)'} padding={'0px'} />
+            <StackIcon icon={'/swiftui.png'} bgColor={'rgba(0,0,0,0)'} padding={'0px'} />
+            <StackIcon icon={'/swiftdata.png'} bgColor={'rgba(0,0,0,0)'} padding={'0px'} />
+          </div>
         </div>
       </div>
       <div className="buttons-container">

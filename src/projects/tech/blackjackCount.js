@@ -1,3 +1,4 @@
+import StackIcon from '@/components/stackIcon';
 import LinkButtons from '../../components/linkButtons';
 
 export default function BlackjackCount() {
@@ -18,6 +19,14 @@ export default function BlackjackCount() {
           {projectDetails.text.split('\n').map((para, index) => (
             <p key={index}>{para}</p>
           ))}
+        </div>
+        <div className="made-with">
+          <div className="made-with-text">Made with:</div>
+          <div className="stack-icons-container flex">
+            <StackIcon icon={'/react.svg'} bgColor={'black'} padding={'8px'} />
+            <StackIcon icon={'/html5.svg'} bgColor={'white'} padding={'8px'} />
+            <StackIcon icon={'/css3.svg'} bgColor={'white'} padding={'8px'} />
+          </div>
         </div>
       </div>
       <div className="buttons-container">
