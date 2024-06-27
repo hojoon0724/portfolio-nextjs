@@ -1,5 +1,5 @@
 import DesignProjectCard from '@/components/designProjectCard';
-import { designProjectsData } from '@/projects/designProjectsData';
+import { designProjectsData } from '@/data/designProjectsData';
 
 export default function Desig() {
   const data = designProjectsData;

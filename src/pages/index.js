@@ -23,10 +23,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="top-container flex column center">
+        <About />
         <Intro />
         <Tech />
         <Design />
-        <About />
         <Contact />
       </div>
     </>

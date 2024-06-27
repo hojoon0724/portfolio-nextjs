@@ -1,5 +1,5 @@
 import TechProjectCard from '@/components/techProjectCard';
-import { techProjectsData } from '@/projects/techProjectsData';
+import { techProjectsData } from '@/data/techProjectsData';
 
 export default function Tech() {
   const data = techProjectsData;

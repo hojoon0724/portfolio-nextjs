@@ -495,6 +495,7 @@ li {
 
 .made-with {
   font-family: var(--font-mono);
+  color: var(--aqua);
   text-transform: uppercase;
   font-size: var(--fs-200);
   margin-top: 16px;
@@ -520,6 +521,19 @@ li {
   height: 24px;
   border-radius: 4px;
   margin-right: 8px;
+}
+
+.software-list-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-container {
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 20%;
+  margin-right: 16px;
 }
 
 /* tablet portrait */
