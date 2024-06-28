@@ -5,7 +5,7 @@ export default function Desig() {
   const data = designProjectsData;
 
   return (
-    <div className="full-width-section tech" id="tech">
+    <div className="section full-width projects-section design scroll-anchor" id="design">
       <div className="max-width-block">
         <h3 style={{ color: 'var(--aqua)', display: 'inline', padding: '4px', borderRadius: '4px' }}>
           Design Projects

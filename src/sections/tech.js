@@ -5,7 +5,7 @@ export default function Tech() {
   const data = techProjectsData;
 
   return (
-    <div className="full-width-section tech" id="tech">
+    <div className="section full-width projects-section tech scroll-anchor" id="tech">
       <div className="max-width-block">
         <h3 style={{ color: 'var(--aqua)', display: 'inline', padding: '4px', borderRadius: '4px' }}>Tech Projects</h3>
       </div>

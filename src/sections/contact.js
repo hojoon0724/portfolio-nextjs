@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div className="section contact flex row" id="contact">
+    <div className="section contact flex row scroll-anchor" id="contact">
       <div className="contact-title">{`Hey, let's connect!`}</div>
 
       <div className="contact-title">{`Social`}</div>
@@ -19,9 +19,15 @@ export default function Contact() {
       </div>
 
       <div className="social-links-container flex column">
-        <SocialButton socialPlatform={iconsData.instagram} socialUrl="https://www.instagram.com/hojoonkimimages/" />
-        <SocialButton socialPlatform={iconsData.linkedin} socialUrl="https://www.linkedin.com/in/hojoon-kim-dev/" />
-        <SocialButton socialPlatform={iconsData.github} socialUrl="https://github.com/hojoon0724" />
+        <SocialButton socialPlatform={iconsData.blackgithub} socialUrl="https://github.com/hojoon0724" />
+        <SocialButton
+          socialPlatform={iconsData.blackinstagram}
+          socialUrl="https://www.instagram.com/hojoonkimimages/"
+        />
+        <SocialButton
+          socialPlatform={iconsData.blacklinkedin}
+          socialUrl="https://www.linkedin.com/in/hojoon-kim-dev/"
+        />
       </div>
     </div>
   );
