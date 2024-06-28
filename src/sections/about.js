@@ -10,18 +10,11 @@ export default function About() {
 
   return (
     <div className="section about column" id="about">
-      {/* <h1>About Hojoon</h1>
-      <h4>Stuff I use:</h4> */}
-      {/* <div className="software-list-container">
-        {iconArray.map((itemInArray) => (
-          <SoftwareIcon itemName={data[itemInArray]} />
-        ))}
-      </div> */}
       <div className="software-list-container">
         {keys.map((key) => (
           <div className="icon-and-name" style={{ display: 'flex', flexDirection: 'column' }}>
             <SoftwareIcon itemName={data[key]} />
-            <div className="icon-name">{data[key].fileName}</div>
+            {/* <div className="icon-name">{data[key].name}</div> */}
           </div>
         ))}
       </div>

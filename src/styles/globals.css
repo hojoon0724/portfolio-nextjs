@@ -449,6 +449,18 @@ li {
   font-family: 'Roboto Mono';
 }
 
+.social-button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 1ch;
+}
+
 .max-width-block {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -533,7 +545,7 @@ li {
   width: 48px;
   height: 48px;
   border-radius: 20%;
-  margin-right: 16px;
+  margin: 4px;
 }
 
 /* tablet portrait */

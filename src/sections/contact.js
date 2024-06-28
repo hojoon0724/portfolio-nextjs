@@ -1,3 +1,5 @@
+import SocialButton from '@/components/socialButton';
+import { iconsData } from '@/data/iconsData';
 import React from 'react';
 
 export default function Contact() {
@@ -17,9 +19,9 @@ export default function Contact() {
       </div>
 
       <div className="social-links-container flex column">
-        <div className="instagram">Instaram</div>
-        <div className="linkedin">linkedIn</div>
-        <div className="github">GitHub</div>
+        <SocialButton socialPlatform={iconsData.instagram} socialUrl="https://www.instagram.com/hojoonkimimages/" />
+        <SocialButton socialPlatform={iconsData.linkedin} socialUrl="https://www.linkedin.com/in/hojoon-kim-dev/" />
+        <SocialButton socialPlatform={iconsData.github} socialUrl="https://github.com/hojoon0724" />
       </div>
     </div>
   );
