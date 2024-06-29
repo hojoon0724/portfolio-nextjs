@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function SocialButton({ socialPlatform, socialUrl }) {
   return (
     <a href={socialUrl} className="social-button">
