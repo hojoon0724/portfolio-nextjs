@@ -7,6 +7,10 @@ import Design from '@/sections/design';
 import Contact from '@/sections/contact';
 import Tech from '@/sections/tech';
 import Intro from '@/sections/intro';
+import { iconsData } from '@/data/iconsData';
+import StackIcon from '@/components/stackIcon';
+import SoftwareIcon from '@/components/softwareIcon';
+import AllIcons from '@/sections/allIcons';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,10 +23,14 @@ export default function Home() {
           name="description"
           content="I’m a design-centered software engineer with a background in design, research, and consulting and I build systemic solutions for people."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="top-container column center">
+        {/* <AllIcons /> */}
         <Intro />
         <Tech />
         <Design />

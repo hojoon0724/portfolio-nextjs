@@ -8,16 +8,31 @@ export default function Hourglass() {
     text: 'A multiplatform time tracking app designed for professionals working on an hourly billing basis (such as consultants, lawyers, tutors, freelancers, and contractors) where users can allocate predetermined hours, deduct hours as the timer runs, and alerts users when client hours approaches the user\'s set threshold.\nApparently "I couldn\'t find an app I liked so I built my own" is the most Hojoon sentence ever.\nApp is available for iOS, iPadOS, macOS, and visionOS.',
 
     stack: [
-      { icon: 'swift.svg', description: 'swift icon', bgColor: 'rgba(0,0,0,0)', padding: '0px' },
-      { icon: 'swiftui.png', description: 'swiftui icon', bgColor: 'rgba(0,0,0,0)', padding: '0px' },
-      { icon: 'swiftdata.png', description: 'swiftdata icon', bgColor: 'rgba(0,0,0,0)', padding: '0px' },
+      {
+        icon: 'swift.svg',
+        description: 'swift icon',
+        bgColor: 'rgba(0,0,0,0)',
+        padding: '0px',
+      },
+      {
+        icon: 'swiftui.png',
+        description: 'swiftui icon',
+        bgColor: 'rgba(0,0,0,0)',
+        padding: '0px',
+      },
+      {
+        icon: 'swiftdata.png',
+        description: 'swiftdata icon',
+        bgColor: 'rgba(0,0,0,0)',
+        padding: '0px',
+      },
     ],
 
     links: [
       {
         button: 'Download on TestFlight',
         url: 'https://testflight.apple.com/join/yyHqLv7f',
-        icon: 'testflight.png',
+        icon: 'testflight.svg',
         bgColor: 'rgba(0,0,0,0)',
         padding: '0px',
       },
@@ -35,16 +50,20 @@ export default function Hourglass() {
     <div className="project-container flex column">
       <div className="project-screenshot"></div>
       <div className="project-text-container">
-        <div className="project-title">{projectDetails.title}</div>
+        <div className="project-title">
+          {projectDetails.title}
+        </div>
         <div className="project-about">
-          {projectDetails.text.split('\n').map((para, index) => (
-            <p key={index}>{para}</p>
-          ))}
+          {projectDetails.text
+            .split('\n')
+            .map((para, index) => (
+              <p key={index}>{para}</p>
+            ))}
         </div>
         <div className="made-with">
           <div className="made-with-text">Made with:</div>
           <div className="stack-icons-container flex">
-            {projectDetails.stack.map((tech) => (
+            {projectDetails.stack.map(tech => (
               <StackIcon
                 key={tech.icon}
                 icon={tech.icon}
@@ -57,8 +76,13 @@ export default function Hourglass() {
         </div>
       </div>
       <div className="buttons-container">
-        {projectDetails.links.map((link) => (
-          <LinkButtons key={link.url} bgColor={'white'} padding={'0px'} targetLink={link} />
+        {projectDetails.links.map(link => (
+          <LinkButtons
+            key={link.url}
+            bgColor={'white'}
+            padding={'0px'}
+            targetLink={link}
+          />
         ))}
       </div>
     </div>

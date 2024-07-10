@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .uuid-36091a3f-afe3-42cf-97f8-a0bffaa82728 {
+        fill: none;
+      }
+
+      .uuid-36091a3f-afe3-42cf-97f8-a0bffaa82728, .uuid-fac53a9e-8949-4f22-9b5e-e30081fe2cac, .uuid-88805e6e-02cd-49ad-b249-33a4a5e4f5af, .uuid-9095adb0-0360-442b-b6a0-7fcd99c5d231 {
+        stroke-width: 0px;
+      }
+
+      .uuid-fac53a9e-8949-4f22-9b5e-e30081fe2cac {
+        fill: #34a853;
+      }
+
+      .uuid-88805e6e-02cd-49ad-b249-33a4a5e4f5af {
+        fill: #188038;
+      }
+
+      .uuid-9095adb0-0360-442b-b6a0-7fcd99c5d231 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="uuid-1d07303c-202e-45b6-8ef3-295bae597c98" data-name="Layer 5">
+    <rect class="uuid-36091a3f-afe3-42cf-97f8-a0bffaa82728" width="800" height="800"/>
+  </g>
+  <g id="uuid-6a08f218-c4bb-46b4-a86a-49a111a3c6b6" data-name="Layer 3">
+    <path class="uuid-9095adb0-0360-442b-b6a0-7fcd99c5d231" d="M553.24,77.5H246.76c-111.77,0-169.26,57.5-169.26,169.26v306.48c0,111.76,57.49,169.26,169.26,169.26h306.48c111.76,0,169.26-57.49,169.26-169.26V246.76c0-111.77-57.5-169.26-169.26-169.26Z"/>
+  </g>
+  <g id="uuid-3f8fa249-c778-45c6-b15e-9216131da4ae" data-name="Layer 1">
+    <g>
+      <path class="uuid-88805e6e-02cd-49ad-b249-33a4a5e4f5af" d="M450.57,177.5l111.25,111.25-55.62,10.11-55.62-10.11-10.11-55.62,10.11-55.62Z"/>
+      <path class="uuid-fac53a9e-8949-4f22-9b5e-e30081fe2cac" d="M450.57,288.75v-111.25h-182.05c-16.76,0-30.34,13.58-30.34,30.34v384.32c0,16.76,13.58,30.34,30.34,30.34h262.95c16.76,0,30.34-13.58,30.34-30.34v-303.41h-111.25Z"/>
+      <path class="uuid-9095adb0-0360-442b-b6a0-7fcd99c5d231" d="M298.86,349.43v146.65h202.27v-146.65h-202.27ZM387.36,470.8h-63.21v-35.4h63.21v35.4ZM387.36,410.11h-63.21v-35.4h63.21v35.4ZM475.85,470.8h-63.21v-35.4h63.21v35.4ZM475.85,410.11h-63.21v-35.4h63.21v35.4Z"/>
+    </g>
+  </g>
+</svg>

@@ -59,8 +59,9 @@ body {
   font-family: var(--font-roboto);
   font-optical-sizing: auto;
   font-weight: 500;
-  font-variation-settings: 'slnt' 0, 'wdth' 120, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203,
-    'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
+  font-variation-settings: 'slnt' 0, 'wdth' 120, 'GRAD' 0,
+    'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750,
+    'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
   color: var(--white);
 }
 
@@ -106,8 +107,9 @@ video {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings: 'slnt' 0, 'wdth' 100, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203,
-    'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
+  font-variation-settings: 'slnt' 0, 'wdth' 100, 'GRAD' 0,
+    'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750,
+    'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
 }
 
 h1 {
@@ -395,20 +397,22 @@ li {
 
 .contact {
   display: grid;
+  grid-auto-flow: column;
   grid-template-columns: 1fr 300px;
   grid-template-rows: auto auto;
-  column-gap: 32px;
-  row-gap: 32px;
+  column-gap: calc((1vh + 1vw) / 5);
+  row-gap: calc((1vh + 1vw) / 5);
 }
 
 .contact-title {
   font-size: var(--fs-700);
   display: flex;
-  align-items: flex-end;
+  align-self: flex-end;
 }
 
 .form-container,
 .form-container > form {
+  align-self: flex-start;
   width: 100%;
 }
 
@@ -420,6 +424,7 @@ li {
 
 .form-container > form > input,
 .form-container > form > textarea {
+  box-sizing: border-box;
   color: var(--white);
   width: 100%;
   background-color: var(--dark);
@@ -433,9 +438,6 @@ li {
 
 .form-container > form > textarea {
   border-radius: 8px;
-}
-
-.form-container > form > textarea {
   min-height: 8rem;
 }
 
@@ -445,6 +447,7 @@ li {
 }
 
 .social-links-container {
+  align-self: flex-start;
   justify-content: flex-start;
 }
 
@@ -478,7 +481,6 @@ li {
 
 .full-width {
   width: 100vw;
-  /* margin: 32px; */
 }
 
 .projects-section {
@@ -549,11 +551,11 @@ li {
 }
 
 .stack-icons-container {
-  margin: 8px 0px;
+  margin: 8px -6px;
 }
 
 .stack-icons-container > * {
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .stack-icon {

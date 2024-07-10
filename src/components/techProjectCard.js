@@ -15,21 +15,20 @@ export default function TechProjectCard({ project }) {
         <div className="made-with">
           <div className="made-with-text">Made with:</div>
           <div className="stack-icons-container flex">
-            {project.stack.map((tech) => (
-              <StackIcon
-                key={tech.icon}
-                icon={tech.icon}
-                description={tech.description}
-                bgColor={tech.bgColor}
-                padding={tech.padding}
-              />
+            {project.stack.map(tech => (
+              <StackIcon key={tech.name} itemName={tech} />
             ))}
           </div>
         </div>
       </div>
       <div className="buttons-container">
-        {project.links.map((link) => (
-          <LinkButtons key={link.url} bgColor={'white'} padding={'0px'} targetLink={link} />
+        {project.links.map(link => (
+          <LinkButtons
+            key={link.url}
+            bgColor={'white'}
+            padding={'0px'}
+            targetLink={link}
+          />
         ))}
       </div>
     </div>

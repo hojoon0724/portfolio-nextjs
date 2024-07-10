@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <defs>
+    <style>
+      .uuid-ecbd3b75-c4c2-45d1-9955-d25a25be7b51 {
+        fill: none;
+      }
+
+      .uuid-ecbd3b75-c4c2-45d1-9955-d25a25be7b51, .uuid-c3ed5e84-2520-4749-b33c-e497674e9d23, .uuid-b957c5e1-639e-4f3c-88c3-50bd0030e434, .uuid-8b06b21b-da5f-453b-886b-cab83a7adc2b, .uuid-c3b4dca4-48d7-4815-aff6-919aae73d3da {
+        stroke-width: 0px;
+      }
+
+      .uuid-c3ed5e84-2520-4749-b33c-e497674e9d23 {
+        fill: #0c67d6;
+      }
+
+      .uuid-b957c5e1-639e-4f3c-88c3-50bd0030e434 {
+        fill: #3086f6;
+      }
+
+      .uuid-8b06b21b-da5f-453b-886b-cab83a7adc2b {
+        fill: #fff;
+      }
+
+      .uuid-c3b4dca4-48d7-4815-aff6-919aae73d3da {
+        fill: #fdffff;
+      }
+    </style>
+  </defs>
+  <g id="uuid-3f45c61b-591e-4009-87b8-56567527ce58" data-name="Layer 5">
+    <rect class="uuid-ecbd3b75-c4c2-45d1-9955-d25a25be7b51" width="800" height="800"/>
+  </g>
+  <g id="uuid-6509d89e-d7f6-4651-a7d7-787786417b8f" data-name="Layer 3">
+    <path class="uuid-8b06b21b-da5f-453b-886b-cab83a7adc2b" d="M553.24,77.5H246.76c-111.77,0-169.26,57.5-169.26,169.26v306.48c0,111.76,57.49,169.26,169.26,169.26h306.48c111.76,0,169.26-57.49,169.26-169.26V246.76c0-111.77-57.5-169.26-169.26-169.26Z"/>
+  </g>
+  <g id="uuid-5fcad8fd-b430-4a8d-b81f-ba68b89cdac6" data-name="Layer 1">
+    <g id="uuid-46bde91c-1c09-4fd4-a708-9b51e538797a" data-name="Layer 5">
+      <path class="uuid-b957c5e1-639e-4f3c-88c3-50bd0030e434" d="M531.48,622.5h-262.95c-16.69,0-30.34-13.65-30.34-30.34V207.84c0-16.69,13.65-30.34,30.34-30.34h182.05l111.25,111.25v303.41c0,16.69-13.65,30.34-30.34,30.34Z"/>
+      <path class="uuid-c3ed5e84-2520-4749-b33c-e497674e9d23" d="M450.57,177.5l111.25,111.25h-111.25v-111.25Z"/>
+      <path class="uuid-c3b4dca4-48d7-4815-aff6-919aae73d3da" d="M491.02,374.72h-182.05v-25.28h182.05v25.28ZM491.02,410.11h-182.05v25.28h182.05v-25.28ZM440.45,470.8h-131.48v25.28h131.48v-25.28Z"/>
+    </g>
+  </g>
+</svg>

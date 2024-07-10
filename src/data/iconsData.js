@@ -3,207 +3,341 @@ export const iconsData = {
     name: 'adobecc',
     fileName: 'adobecc.svg',
     description: 'adobecc icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   adobeaftereffects: {
     name: 'adobeaftereffects',
     fileName: 'adobeaftereffects.svg',
     description: 'adobeaftereffects icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   adobeillustrator: {
     name: 'adobeillustrator',
     fileName: 'adobeillustrator.svg',
     description: 'adobeillustrator icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   adobeindesign: {
     name: 'adobeindesign',
     fileName: 'adobeindesign.svg',
     description: 'adobeindesign icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   adobelightroom: {
     name: 'adobelightroom',
     fileName: 'adobelightroom.svg',
     description: 'adobelightroom icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   adobelightroomclassic: {
     name: 'adobelightroomclassic',
     fileName: 'adobelightroomclassic.svg',
     description: 'adobelightroomclassic icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   adobephotoshop: {
     name: 'adobephotoshop',
     fileName: 'adobephotoshop.svg',
     description: 'adobephotoshop icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   adobepremiere: {
     name: 'adobepremiere',
     fileName: 'adobepremiere.svg',
     description: 'adobepremiere icon',
-    bgColor: '',
-    padding: '0%',
   },
-  blackinstagram: {
-    name: 'instagram',
-    fileName: 'blackinstagram.svg',
-    description: 'blackinstagram icon',
-    bgColor: '#ffffff',
-    padding: '0%',
+
+  css3alt: {
+    name: 'css3alt',
+    fileName: 'css3alt.svg',
+    description: 'css3 icon',
   },
-  blackgithub: {
-    name: 'github',
-    fileName: 'blackgithub.svg',
-    description: 'blackgithub icon',
-    bgColor: '#ffffff',
-    padding: '0%',
+
+  css3: {
+    name: 'css3',
+    fileName: 'css3.svg',
+    description: 'css3 icon',
   },
-  blacklinkedin: {
-    name: 'linkedin',
-    fileName: 'blacklinkedin.svg',
-    description: 'blacklinkedin icon',
-    bgColor: '#ffffff',
-    padding: '0%',
+
+  django: {
+    name: 'django',
+    fileName: 'django.svg',
+    description: 'django icon',
   },
-  css3alt: { name: 'css3-2', fileName: 'css3-2.svg', description: 'css3 icon', bgColor: '#ffffff', padding: '8%' },
-  css3: { name: 'css3', fileName: 'css3.svg', description: 'css3 icon', bgColor: '#ffffff', padding: '10%' },
-  django: { name: 'django', fileName: 'django.svg', description: 'django icon', bgColor: '#ffffff', padding: '5%' },
+
   express: {
     name: 'express',
     fileName: 'express.svg ',
     description: 'express icon',
-    bgColor: '#ffffff',
-    padding: '5%',
   },
+
   finalcutpro: {
     name: 'finalcutpro',
-    fileName: 'finalcutpro.png ',
+    fileName: 'finalcutpro.svg ',
     description: 'finalcutpro icon',
-    bgColor: '',
-    padding: '0%',
   },
-  github: { name: 'github', fileName: 'github.svg', description: 'github icon', bgColor: '#161614', padding: '8%' },
-  html5alt: { name: 'html5-2', fileName: 'html5-2.svg', description: 'html5 icon', bgColor: '#ffffff', padding: '8%' },
-  html5: { name: 'html5', fileName: 'html5.svg', description: 'html5 icon', bgColor: '#ffffff', padding: '10%' },
+
+  github: {
+    name: 'github',
+    fileName: 'github.svg',
+    description: 'github icon',
+  },
+
+  githubdark: {
+    name: 'githubdark',
+    fileName: 'githubdark.svg',
+    description: 'githubdark icon',
+  },
+
+  googledocs: {
+    name: 'googledocs',
+    fileName: 'googledocs.svg',
+    description: 'googledocs icon',
+  },
+
+  googledrive: {
+    name: 'googledrive',
+    fileName: 'googledrive.svg',
+    description: 'googledrive icon',
+  },
+
+  googlesheets: {
+    name: 'googlesheets',
+    fileName: 'googlesheets.svg',
+    description: 'googlesheets icon',
+  },
+
+  grandma3: {
+    name: 'grandma3',
+    fileName: 'grandma3.svg',
+    description: 'grandma3 icon',
+  },
+
+  html5alt: {
+    name: 'html5alt',
+    fileName: 'html5alt.svg',
+    description: 'html5 icon',
+  },
+
+  html5: {
+    name: 'html5',
+    fileName: 'html5.svg',
+    description: 'html5 icon',
+  },
+
   instagram: {
     name: 'instagram',
     fileName: 'instagram.svg ',
     description: 'instagram icon',
-    bgColor: '',
-    padding: '0%',
   },
+
+  instagramblack: {
+    name: 'instagram',
+    fileName: 'instagramblack.svg',
+    description: 'instagramblack icon',
+  },
+
   javascript: {
     name: 'javascript',
     fileName: 'javascript.svg',
     description: 'javascript icon',
-    bgColor: '',
-    padding: '0%',
   },
-  jquery: { name: 'jquery', fileName: 'jquery.svg', description: 'jquery icon', bgColor: '#ffffff', padding: '5%' },
-  jwt: { name: 'jwt', fileName: 'jwt.svg', description: 'jwt icon', bgColor: '#111', padding: '13%' },
+
+  jquery: {
+    name: 'jquery',
+    fileName: 'jquery.svg',
+    description: 'jquery icon',
+  },
+
+  jwt: {
+    name: 'jwt',
+    fileName: 'jwt.svg',
+    description: 'jwt icon',
+  },
+
   linkedin: {
     name: 'linkedin',
     fileName: 'linkedin.svg',
     description: 'linkedin icon',
-    bgColor: '#ffffff',
-    padding: '0%',
   },
+
+  linkedinblack: {
+    name: 'linkedin',
+    fileName: 'linkedinblack.svg',
+    description: 'linkedinblack icon',
+  },
+
   mongodbalt: {
-    name: 'mongodb-2',
-    fileName: 'mongodb-2.svg',
+    name: 'mongodbalt',
+    fileName: 'mongodbalt.svg',
     description: 'mongodb icon',
-    bgColor: '#ffffff',
-    padding: '5%',
   },
+
   mongodb: {
     name: 'mongodb',
     fileName: 'mongodb.svg',
     description: 'mongodb icon',
-    bgColor: '#011e2b',
-    padding: '7%',
   },
+
   motion: {
     name: 'motion',
-    fileName: 'motion.png',
+    fileName: 'motion.svg',
     description: 'motion icon',
-    bgColor: '',
-    padding: '0%',
   },
-  mysql: { name: 'mysql', fileName: 'mysql.svg', description: 'mysql icon', bgColor: '#ffffff', padding: '0%' },
-  nextjsalt: {
-    name: 'nextjs-2',
-    fileName: 'nextjs-2.svg',
+
+  msexcel: {
+    name: 'msexcel',
+    fileName: 'msexcel.svg',
+    description: 'msexcel icon',
+  },
+
+  msteams: {
+    name: 'msteams',
+    fileName: 'msteams.svg',
+    description: 'msteams icon',
+  },
+
+  msword: {
+    name: 'msword',
+    fileName: 'msword.svg',
+    description: 'msword icon',
+  },
+
+  mysql: {
+    name: 'mysql',
+    fileName: 'mysql.svg',
+    description: 'mysql icon',
+  },
+
+  nextjs: {
+    name: 'nextjs',
+    fileName: 'nextjs.svg',
     description: 'nextjs icon',
-    bgColor: '#ffffff',
-    padding: '5%',
   },
-  nextjs: { name: 'nextjs', fileName: 'nextjs.svg', description: 'nextjs icon', bgColor: '#ffffff', padding: '8%' },
-  nodealt: { name: 'node-2', fileName: 'node-2.svg', description: 'node icon', bgColor: '#ffffff', padding: '5%' },
-  node: { name: 'node', fileName: 'node.svg', description: 'node icon', bgColor: '#ffffff', padding: '8%' },
-  notion: { name: 'notion', fileName: 'notion.svg ', description: 'notion icon', bgColor: '#ffffff', padding: '8%' },
-  python: { name: 'python', fileName: 'python.svg', description: 'python icon', bgColor: '#000000', padding: '10%' },
-  react: { name: 'react', fileName: 'react.svg', description: 'react icon', bgColor: '#000000', padding: '12%' },
-  sqlite: { name: 'sqlite', fileName: 'sqlite.svg', description: 'sqlite icon', bgColor: '#ffffff', padding: '3%' },
+
+  nextjsalt: {
+    name: 'nextjsalt',
+    fileName: 'nextjsalt.svg',
+    description: 'nextjs icon',
+  },
+
+  nodejsalt: {
+    name: 'nodejsalt',
+    fileName: 'nodejsalt.svg',
+    description: 'node icon',
+  },
+
+  nodejs: {
+    name: 'nodejs',
+    fileName: 'nodejs.svg',
+    description: 'nodejs icon',
+  },
+
+  notion: {
+    name: 'notion',
+    fileName: 'notion.svg ',
+    description: 'notion icon',
+  },
+
+  python: {
+    name: 'python',
+    fileName: 'python.svg',
+    description: 'python icon',
+  },
+
+  qlab: {
+    name: 'qlab',
+    fileName: 'qlab.svg',
+    description: 'qlab icon',
+  },
+
+  quickq: {
+    name: 'quickq',
+    fileName: 'quickq.svg',
+    description: 'quickq icon',
+  },
+
+  react: {
+    name: 'react',
+    fileName: 'react.svg',
+    description: 'react icon',
+  },
+
+  sketch: {
+    name: 'sketch',
+    fileName: 'sketch.svg',
+    description: 'sketch icon',
+  },
+
+  slack: {
+    name: 'slack',
+    fileName: 'slack.svg',
+    description: 'slack icon',
+  },
+
+  sqlite: {
+    name: 'sqlite',
+    fileName: 'sqlite.svg',
+    description: 'sqlite icon',
+  },
+
+  sqlitealt: {
+    name: 'sqlitealt',
+    fileName: 'sqlitealt.svg',
+    description: 'sqlitealt icon',
+  },
+
   squarespace: {
     name: 'squarespace',
     fileName: 'squarespace.svg',
     description: 'squarespace icon',
-    bgColor: '#ffffff',
-    padding: '8%',
   },
-  swift: { name: 'swift', fileName: 'swift.svg', description: 'swift icon', bgColor: '', padding: '0%' },
+
+  swift: {
+    name: 'swift',
+    fileName: 'swift.svg',
+    description: 'swift icon',
+  },
+
   swiftdata: {
     name: 'swiftdata',
-    fileName: 'swiftdata.png',
+    fileName: 'swiftdata.svg',
     description: 'swiftdata icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   swiftui: {
     name: 'swiftui',
-    fileName: 'swiftui.png',
+    fileName: 'swiftui.svg',
     description: 'swiftui icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   tailwind: {
     name: 'tailwind',
     fileName: 'tailwind.svg',
     description: 'tailwind icon',
-    bgColor: 'rgb(15, 23, 42)',
-    padding: '8%',
   },
-  testflightsmall: {
-    name: 'testflight-small',
-    fileName: 'testflight-small.svg',
-    description: 'testflight icon',
-    bgColor: '',
-    padding: '0%',
-  },
+
   testflight: {
     name: 'testflight',
-    fileName: 'testflight.png',
+    fileName: 'testflight.svg',
     description: 'testflight icon',
-    bgColor: '',
-    padding: '0%',
   },
+
   typescript: {
     name: 'typescript',
     fileName: 'typescript.svg',
     description: 'typescript icon',
-    bgColor: '#ffffff',
-    padding: '0%',
   },
-  vscode: { name: 'vscode', fileName: 'vscode.svg', description: 'vscode icon', bgColor: '#ffffff', padding: '10%' },
+
+  vscode: {
+    name: 'vscode',
+    fileName: 'vscode.svg',
+    description: 'vscode icon',
+  },
+
+  xcode: {
+    name: 'xcode',
+    fileName: 'xcode.svg',
+    description: 'xcode icon',
+  },
 };
