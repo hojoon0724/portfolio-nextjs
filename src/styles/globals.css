@@ -198,6 +198,7 @@ button {
 .top {
   width: 100vw;
   height: 100vh;
+  justify-content: space-between;
   overflow: scroll;
 }
 
@@ -538,6 +539,21 @@ li {
 .project-title {
   font-family: var(--font-roboto);
   font-size: var(--fs-800);
+}
+
+.project-tags {
+  max-width: 72ch;
+  flex-wrap: wrap;
+  margin: -2px;
+}
+
+.tag-item {
+  background-color: var(--dark);
+  padding: 4px;
+  border-radius: 4px;
+  margin: 2px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
 }
 
 .buttons-container {
