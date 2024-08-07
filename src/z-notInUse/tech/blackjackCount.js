@@ -1,5 +1,5 @@
 import StackIcon from '@/components/stackIcon';
-import LinkButtons from '@/components/linkButtons';
+import RepoLinkButtons from '@/components/linkButtons';
 
 export default function BlackjackCount() {
   const projectDetails = {
@@ -29,7 +29,7 @@ export default function BlackjackCount() {
         <div className="made-with">
           <div className="made-with-text">Made with:</div>
           <div className="stack-icons-container flex">
-            {projectDetails.stack.map((tech) => (
+            {projectDetails.stack.map(tech => (
               <StackIcon
                 key={tech.icon}
                 icon={tech.icon}
@@ -42,8 +42,8 @@ export default function BlackjackCount() {
         </div>
       </div>
       <div className="buttons-container">
-        {projectDetails.links.map((link) => (
-          <LinkButtons key={link.url} targetLink={link} />
+        {projectDetails.links.map(link => (
+          <RepoLinkButtons key={link.url} targetLink={link} />
         ))}
       </div>
     </div>

@@ -1,5 +1,5 @@
 import StackIcon from '@/components/stackIcon';
-import LinkButtons from '@/components/linkButtons';
+import RepoLinkButtons from '@/components/linkButtons';
 
 export default function Bkmrkd() {
   const projectDetails = {
@@ -34,7 +34,7 @@ export default function Bkmrkd() {
         <div className="made-with">
           <div className="made-with-text">Made with:</div>
           <div className="stack-icons-container flex">
-            {projectDetails.stack.map((tech) => (
+            {projectDetails.stack.map(tech => (
               <StackIcon
                 key={tech.icon}
                 icon={tech.icon}
@@ -47,8 +47,8 @@ export default function Bkmrkd() {
         </div>
       </div>
       <div className="buttons-container">
-        {projectDetails.links.map((link) => (
-          <LinkButtons key={link.url} icon={link.icon} targetLink={link} />
+        {projectDetails.links.map(link => (
+          <RepoLinkButtons key={link.url} icon={link.icon} targetLink={link} />
         ))}
       </div>
     </div>

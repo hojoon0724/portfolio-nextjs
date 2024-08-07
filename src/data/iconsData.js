@@ -1,343 +1,355 @@
 export const iconsData = {
   adobecc: {
     name: 'adobecc',
-    fileName: 'adobecc.svg',
-    description: 'adobecc icon',
+    fileName: 'adobecc.png',
+    description: 'Adobe CC',
   },
 
   adobeaftereffects: {
     name: 'adobeaftereffects',
-    fileName: 'adobeaftereffects.svg',
-    description: 'adobeaftereffects icon',
+    fileName: 'adobeaftereffects.png',
+    description: 'Adobe Aftere Effects',
   },
 
   adobeillustrator: {
     name: 'adobeillustrator',
-    fileName: 'adobeillustrator.svg',
-    description: 'adobeillustrator icon',
+    fileName: 'adobeillustrator.png',
+    description: 'Adobe Illustrator',
   },
 
   adobeindesign: {
     name: 'adobeindesign',
-    fileName: 'adobeindesign.svg',
-    description: 'adobeindesign icon',
+    fileName: 'adobeindesign.png',
+    description: 'Adobe InDesign',
   },
 
   adobelightroom: {
     name: 'adobelightroom',
-    fileName: 'adobelightroom.svg',
-    description: 'adobelightroom icon',
+    fileName: 'adobelightroom.png',
+    description: 'Adobe Lightroom',
   },
 
   adobelightroomclassic: {
     name: 'adobelightroomclassic',
-    fileName: 'adobelightroomclassic.svg',
-    description: 'adobelightroomclassic icon',
+    fileName: 'adobelightroomclassic.png',
+    description: 'Adobe Lightroomc Classic',
   },
 
   adobephotoshop: {
     name: 'adobephotoshop',
-    fileName: 'adobephotoshop.svg',
-    description: 'adobephotoshop icon',
+    fileName: 'adobephotoshop.png',
+    description: 'Adobe Photoshop',
   },
 
   adobepremiere: {
     name: 'adobepremiere',
-    fileName: 'adobepremiere.svg',
-    description: 'adobepremiere icon',
+    fileName: 'adobepremiere.png',
+    description: 'Adobe Premiere',
   },
 
   css3alt: {
     name: 'css3alt',
-    fileName: 'css3alt.svg',
-    description: 'css3 icon',
+    fileName: 'css3alt.png',
+    description: 'CSS3',
   },
 
   css3: {
     name: 'css3',
-    fileName: 'css3.svg',
-    description: 'css3 icon',
+    fileName: 'css3.png',
+    description: 'CSS3',
   },
 
   django: {
     name: 'django',
-    fileName: 'django.svg',
-    description: 'django icon',
+    fileName: 'django.png',
+    description: 'Django',
   },
 
   express: {
     name: 'express',
-    fileName: 'express.svg ',
-    description: 'express icon',
+    fileName: 'express.png ',
+    description: 'Express',
   },
 
   finalcutpro: {
     name: 'finalcutpro',
-    fileName: 'finalcutpro.svg ',
-    description: 'finalcutpro icon',
+    fileName: 'finalcutpro.png ',
+    description: 'Final Cut Pro X',
+  },
+
+  framermotion: {
+    name: 'framermotion',
+    fileName: 'framermotion.png ',
+    description: 'Framer Motion',
   },
 
   github: {
     name: 'github',
-    fileName: 'github.svg',
-    description: 'github icon',
+    fileName: 'github.png',
+    description: 'GitHub',
   },
 
   githubdark: {
     name: 'githubdark',
-    fileName: 'githubdark.svg',
-    description: 'githubdark icon',
+    fileName: 'githubdark.png',
+    description: 'GitHub',
   },
 
   googledocs: {
     name: 'googledocs',
-    fileName: 'googledocs.svg',
-    description: 'googledocs icon',
+    fileName: 'googledocs.png',
+    description: 'Google Docs',
   },
 
   googledrive: {
     name: 'googledrive',
-    fileName: 'googledrive.svg',
-    description: 'googledrive icon',
+    fileName: 'googledrive.png',
+    description: 'Google Drive',
   },
 
   googlesheets: {
     name: 'googlesheets',
-    fileName: 'googlesheets.svg',
-    description: 'googlesheets icon',
+    fileName: 'googlesheets.png',
+    description: 'Google Sheets',
   },
 
   grandma3: {
     name: 'grandma3',
-    fileName: 'grandma3.svg',
-    description: 'grandma3 icon',
+    fileName: 'grandma3.png',
+    description: 'grandMA3',
   },
 
   html5alt: {
     name: 'html5alt',
-    fileName: 'html5alt.svg',
-    description: 'html5 icon',
+    fileName: 'html5alt.png',
+    description: 'html5',
   },
 
   html5: {
     name: 'html5',
-    fileName: 'html5.svg',
-    description: 'html5 icon',
+    fileName: 'html5.png',
+    description: 'html5',
   },
 
   instagram: {
     name: 'instagram',
-    fileName: 'instagram.svg ',
-    description: 'instagram icon',
+    fileName: 'instagram.png ',
+    description: 'Instagram',
   },
 
   instagramblack: {
     name: 'instagram',
-    fileName: 'instagramblack.svg',
-    description: 'instagramblack icon',
+    fileName: 'instagramblack.png',
+    description: 'Instagram',
   },
 
   javascript: {
     name: 'javascript',
-    fileName: 'javascript.svg',
-    description: 'javascript icon',
+    fileName: 'javascript.png',
+    description: 'JavaScript',
   },
 
   jquery: {
     name: 'jquery',
-    fileName: 'jquery.svg',
-    description: 'jquery icon',
+    fileName: 'jquery.png',
+    description: 'jQuery',
   },
 
   jwt: {
     name: 'jwt',
-    fileName: 'jwt.svg',
-    description: 'jwt icon',
+    fileName: 'jwt.png',
+    description: 'JWT',
   },
 
   linkedin: {
     name: 'linkedin',
-    fileName: 'linkedin.svg',
-    description: 'linkedin icon',
+    fileName: 'linkedin.png',
+    description: 'linkedIn',
   },
 
   linkedinblack: {
     name: 'linkedin',
-    fileName: 'linkedinblack.svg',
-    description: 'linkedinblack icon',
+    fileName: 'linkedinblack.png',
+    description: 'linkedIn',
   },
 
   mongodbalt: {
     name: 'mongodbalt',
-    fileName: 'mongodbalt.svg',
-    description: 'mongodb icon',
+    fileName: 'mongodbalt.png',
+    description: 'mongoDB',
   },
 
   mongodb: {
     name: 'mongodb',
-    fileName: 'mongodb.svg',
-    description: 'mongodb icon',
+    fileName: 'mongodb.png',
+    description: 'mongoDB',
   },
 
   motion: {
     name: 'motion',
-    fileName: 'motion.svg',
-    description: 'motion icon',
+    fileName: 'motion.png',
+    description: 'Motion',
   },
 
   msexcel: {
     name: 'msexcel',
-    fileName: 'msexcel.svg',
-    description: 'msexcel icon',
+    fileName: 'msexcel.png',
+    description: 'Microsoft Excel',
   },
 
   msteams: {
     name: 'msteams',
-    fileName: 'msteams.svg',
-    description: 'msteams icon',
+    fileName: 'msteams.png',
+    description: 'Microsoft Teams',
   },
 
   msword: {
     name: 'msword',
-    fileName: 'msword.svg',
-    description: 'msword icon',
+    fileName: 'msword.png',
+    description: 'Microsoft Word',
   },
 
   mysql: {
     name: 'mysql',
-    fileName: 'mysql.svg',
-    description: 'mysql icon',
+    fileName: 'mysql.png',
+    description: 'MySQL',
   },
 
   nextjs: {
     name: 'nextjs',
-    fileName: 'nextjs.svg',
-    description: 'nextjs icon',
+    fileName: 'nextjs.png',
+    description: 'Next.js',
   },
 
   nextjsalt: {
     name: 'nextjsalt',
-    fileName: 'nextjsalt.svg',
-    description: 'nextjs icon',
+    fileName: 'nextjsalt.png',
+    description: 'Next.js',
   },
 
   nodejsalt: {
     name: 'nodejsalt',
-    fileName: 'nodejsalt.svg',
-    description: 'node icon',
+    fileName: 'nodejsalt.png',
+    description: 'Node',
   },
 
   nodejs: {
     name: 'nodejs',
-    fileName: 'nodejs.svg',
-    description: 'nodejs icon',
+    fileName: 'nodejs.png',
+    description: 'Node',
   },
 
   notion: {
     name: 'notion',
-    fileName: 'notion.svg ',
-    description: 'notion icon',
+    fileName: 'notion.png ',
+    description: 'Notion',
   },
 
   python: {
     name: 'python',
-    fileName: 'python.svg',
-    description: 'python icon',
+    fileName: 'python.png',
+    description: 'Python',
   },
 
   qlab: {
     name: 'qlab',
-    fileName: 'qlab.svg',
-    description: 'qlab icon',
+    fileName: 'qlab.png',
+    description: 'QLab',
   },
 
   quickq: {
     name: 'quickq',
-    fileName: 'quickq.svg',
-    description: 'quickq icon',
+    fileName: 'quickq.png',
+    description: 'QuickQ',
   },
 
   react: {
     name: 'react',
-    fileName: 'react.svg',
-    description: 'react icon',
+    fileName: 'react.png',
+    description: 'React',
   },
 
   sketch: {
     name: 'sketch',
-    fileName: 'sketch.svg',
-    description: 'sketch icon',
+    fileName: 'sketch.png',
+    description: 'Sketch',
   },
 
   slack: {
     name: 'slack',
-    fileName: 'slack.svg',
-    description: 'slack icon',
+    fileName: 'slack.png',
+    description: 'Slack',
   },
 
   sqlite: {
     name: 'sqlite',
-    fileName: 'sqlite.svg',
-    description: 'sqlite icon',
+    fileName: 'sqlite.png',
+    description: 'SQLite',
   },
 
   sqlitealt: {
     name: 'sqlitealt',
-    fileName: 'sqlitealt.svg',
-    description: 'sqlitealt icon',
+    fileName: 'sqlitealt.png',
+    description: 'SQLite',
   },
 
   squarespace: {
     name: 'squarespace',
-    fileName: 'squarespace.svg',
-    description: 'squarespace icon',
+    fileName: 'squarespace.png',
+    description: 'Squarespace',
   },
 
   swift: {
     name: 'swift',
-    fileName: 'swift.svg',
-    description: 'swift icon',
+    fileName: 'swift.png',
+    description: 'Swift',
   },
 
   swiftdata: {
     name: 'swiftdata',
-    fileName: 'swiftdata.svg',
-    description: 'swiftdata icon',
+    fileName: 'swiftdata.png',
+    description: 'SwiftData',
   },
 
   swiftui: {
     name: 'swiftui',
-    fileName: 'swiftui.svg',
-    description: 'swiftui icon',
+    fileName: 'swiftui.png',
+    description: 'SwiftUI',
   },
 
   tailwind: {
     name: 'tailwind',
-    fileName: 'tailwind.svg',
-    description: 'tailwind icon',
+    fileName: 'tailwind.png',
+    description: 'Tailwind',
   },
 
   testflight: {
     name: 'testflight',
-    fileName: 'testflight.svg',
-    description: 'testflight icon',
+    fileName: 'testflight.png',
+    description: 'TestFlight',
   },
 
   typescript: {
     name: 'typescript',
-    fileName: 'typescript.svg',
-    description: 'typescript icon',
+    fileName: 'typescript.png',
+    description: 'TypeScript',
   },
 
   vscode: {
     name: 'vscode',
-    fileName: 'vscode.svg',
-    description: 'vscode icon',
+    fileName: 'vscode.png',
+    description: 'Visual Studio Code',
+  },
+
+  website: {
+    name: 'website',
+    fileName: 'website.png',
+    description: 'Website',
   },
 
   xcode: {
     name: 'xcode',
-    fileName: 'xcode.svg',
-    description: 'xcode icon',
+    fileName: 'xcode.png',
+    description: 'Xcode',
   },
 };

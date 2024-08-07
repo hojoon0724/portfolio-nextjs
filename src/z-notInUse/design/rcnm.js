@@ -1,4 +1,4 @@
-import LinkButtons from '../../components/linkButtons';
+import LinkButton from '../../components/linkButton';
 
 export default function Rcnm() {
   const projectDetails = {
@@ -21,8 +21,8 @@ export default function Rcnm() {
         </div>
       </div>
       <div className="buttons-container">
-        {projectDetails.links.map((link) => (
-          <LinkButtons key={link.url} targetLink={link} />
+        {projectDetails.links.map(link => (
+          <LinkButton key={link.url} targetLink={link} />
         ))}
       </div>
     </div>

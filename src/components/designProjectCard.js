@@ -1,5 +1,5 @@
 import StackIcon from '@/components/stackIcon';
-import LinkButtons from '@/components/linkButtons';
+import LinkButton from '@/components/linkButton';
 
 export default function DesignProjectCard({ project }) {
   return (
@@ -22,14 +22,14 @@ export default function DesignProjectCard({ project }) {
         </div>
       </div>
       <div className="buttons-container">
-        {project.links.map(link => (
-          <LinkButtons
-            key={link.url}
-            bgColor={'white'}
-            padding={'0px'}
-            targetLink={link}
-          />
-        ))}
+        <div className="repo-links-container">
+          {project.repoLinks.map(link => (
+            <LinkButton key={link.url} bgColor={'white'} padding={'0px'} targetLink={link} />
+          ))}
+        </div>
+        <div className="main-link-container">
+          <LinkButton targetLink={project.mainLink} />
+        </div>
       </div>
     </div>
   );

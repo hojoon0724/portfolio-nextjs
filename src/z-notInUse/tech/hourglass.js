@@ -1,5 +1,5 @@
 import StackIcon from '@/components/stackIcon';
-import LinkButtons from '@/components/linkButtons';
+import RepoLinkButtons from '@/components/linkButtons';
 
 export default function Hourglass() {
   const projectDetails = {
@@ -50,15 +50,11 @@ export default function Hourglass() {
     <div className="project-container flex column">
       <div className="project-screenshot"></div>
       <div className="project-text-container">
-        <div className="project-title">
-          {projectDetails.title}
-        </div>
+        <div className="project-title">{projectDetails.title}</div>
         <div className="project-about">
-          {projectDetails.text
-            .split('\n')
-            .map((para, index) => (
-              <p key={index}>{para}</p>
-            ))}
+          {projectDetails.text.split('\n').map((para, index) => (
+            <p key={index}>{para}</p>
+          ))}
         </div>
         <div className="made-with">
           <div className="made-with-text">Made with:</div>
@@ -77,12 +73,7 @@ export default function Hourglass() {
       </div>
       <div className="buttons-container">
         {projectDetails.links.map(link => (
-          <LinkButtons
-            key={link.url}
-            bgColor={'white'}
-            padding={'0px'}
-            targetLink={link}
-          />
+          <RepoLinkButtons key={link.url} bgColor={'white'} padding={'0px'} targetLink={link} />
         ))}
       </div>
     </div>

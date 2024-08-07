@@ -59,9 +59,8 @@ body {
   font-family: var(--font-roboto);
   font-optical-sizing: auto;
   font-weight: 500;
-  font-variation-settings: 'slnt' 0, 'wdth' 120, 'GRAD' 0,
-    'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750,
-    'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
+  font-variation-settings: 'slnt' 0, 'wdth' 120, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203,
+    'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
   color: var(--white);
 }
 
@@ -107,9 +106,8 @@ video {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings: 'slnt' 0, 'wdth' 100, 'GRAD' 0,
-    'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750,
-    'YTDE' -203, 'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
+  font-variation-settings: 'slnt' 0, 'wdth' 100, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203,
+    'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
 }
 
 h1 {
@@ -231,10 +229,18 @@ button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
-  border-radius: 8px;
+  /* padding: 4px; */
+  border-radius: 10px;
+  color: var(--white);
+  border: 1px solid var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.pri-accent-btn:hover {
   color: var(--black);
+  border: 1px solid var(--aqua);
   background-color: var(--aqua);
+  transition: all 0.3s ease-in-out;
 }
 
 .sec-accent-btn {
@@ -534,12 +540,21 @@ li {
   font-size: var(--fs-800);
 }
 
-.buttons-container > * {
-  margin: 0px 12px;
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.buttons-container > *:first-child {
+.repo-links-container > * {
+  margin: 0px 6px;
+}
+
+.repo-links-container > *:first-child {
   margin-left: 0px;
+}
+
+.repo-links-container > *:last-child {
+  margin-right: 0px;
 }
 
 .made-with {
@@ -564,11 +579,27 @@ li {
   border-radius: 8px;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.repo-links-container,
+.main-link-container {
+  display: flex;
+  align-items: flex-end;
+}
+
 .button-icon {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   border-radius: 4px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
+}
+
+.link-text {
+  margin: 0px 14px 0px 8px;
 }
 
 .software-list-container {
