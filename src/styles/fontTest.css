@@ -1,0 +1,254 @@
+/* 
+Roboto Flex Parameters
+'opsz' 144,
+8 - 144
+
+'wght' 400,
+100 - 1000
+
+'grad' 0,
+-200 - 150
+
+'slnt' 0,
+-10 - 0
+
+'wdth' 100,
+25 - 151
+
+'xopq' 96,
+27 - 175 (thick stroke)
+
+'yopq' 79,
+25 - 135 (thin stroke)
+
+'xtra' 468,
+323 - 603 (counter width)
+
+'ytuc' 712,
+528 - 760 (uppercase height)
+
+'ytlc' 514,
+416 - 570 (lowercase height)
+
+'ytas' 750,
+649 - 854 (ascender height)
+
+'ytde' -203,
+-305 - -98 (descender depth)
+
+'ytfi' 738,
+560 - 788 (figure height)
+
+
+'opsz', var(--opsz)
+'wght', var(--wght)
+'grad', var(--grad)
+'slnt', var(--slnt)
+'wdth', var(--wdth)
+'xopq', var(--xopq)
+'yopq', var(--yopq)
+'xtra', var(--xtra)
+'ytuc', var(--ytuc)
+'ytlc', var(--ytlc)
+'ytas', var(--ytas)
+'ytde', var(--ytde)
+'ytfi', var(--ytfi)
+
+*/
+
+:root {
+  --size-1: 2.5rem;
+  --opsz-1: 144;
+  --wght-1: 300;
+  --grad-1: 0;
+  --slnt-1: 0;
+  --wdth-1: 50;
+  --xopq-1: 96;
+  --yopq-1: 79;
+  --xtra-1: 468;
+  --ytuc-1: 712;
+  --ytlc-1: 514;
+  --ytas-1: 750;
+  --ytde-1: -203;
+  --ytfi-1: 738;
+
+  --size-2: 2.5rem;
+  --opsz-2: 144;
+  --wght-2: 600;
+  --grad-2: 0;
+  --slnt-2: 0;
+  --wdth-2: 150;
+  --xopq-2: 96;
+  --yopq-2: 79;
+  --xtra-2: 468;
+  --ytuc-2: 712;
+  --ytlc-2: 514;
+  --ytas-2: 750;
+  --ytde-2: -203;
+  --ytfi-2: 738;
+
+  --size-3: 1.5rem;
+  --opsz-3: 144;
+  --wght-3: 200;
+  --grad-3: 0;
+  --slnt-3: 0;
+  --wdth-3: 50;
+  --xopq-3: 96;
+  --yopq-3: 79;
+  --xtra-3: 468;
+  --ytuc-3: 712;
+  --ytlc-3: 514;
+  --ytas-3: 750;
+  --ytde-3: -203;
+  --ytfi-3: 738;
+
+  --size-4: 0.75rem;
+  --opsz-4: 144;
+  --wght-4: 500;
+  --grad-4: 0;
+  --slnt-4: 0;
+  --wdth-4: 75;
+  --xopq-4: 96;
+  --yopq-4: 79;
+  --xtra-4: 468;
+  --ytuc-4: 712;
+  --ytlc-4: 514;
+  --ytas-4: 750;
+  --ytde-4: -203;
+  --ytfi-4: 738;
+
+  --size-5: 1.5rem;
+  --opsz-5: 144;
+  --wght-5: 400;
+  --grad-5: 0;
+  --slnt-5: 0;
+  --wdth-5: 50;
+  --xopq-5: 96;
+  --yopq-5: 79;
+  --xtra-5: 468;
+  --ytuc-5: 712;
+  --ytlc-5: 514;
+  --ytas-5: 750;
+  --ytde-5: -203;
+  --ytfi-5: 738;
+
+  --size-6: 2.5rem;
+  --opsz-6: 144;
+  --wght-6: 400;
+  --grad-6: 0;
+  --slnt-6: 0;
+  --wdth-6: 100;
+  --xopq-6: 96;
+  --yopq-6: 79;
+  --xtra-6: 468;
+  --ytuc-6: 712;
+  --ytlc-6: 514;
+  --ytas-6: 750;
+  --ytde-6: -203;
+  --ytfi-6: 738;
+
+  --size-7: 2.5rem;
+  --opsz-7: 144;
+  --wght-7: 400;
+  --grad-7: 0;
+  --slnt-7: 0;
+  --wdth-7: 100;
+  --xopq-7: 96;
+  --yopq-7: 79;
+  --xtra-7: 468;
+  --ytuc-7: 712;
+  --ytlc-7: 416;
+  --ytas-7: 750;
+  --ytde-7: -203;
+  --ytfi-7: 738;
+
+  --size-8: 2.5rem;
+  --opsz-8: 144;
+  --wght-8: 400;
+  --grad-8: 0;
+  --slnt-8: 0;
+  --wdth-8: 100;
+  --xopq-8: 96;
+  --yopq-8: 79;
+  --xtra-8: 468;
+  --ytuc-8: 712;
+  --ytlc-8: 514;
+  --ytas-8: 750;
+  --ytde-8: -203;
+  --ytfi-8: 738;
+}
+
+.fonts-size-container {
+  min-height: 50vh !important;
+}
+
+.fonts-size-container > * {
+  margin: 1rem 0rem;
+}
+
+.font-1 {
+  font-size: var(--size-1);
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'opsz' var(--opsz-1), 'wght' var(--wght-1), 'grad' var(--grad-1), 'slnt' var(--slnt-1),
+    'wdth' var(--wdth-1), 'xopq' var(--xopq-1), 'yopq' var(--yopq-1), 'xtra' var(--xtra-1), 'ytuc' var(--ytuc-1),
+    'ytlc' var(--ytlc-1), 'ytas' var(--ytas-1), 'ytde' var(--ytde-1), 'ytfi' var(--ytfi-1);
+}
+.font-2 {
+  font-size: var(--size-2);
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'opsz' var(--opsz-2), 'wght' var(--wght-2), 'grad' var(--grad-2), 'slnt' var(--slnt-2),
+    'wdth' var(--wdth-2), 'xopq' var(--xopq-2), 'yopq' var(--yopq-2), 'xtra' var(--xtra-2), 'ytuc' var(--ytuc-2),
+    'ytlc' var(--ytlc-2), 'ytas' var(--ytas-2), 'ytde' var(--ytde-2), 'ytfi' var(--ytfi-2);
+}
+.font-3 {
+  font-size: var(--size-3);
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 
+  /* 'opsz' var(--opsz-3),  */ 'wght' var(--wght-3), 'grad' var(--grad-3),
+    'slnt' var(--slnt-3), 'wdth' var(--wdth-3), 'xopq' var(--xopq-3), 'yopq' var(--yopq-3), 'xtra' var(--xtra-3),
+    'ytuc' var(--ytuc-3), 'ytlc' var(--ytlc-3), 'ytas' var(--ytas-3), 'ytde' var(--ytde-3), 'ytfi' var(--ytfi-3);
+}
+.font-4 {
+  text-transform: uppercase;
+  font-size: var(--size-4);
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 
+  /* 'opsz' var(--opsz-4),  */ 'wght' var(--wght-4), 'grad' var(--grad-4),
+    'slnt' var(--slnt-4), 'wdth' var(--wdth-4), 'xopq' var(--xopq-4), 'yopq' var(--yopq-4), 'xtra' var(--xtra-4),
+    'ytuc' var(--ytuc-4), 'ytlc' var(--ytlc-4), 'ytas' var(--ytas-4), 'ytde' var(--ytde-4), 'ytfi' var(--ytfi-4);
+}
+.font-5 {
+  font-size: var(--size-5);
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'opsz' var(--opsz-5), 'wght' var(--wght-5), 'grad' var(--grad-5), 'slnt' var(--slnt-5),
+    'wdth' var(--wdth-5), 'xopq' var(--xopq-5), 'yopq' var(--yopq-5), 'xtra' var(--xtra-5), 'ytuc' var(--ytuc-5),
+    'ytlc' var(--ytlc-5), 'ytas' var(--ytas-5), 'ytde' var(--ytde-5), 'ytfi' var(--ytfi-5);
+}
+.font-6 {
+  font-size: var(--size-6);
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'opsz' var(--opsz-6), 'wght' var(--wght-6), 'grad' var(--grad-6), 'slnt' var(--slnt-6),
+    'wdth' var(--wdth-6), 'xopq' var(--xopq-6), 'yopq' var(--yopq-6), 'xtra' var(--xtra-6), 'ytuc' var(--ytuc-6),
+    'ytlc' var(--ytlc-6), 'ytas' var(--ytas-6), 'ytde' var(--ytde-6), 'ytfi' var(--ytfi-6);
+}
+.font-7 {
+  font-size: var(--size-7);
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'opsz' var(--opsz-7), 'wght' var(--wght-7), 'grad' var(--grad-7), 'slnt' var(--slnt-7),
+    'wdth' var(--wdth-7), 'xopq' var(--xopq-7), 'yopq' var(--yopq-7), 'xtra' var(--xtra-7), 'ytuc' var(--ytuc-7),
+    'ytlc' var(--ytlc-7), 'ytas' var(--ytas-7), 'ytde' var(--ytde-7), 'ytfi' var(--ytfi-7);
+}
+.font-8 {
+  font-size: var(--size-8);
+  font-family: 'Roboto Flex', sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: 'slnt' 0, 'wdth' 120, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203,
+    'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
+}

@@ -1,6 +1,6 @@
-import { allColors } from '../../scratch/vsCodeColorsExport';
-import { orderArray } from '../../scratch/vsCodeColorsExport';
-import { convertToHSL } from '../../scratch/vsCodeColorsExport';
+import { allColors } from '../../test/vsCodeColorsExport';
+import { orderArray } from '../../test/vsCodeColorsExport';
+import { convertToHSL } from '../../test/vsCodeColorsExport';
 
 export default function showAllColors() {
   const colorsRaw = allColors;
@@ -15,7 +15,7 @@ export default function showAllColors() {
       className="color-block-container flex"
       style={{ display: 'flex', flexWrap: 'wrap', fontFamily: 'Roboto Mono' }}
     >
-      {colorsHSLOrdered.map((hsl) => (
+      {colorsHSLOrdered.map(hsl => (
         <div className="box" key={hsl} style={{ backgroundColor: `hsl(${hsl[0]} ${hsl[1] * 100}% ${hsl[2] * 100}%)` }}>
           {`(${hsl[0]} ${Math.round(hsl[1] * 100)}% ${Math.round(hsl[2] * 100)}%)`}
         </div>
