@@ -34,7 +34,7 @@ export const designProjectsData = [
     repoLinks: [],
     mainLink: {
       button: 'Check out the whole project',
-      icon: '/github.png',
+      icon: '/loupe.png',
       openOnNewWindow: false,
       url: 'https://github.com/hojoon0724/bkmrkd-frontend',
     },
@@ -66,7 +66,7 @@ export const designProjectsData = [
     repoLinks: [],
     mainLink: {
       button: 'Check out the whole project',
-      icon: '/github.png',
+      icon: '/loupe.png',
       openOnNewWindow: false,
       url: 'https://github.com/hojoon0724/bkmrkd-frontend',
     },
@@ -99,7 +99,7 @@ export const designProjectsData = [
     repoLinks: [],
     mainLink: {
       button: 'Check out the whole project',
-      icon: '/github.png',
+      icon: '/loupe.png',
       openOnNewWindow: false,
       url: 'https://github.com/hojoon0724/bkmrkd-frontend',
     },
@@ -122,7 +122,7 @@ export const designProjectsData = [
     repoLinks: [],
     mainLink: {
       button: 'Check out the whole project',
-      icon: '/github.png',
+      icon: '/loupe.png',
       openOnNewWindow: false,
       url: 'https://github.com/hojoon0724/bkmrkd-frontend',
     },
