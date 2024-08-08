@@ -7,7 +7,7 @@ export default function RotatingScreenshots({ folderRoute, galleryArray }) {
   }
   return (
     <div className="screenshot-container">
-      <Image className="screenshot-image" src={`${folderRoute}${galleryArray[0]}`} alt="" width={2500} height={2500} />
+      <img className="screenshot-image" src={`${folderRoute}${galleryArray[0]}`} alt="" width={2500} height={2500} />
     </div>
   );
 }

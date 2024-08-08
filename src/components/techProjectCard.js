@@ -8,7 +8,7 @@ export default function TechProjectCard({ project }) {
   return (
     <div className="project-container flex column">
       <div className="project-screenshot">
-        <RotatingScreenshots folderRoute={project.folder} galleryArray={project.images} />
+        {/* <RotatingScreenshots folderRoute={project.folder} galleryArray={project.images} /> */}
       </div>
       <div className="project-text-container">
         <div className="project-title">{project.logo ? <ProjectLogo project={project} /> : project.title}</div>

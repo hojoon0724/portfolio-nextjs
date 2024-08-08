@@ -10,7 +10,9 @@ export default function DesignProjectCard({ project }) {
         <div className="project-title">{project.title}</div>
         <div className="project-tags flex">
           {project.tags.map(tag => (
-            <div className="tag-item">{tag}</div>
+            <div className="tag-item" key={tag}>
+              {tag}
+            </div>
           ))}
         </div>
         <div className="project-about">

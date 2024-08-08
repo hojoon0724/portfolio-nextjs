@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ProjectLogo({ project }) {
   return (
     <div className="project-logo-container">
