@@ -323,7 +323,7 @@ button {
 }
 
 .top-container > * {
-  width: clamp(480px, 100%, var(--max-width));
+  width: clamp(360px, 100%, var(--max-width));
 }
 
 .color-test-container {
@@ -442,7 +442,7 @@ button {
 }
 
 .nav-bar {
-  width: clamp(480px, 100%, var(--max-width));
+  width: clamp(360px, 100%, var(--max-width));
   justify-content: center;
   align-items: center;
 }
@@ -491,6 +491,13 @@ button {
   padding: 8px 16px;
   z-index: 1;
   background-color: var(--dark);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-btn {
+    font-size: 0.7rem;
+    padding: 8px 12px;
+  }
 }
 
 .nav-active {
@@ -544,7 +551,7 @@ li {
 /* About Section */
 
 .hello-container {
-  margin: clamp(60px, 20vh, 120px);
+  margin: clamp(60px, 20vw, 120px);
 }
 
 .hojoon {
@@ -774,6 +781,12 @@ li {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .project-text-container::after {
+    max-height: 90svh;
+  }
 }
 
 .project-title {
