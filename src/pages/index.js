@@ -11,6 +11,7 @@ import { iconsData } from '@/data/iconsData';
 import StackIcon from '@/components/stackIcon';
 import SoftwareIcon from '@/components/softwareIcon';
 import AllIcons from '@/sections/allIcons';
+import ScrollText from '@/sections/scrollText';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,14 +24,14 @@ export default function Home() {
           name="description"
           content="I’m a design-centered software engineer with a background in design, research, and consulting and I build systemic solutions for people."
         />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="top-container column center">
         {/* <AllIcons /> */}
+        <ScrollText
+          text={`I’m a design-centered software engineer with a background in design, research, and consulting and I build systemic solutions for people.`}
+        />
         <Intro />
         <Tech />
         <Design />
