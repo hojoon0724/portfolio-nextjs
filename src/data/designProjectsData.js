@@ -3,6 +3,7 @@ import { iconsData } from './iconsData';
 export const designProjectsData = [
   {
     title: 'Rocket City New Music',
+    logo: '/rcnmWordmark.svg',
     text: 'DescriptionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     stack: [
       iconsData.javascript,
@@ -42,6 +43,7 @@ export const designProjectsData = [
 
   {
     title: 'Partner Energy',
+    logo: '/partnerEnergyLogo.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     stack: [
       iconsData.msword,
@@ -53,16 +55,7 @@ export const designProjectsData = [
       iconsData.html5,
       iconsData.css3,
     ],
-    tags: [
-      'branding',
-      'web design',
-      'web dev',
-      'graphic design',
-      'video production',
-      'internal database',
-      'lighting design',
-      'event management',
-    ],
+    tags: ['brand identity', 'brand guidelines', 'logo design', 'icon design'],
     repoLinks: [],
     mainLink: {
       button: 'Check out the whole project',
@@ -74,6 +67,7 @@ export const designProjectsData = [
 
   {
     title: 'enSRQ',
+    logo: '',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     stack: [
       iconsData.adobeindesign,
@@ -87,14 +81,13 @@ export const designProjectsData = [
       iconsData.googledrive,
     ],
     tags: [
-      'branding',
+      'brand identity',
+      'brand guidelines',
+      'graphics standards',
+      'logo design',
       'web design',
       'web dev',
-      'graphic design',
-      'video production',
-      'internal database',
-      'lighting design',
-      'event management',
+      'print design',
     ],
     repoLinks: [],
     mainLink: {
@@ -107,17 +100,16 @@ export const designProjectsData = [
 
   {
     title: 'LA Mongrel Rugby League',
+    logo: '',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     stack: [iconsData.react, iconsData.mongodb, iconsData.jwt, iconsData.html5, iconsData.css3],
     tags: [
-      'branding',
-      'web design',
-      'web dev',
-      'graphic design',
-      'video production',
-      'internal database',
-      'lighting design',
-      'event management',
+      'brand identity',
+      'brand guidelines',
+      'graphics standards',
+      'logo design',
+      'team uniform design',
+      'merchandise design',
     ],
     repoLinks: [],
     mainLink: {
