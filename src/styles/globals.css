@@ -746,6 +746,7 @@ li {
 .project-text-container {
   z-index: 1;
   position: relative;
+  /* max-width: 72ch; */
   /* background-color: #179fff; */
   /* mix-blend-mode: multiply; */
 }
@@ -792,11 +793,15 @@ li {
 .project-title {
   font-family: var(--font-roboto);
   font-size: var(--fs-800);
-  height: var(--fs-800);
+  height: max(10rem, var(--fs-800));
+  /* max-height: 1000px; */
+  /* max-width: 40rem; */
+  width: min(640px, 100%);
 }
 
 .project-logo-container {
   height: 100%;
+  max-width: 72ch;
   /* padding-top: 1rem; */
 }
 

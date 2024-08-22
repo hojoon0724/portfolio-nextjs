@@ -3,7 +3,7 @@ import { iconsData } from './iconsData';
 export const designProjectsData = [
   {
     title: 'Rocket City New Music',
-    logo: '/rcnmWordmark.svg',
+    logo: '/rcnm/rcnm-lockupLong.svg',
     text: 'DescriptionLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     stack: [
       iconsData.javascript,
@@ -43,8 +43,8 @@ export const designProjectsData = [
 
   {
     title: 'Partner Energy',
-    logo: '/partnerEnergyLogo.svg',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    logo: '/partnerEnergy/pe-gradientForDark_fillPrimaryLockup.svg',
+    text: 'This $100M+-revenue energy consulting company, hired me to give a fresh new look to their brand, which was perceived as too corporate and lacking in creativity. The company’s aesthetic was seen as uninspired, with a design reminiscent of basic templates. I executed a comprehensive rebrand, creating a unique brand guidelines with a logo system, graphic standards, and document templates designed for their staff to easily use the new design system.',
     stack: [
       iconsData.msword,
       iconsData.msexcel,
@@ -67,7 +67,7 @@ export const designProjectsData = [
 
   {
     title: 'enSRQ',
-    logo: '',
+    logo: '/ensrq/ensrq-multiForDark-noCS.svg',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     stack: [
       iconsData.adobeindesign,
@@ -100,9 +100,19 @@ export const designProjectsData = [
 
   {
     title: 'LA Mongrel Rugby League',
-    logo: '',
+    logo: '/mongrel/Horizontal_Dark-Full-LA-Mongrel-NeverSurrender.png',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    stack: [iconsData.react, iconsData.mongodb, iconsData.jwt, iconsData.html5, iconsData.css3],
+    stack: [
+      iconsData.adobeindesign,
+      iconsData.adobelightroom,
+      iconsData.adobeillustrator,
+      iconsData.adobephotoshop,
+      iconsData.html5,
+      iconsData.css3,
+      iconsData.javascript,
+      iconsData.squarespace,
+      iconsData.googledrive,
+    ],
     tags: [
       'brand identity',
       'brand guidelines',
