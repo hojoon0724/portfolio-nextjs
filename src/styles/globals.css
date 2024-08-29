@@ -778,6 +778,7 @@ li {
   /* background-image: radial-gradient(circle at 0 0, #c21818 0%, #245ba3 62%, #16b119 100%); */
   width: calc(100% + 16px * 2);
   height: calc(150% + 16px * 2);
+  max-height: 80svh;
   margin: -16px;
   position: absolute;
   left: 0;

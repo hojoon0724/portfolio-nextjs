@@ -29,9 +29,9 @@ export default function Home() {
       </Head>
       <div className="top-container column center">
         {/* <AllIcons /> */}
-        <ScrollText
+        {/* <ScrollText
           text={`I’m a design-centered software engineer with a background in design, research, and consulting and I build systemic solutions for people.`}
-        />
+        /> */}
         <Design />
         <Intro />
         <Tech />
