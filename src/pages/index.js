@@ -28,10 +28,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="top-container column center">
-        {/* <AllIcons /> */}
-        {/* <ScrollText
-          text={`I’m a design-centered software engineer with a background in design, research, and consulting and I build systemic solutions for people.`}
-        /> */}
         <Intro />
         <Tech />
         <Design />

@@ -1,7 +1,7 @@
 import DesignProjectCard from '@/components/designProjectCard';
 import { designProjectsData } from '@/data/designProjectsData';
 
-export default function Desig() {
+export default function Design() {
   const data = designProjectsData;
 
   return (
@@ -12,7 +12,7 @@ export default function Desig() {
         </h3>
       </div>
       <div className="projects-scroll-container flex">
-        {data.map((project) => (
+        {data.map(project => (
           <DesignProjectCard key={project.title} project={project} />
         ))}
       </div>
