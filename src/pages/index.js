@@ -32,9 +32,9 @@ export default function Home() {
         {/* <ScrollText
           text={`I’m a design-centered software engineer with a background in design, research, and consulting and I build systemic solutions for people.`}
         /> */}
-        <Design />
         <Intro />
         <Tech />
+        <Design />
         <About />
         <Contact />
       </div>

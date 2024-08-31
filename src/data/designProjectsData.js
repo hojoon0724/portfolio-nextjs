@@ -4,7 +4,7 @@ export const designProjectsData = [
   {
     title: 'Rocket City New Music',
     logo: '/rcnm/rcnm-lockupLong.svg',
-    text: 'In 2021, I co-founded this contemporary classical music concert series in Huntsville, home of rocket engines that took us to the moon. I created the visual identity and I make the events more immersive by using lighting and visual elements to enhance the audience experience.',
+    text: 'In 2021, I co-founded a contemporary classical music concert series and developed its brand identity and graphic standards. Unlike traditional classical music concerts, I aim to immerse the audience in the performance, using lights and visual elements to make them feel like an integral part of the show. I design dynamic projections and program stage lighting live, with the full music score in front of me, creating a sensory experience where the audience can ’see’ the music and feel its energy, rather than simply being passive observers. This approach brings a new dimension to classical concerts, much like what is common in other music genres.',
     stack: [
       iconsData.javascript,
       iconsData.html5,
@@ -34,7 +34,7 @@ export const designProjectsData = [
 
     repoLinks: [],
     mainLink: {
-      button: 'Check out the whole project',
+      button: 'See More',
       icon: '/loupe.png',
       openOnNewWindow: false,
       url: 'https://github.com/hojoon0724/bkmrkd-frontend',
@@ -58,7 +58,7 @@ export const designProjectsData = [
     tags: ['brand identity', 'brand guidelines', 'logo design', 'icon design'],
     repoLinks: [],
     mainLink: {
-      button: 'Check out the whole project',
+      button: 'See More',
       icon: '/loupe.png',
       openOnNewWindow: false,
       url: 'https://github.com/hojoon0724/bkmrkd-frontend',
@@ -68,7 +68,7 @@ export const designProjectsData = [
   {
     title: 'enSRQ',
     logo: '/ensrq/ensrq-multiForDark-noCS.svg',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    text: 'In 2017, enSRQ, a concert series based in Sarasota, Florida, approached me to design their brand identity and establish graphic standards. Since then, I’ve developed a new style for each season, creating a fresh and unique look while staying true to their brand identity. This approach ensures the organization’s visual appeal remains dynamic while maintaining consistency and continuity with their established guidelines.',
     stack: [
       iconsData.adobeindesign,
       iconsData.adobelightroom,
@@ -91,7 +91,7 @@ export const designProjectsData = [
     ],
     repoLinks: [],
     mainLink: {
-      button: 'Check out the whole project',
+      button: 'See More',
       icon: '/loupe.png',
       openOnNewWindow: false,
       url: 'https://github.com/hojoon0724/bkmrkd-frontend',
@@ -101,7 +101,7 @@ export const designProjectsData = [
   {
     title: 'LA Mongrel Rugby League',
     logo: '/mongrel/Horizontal_Dark-Full-LA-Mongrel-NeverSurrender.png',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    text: 'I was commissioned by a local rugby team in Los Angeles, California, to unify and standardize their visual identity. After establishing a comprehensive brand identity and graphic guidelines, I designed their team uniforms and seasonal merchandise to align with the new branding.',
     stack: [
       iconsData.adobeindesign,
       iconsData.adobelightroom,
@@ -123,7 +123,7 @@ export const designProjectsData = [
     ],
     repoLinks: [],
     mainLink: {
-      button: 'Check out the whole project',
+      button: 'See More',
       icon: '/loupe.png',
       openOnNewWindow: false,
       url: 'https://github.com/hojoon0724/bkmrkd-frontend',

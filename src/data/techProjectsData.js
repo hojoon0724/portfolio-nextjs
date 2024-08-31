@@ -4,7 +4,7 @@ export const techProjectsData = [
   {
     title: 'Hourglass',
     logo: '/hourglassLettering.svg',
-    text: 'A multiplatform time tracking app designed for professionals working on an hourly billing basis (such as consultants, lawyers, tutors, freelancers, and contractors) where users can allocate predetermined hours, deduct hours as the timer runs, and alerts users when client hours approaches the user\'s set threshold.\nApparently "I couldn\'t find an app I liked so I built my own" is the most Hojoon sentence ever.\nApp is available for iOS, iPadOS, macOS, and visionOS.',
+    text: 'I couldn’t find a time tracking app that I liked so I built my own. Hourglass is designed for professionals working on an hourly billing basis (such as consultants, lawyers, tutors, freelancers, and contractors) where users can allocate predetermined hours, deduct hours as the timer runs, and alerts users when client hours approaches the user’s set threshold.\nApp is available for iOS, iPadOS, macOS, and visionOS.',
     stack: [iconsData.xcode, iconsData.swift, iconsData.swiftui, iconsData.swiftdata, iconsData.testflight],
     repoLinks: [
       {
@@ -26,7 +26,8 @@ export const techProjectsData = [
   {
     title: 'Blackjack Card Counter',
     logo: '',
-    text: 'The house always wins… unless you know how to count cards, at which point you can gain a small advantage of around 1%. You can practice card counting, but you’ll need an accomplice who’s also a skilled card counter and finding someone who’s perfect at it can be tough. Instead, you can use this web application I made to practice on your own. The app will automatically keep track of the count and lets you compare your count against the actual count. \nOr, you can just play blackjack for funsies for free. \nBy the way, if you like statistics, it also keeps track of your long term performance.',
+    text: 'The house always wins… unless you know how to count cards, at which point you can gain a small advantage of around 1%. You can practice card counting, but you’ll need an accomplice who’s also a skilled card counter and finding someone who’s perfect at it can be tough. Instead, you can use this web application I made to practice on your own. The app will automatically keep track of the count and lets you compare your count against the actual count. \nOr, you can just play blackjack for funsies for free.',
+    //  \nBy the way, if you like statistics, it also keeps track of your long term performance.',
     stack: [iconsData.vscode, iconsData.react, iconsData.framermotion, iconsData.html5, iconsData.css3],
     repoLinks: [
       {
