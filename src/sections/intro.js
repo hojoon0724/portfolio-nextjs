@@ -1,3 +1,5 @@
+import styles from './intro.module.css';
+
 export default function Intro() {
   const shortBio = (
     <div>
@@ -12,12 +14,12 @@ export default function Intro() {
   );
 
   return (
-    <div className="section intro flex scroll-anchor" id="intro">
-      <div className="hello-container">
-        <div className="hello text-mono-small">{`Hi, my name is`}</div>
-        <div className="hojoon">{`Hojoon Kim`}</div>
-        <div className="intro text-mono-small">{`I design and build apps and stuff`}</div>
-        <div className="short-bio text-mono-small">{shortBio}</div>
+    <div className="section flex scroll-anchor" id="intro">
+      <div className={styles.helloContainer}>
+        <div className={`text-mono-small`}>{`Hi, my name is`}</div>
+        <div className={`${styles.hojoon}`}>{`Hojoon Kim`}</div>
+        <div className={`${styles.intro} text-mono-small`}>{`I design and build apps and stuff`}</div>
+        <div className={`${styles.shortBio} text-mono-small`}>{shortBio}</div>
       </div>
     </div>
   );

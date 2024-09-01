@@ -1,3 +1,4 @@
+import styles from './design.module.css';
 import DesignProjectCard from '@/components/designProjectCard';
 import { designProjectsData } from '@/data/designProjectsData';
 

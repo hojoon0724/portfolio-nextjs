@@ -38,15 +38,15 @@
   --success: oklch(50% 0.202 148);
   --error: oklch(45% 0.22 22);
 
-  --light-yellow: #dedeac;
-  --yellow: #ffd700;
-  --orange: #ffa500;
-  --dark-orange: #ce9178;
-  --light-blue: #a2e6ff;
-  --blue: #179fff;
-  --pink: #da70d6;
-  --light-green: #b5cea8;
-  --green: #4ec9b0;
+  --light-yellow: oklch(88.82% 0.066 107.66);
+  --yellow: oklch(89% 46% 95deg);
+  --orange: oklch(79.82% 0.197 70.67);
+  --dark-orange: oklch(71.04% 0.083 43.17);
+  --light-blue: oklch(88.82% 0.076 222.88);
+  --blue: oklch(68.44% 0.187 247.4);
+  --pink: oklch(70.21% 0.181 328.71);
+  --light-green: oklch(82.26% 0.059 134.91);
+  --green: oklch(76.04% 0.115 177.18);
 
   --tr-slow: ease-in-out 0.5s;
   --tr-fast: ease-in-out 0.3s;
@@ -548,71 +548,6 @@ li {
   scroll-snap-align: center;
 }
 
-/* About Section */
-
-.hello-container {
-  margin: clamp(60px, 20vw, 120px);
-}
-
-.hojoon {
-  font-family: var(--roboto-flex);
-  font-variation-settings: var(--font-variation-wide-bold);
-  font-size: var(--fs-900);
-  margin-bottom: 20px;
-}
-
-.intro {
-  justify-content: center;
-  align-items: center;
-}
-
-.short-bio {
-  max-width: 72ch;
-  line-height: 1.5rem;
-  margin-top: 64px;
-}
-
-.contact {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 300px;
-  grid-template-rows: auto auto;
-  column-gap: calc((1vh + 1vw) / 5);
-  row-gap: calc((1vh + 1vw) / 5);
-}
-
-/* tablet portrait */
-@media only screen and (max-width: 1024px) {
-  .contact {
-    display: flex;
-    flex-direction: column;
-    padding: 32px;
-  }
-
-  .contact > *,
-  .contact > * > * {
-    width: 100%;
-  }
-
-  .form-container {
-    margin-bottom: 60px;
-  }
-
-  .social-button {
-    margin: 8px 0px !important;
-  }
-}
-
-/* mobile portrait */
-@media only screen and (max-width: 768px) {
-}
-
-.contact-title {
-  font-size: var(--fs-700);
-  display: flex;
-  align-self: flex-end;
-}
-
 .form-container,
 .form-container > form {
   align-self: flex-start;
@@ -649,11 +584,6 @@ li {
   width: auto;
   padding: 0.75rem 1.5rem;
   border: 1px solid var(--white);
-}
-
-.social-links-container {
-  align-self: flex-start;
-  justify-content: flex-start;
 }
 
 .social-button {
@@ -789,21 +719,29 @@ li {
 .project-title {
   font-family: var(--font-roboto);
   font-size: var(--fs-800);
-  height: max(10rem, var(--fs-800));
-  /* max-height: 1000px; */
-  /* max-width: 40rem; */
-  width: min(640px, 100%);
+  max-width: 20ch;
 }
 
 .project-logo-container {
-  height: 100%;
-  max-width: 72ch;
-  /* padding-top: 1rem; */
+  max-height: 10rem; /* Limit the maximum height of the container */
+  width: 100%; /* Full width */
+  padding-top: 1rem;
+  overflow: hidden; /* Hide anything that overflows */
+  display: block; /* Ensure normal block layout */
+  position: relative; /* Necessary for absolute positioning of img */
 }
 
 .project-logo-container img {
-  height: 100%;
-  object-fit: contain;
+  background-color: red; /* Optional for debugging */
+  max-height: 100%; /* Fit within the container's height */
+  max-width: 100%; /* Fit within the container's width */
+  width: 100%; /* Ensures the image scales proportionally */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Absolutely position the image */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  object-fit: contain; /* Ensure it scales to fit within the container */
 }
 
 .project-tags {

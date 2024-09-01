@@ -1,3 +1,4 @@
+import styles from './about.module.css';
 import Scratch from '@/components/scratch';
 import StackIcon from '@/components/stackIcon';
 import SoftwareIcon from '@/components/softwareIcon';
@@ -25,7 +26,7 @@ export default function About() {
 
         <h3 style={{ color: 'var(--aqua)', display: 'inline', padding: '4px', borderRadius: '4px' }}>Skills</h3>
         <Skills category={'tech'} />
-        <Skills category={'media & design'} />
+        <Skills cautegory={'media & design'} />
         <Skills category={'software'} />
         <Skills category={'usual suspects'} />
 

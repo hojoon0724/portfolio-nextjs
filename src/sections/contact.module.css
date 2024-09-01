@@ -1,0 +1,40 @@
+.contact {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: auto auto;
+  column-gap: calc((1vh + 1vw) / 5);
+  row-gap: calc((1vh + 1vw) / 5);
+}
+
+.contact-title {
+  font-size: var(--fs-700);
+  display: flex;
+  align-self: flex-end;
+}
+.social-links-container {
+  align-self: flex-start;
+  justify-content: flex-start;
+}
+
+/* tablet portrait */
+@media only screen and (max-width: 1024px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  .contact > *,
+  .contact > * > * {
+    width: 100%;
+  }
+
+  .form-container {
+    margin-bottom: 60px;
+  }
+
+  .social-button {
+    margin: 8px 0px !important;
+  }
+}

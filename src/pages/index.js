@@ -2,15 +2,15 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
+
+import Intro from '@/sections/intro';
 import About from '@/sections/about';
 import Design from '@/sections/design';
-import Contact from '@/sections/contact';
 import Tech from '@/sections/tech';
-import Intro from '@/sections/intro';
+import Contact from '@/sections/contact';
+
 import { iconsData } from '@/data/iconsData';
-import StackIcon from '@/components/stackIcon';
-import SoftwareIcon from '@/components/softwareIcon';
-import AllIcons from '@/sections/allIcons';
+
 import ScrollText from '@/sections/scrollText';
 
 const inter = Inter({ subsets: ['latin'] });
