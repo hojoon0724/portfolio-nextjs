@@ -1,3 +1,6 @@
+/* GLOBAL START */
+
+/* VARIABLES START */
 :root {
   --max-width: 1200px;
   --border-radius: 12px;
@@ -210,13 +213,15 @@ video {
 }
 
 .title-text {
-  font-family: --rob;
+  font-family: var(--roboto-flex);
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
@@ -304,6 +309,8 @@ button {
   color: var(--light-green);
 }
 
+/* END VARIABLES */
+
 .top {
   width: 100vw;
   height: 100vh;
@@ -326,18 +333,26 @@ button {
   width: clamp(360px, 100%, var(--max-width));
 }
 
-.color-test-container {
-  min-width: 100svw;
-  min-height: 100svh;
-  flex-direction: column;
-  align-items: center;
-}
-
 .box {
   margin: 8px;
   padding: 16px 32px;
 }
 
+li {
+  display: block;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin: 32px 0px;
+  min-height: 100%;
+  scroll-snap-align: center;
+}
+
+/* BUTTONS STYLING START */
 .pri-accent-btn {
   display: inline-flex;
   justify-content: center;
@@ -354,6 +369,9 @@ button {
   border: 1px solid var(--aqua);
   background-color: var(--aqua);
   transition: all 0.3s ease-in-out;
+}
+.text-pri-accent {
+  color: var(--aqua);
 }
 
 .pri-transparent-btn {
@@ -403,6 +421,10 @@ button {
   background-color: var(--magenta);
 }
 
+.text-sec-accent {
+  color: var(--magenta);
+}
+
 .app-store-btn {
   min-height: 40px;
   width: fit-content;
@@ -424,103 +446,88 @@ button {
   background-color: var(--error);
 }
 
-.text-pri-accent {
-  color: var(--aqua);
-}
+/* GLOBAL END */
 
-.text-sec-accent {
-  color: var(--magenta);
-}
-
-.nav-bar-container {
-  background-color: var(--dark);
-  width: 100vw;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0px;
-  box-shadow: 0px 0px 8px black;
-}
-
-.nav-bar {
-  width: clamp(360px, 100%, var(--max-width));
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-bar-left {
-  margin-left: 16px;
-}
-
-.nav-bar-left > * {
-  transition: var(--tr-fast);
-}
-
-.nav-bar-left > *:hover {
-  color: var(--aqua);
-}
-
-.logo {
-  font-size: var(--fs-500);
-  letter-spacing: 0.5ch;
-  text-transform: uppercase;
-}
-
-.subtitle {
-  font-size: var(--fs-200);
-  letter-spacing: 0.3ch;
-  text-transform: uppercase;
-}
-
-.nav-bar-center {
+.social-button {
   display: flex;
-}
-
-.nav-btn-container {
-  position: relative;
-}
-
-.nav-btn {
-  display: block;
-  margin: 0px 8px;
-  text-transform: lowercase;
-  letter-spacing: 0.1ch;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: var(--tr-fast);
+  align-items: center;
+  border: 1px solid var(--aqua);
+  min-height: 3rem;
+  margin: 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
   font-family: 'Roboto Mono';
-  padding: 8px 16px;
-  z-index: 1;
-  background-color: var(--dark);
+  cursor: pointer;
+}
+
+.social-button-icon {
+  width: 46px;
+  height: 100%;
+  margin-right: 1ch;
+}
+
+.max-width-block {
+  width: calc(100% - 84px);
+  padding: 12px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  max-width: 1200px;
+  align-self: center;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.project-text-container::after {
+  z-index: -1;
+  content: '';
+  mix-blend-mode: overlay;
+  background-image: linear-gradient(
+    to top,
+    hsla(0, 0%, 0%, 0) 0%,
+    hsla(0, 0%, 0%, 0.01) 8.1%,
+    hsla(0, 0%, 0%, 0.036) 15.5%,
+    hsla(0, 0%, 0%, 0.078) 22.5%,
+    hsla(0, 0%, 0%, 0.132) 29%,
+    hsla(0, 0%, 0%, 0.194) 35.3%,
+    hsla(0, 0%, 0%, 0.264) 41.2%,
+    hsla(0, 0%, 0%, 0.338) 47.1%,
+    hsla(0, 0%, 0%, 0.412) 52.9%,
+    hsla(0, 0%, 0%, 0.486) 58.8%,
+    hsla(0, 0%, 0%, 0.556) 64.7%,
+    hsla(0, 0%, 0%, 0.618) 71%,
+    hsla(0, 0%, 0%, 0.672) 77.5%,
+    hsla(0, 0%, 0%, 0.714) 84.5%,
+    hsla(0, 0%, 0%, 0.74) 91.9%,
+    hsla(0, 0%, 0%, 0.75) 100%
+  );
+  /* background-image: radial-gradient(hsla(0, 0%, 0%, 0.75) 0% hsla(0, 0%, 0%, 0) 100%); */
+  /* background-image: radial-gradient(circle at 0 0, #c21818 0%, #245ba3 62%, #16b119 100%); */
+  width: calc(100% + 16px * 2);
+  height: calc(150% + 16px * 2);
+  margin: -16px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  .nav-btn {
-    font-size: 0.7rem;
-    padding: 8px 12px;
+  .project-text-container::after {
+    max-height: 80svh;
   }
 }
 
-.nav-active {
-  height: 30%;
-  width: 40px;
-  position: absolute;
-  bottom: -6px;
-  background-color: var(--green);
-  filter: blur(6px);
-  z-index: -1;
-  border-radius: 100%;
-  transition: 0.3s ease-in-out;
+/* TESTS BEGIN */
+.color-test-container {
+  min-width: 100svw;
+  min-height: 100svh;
+  flex-direction: column;
+  align-items: center;
 }
+/* TESTS END */
 
-.nav-btn:hover {
-  color: var(--black);
-  background-color: var(--aqua);
-}
-
-li {
-  display: block;
-}
-
+/* FOOTER START */
 .footer-container {
   background-color: var(--dark);
   width: 100%;
@@ -537,17 +544,9 @@ li {
   font-size: 8pt;
   position: sticky;
 }
+/* FOOTER END */
 
-.section {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  margin: 32px 0px;
-  min-height: 100%;
-  scroll-snap-align: center;
-}
-
+/* CONTACT SECTION FORM START */
 .form-container,
 .form-container > form {
   align-self: flex-start;
@@ -585,37 +584,9 @@ li {
   padding: 0.75rem 1.5rem;
   border: 1px solid var(--white);
 }
+/* CONTACT SECTION FORM END */
 
-.social-button {
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--aqua);
-  min-height: 3rem;
-  margin: 8px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  font-family: 'Roboto Mono';
-  cursor: pointer;
-}
-
-.social-button-icon {
-  width: 46px;
-  height: 100%;
-  margin-right: 1ch;
-}
-
-.max-width-block {
-  width: calc(100% - 84px);
-  padding: 12px;
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-  max-width: 1200px;
-  align-self: center;
-}
-
-.full-width {
-  width: 100vw;
-}
+/* PROJECTS START */
 
 .projects-section {
   display: flex;
@@ -677,45 +648,6 @@ li {
   /* mix-blend-mode: multiply; */
 }
 
-.project-text-container::after {
-  z-index: -1;
-  content: '';
-  mix-blend-mode: overlay;
-  background-image: linear-gradient(
-    to top,
-    hsla(0, 0%, 0%, 0) 0%,
-    hsla(0, 0%, 0%, 0.01) 8.1%,
-    hsla(0, 0%, 0%, 0.036) 15.5%,
-    hsla(0, 0%, 0%, 0.078) 22.5%,
-    hsla(0, 0%, 0%, 0.132) 29%,
-    hsla(0, 0%, 0%, 0.194) 35.3%,
-    hsla(0, 0%, 0%, 0.264) 41.2%,
-    hsla(0, 0%, 0%, 0.338) 47.1%,
-    hsla(0, 0%, 0%, 0.412) 52.9%,
-    hsla(0, 0%, 0%, 0.486) 58.8%,
-    hsla(0, 0%, 0%, 0.556) 64.7%,
-    hsla(0, 0%, 0%, 0.618) 71%,
-    hsla(0, 0%, 0%, 0.672) 77.5%,
-    hsla(0, 0%, 0%, 0.714) 84.5%,
-    hsla(0, 0%, 0%, 0.74) 91.9%,
-    hsla(0, 0%, 0%, 0.75) 100%
-  );
-  /* background-image: radial-gradient(hsla(0, 0%, 0%, 0.75) 0% hsla(0, 0%, 0%, 0) 100%); */
-  /* background-image: radial-gradient(circle at 0 0, #c21818 0%, #245ba3 62%, #16b119 100%); */
-  width: calc(100% + 16px * 2);
-  height: calc(150% + 16px * 2);
-  margin: -16px;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-@media only screen and (max-width: 768px) {
-  .project-text-container::after {
-    max-height: 80svh;
-  }
-}
-
 .project-title {
   font-family: var(--font-roboto);
   font-size: var(--fs-800);
@@ -723,25 +655,25 @@ li {
 }
 
 .project-logo-container {
-  max-height: 10rem; /* Limit the maximum height of the container */
-  width: 100%; /* Full width */
+  max-height: 10rem;
+  width: 100%;
   padding-top: 1rem;
-  overflow: hidden; /* Hide anything that overflows */
-  display: block; /* Ensure normal block layout */
-  position: relative; /* Necessary for absolute positioning of img */
+  overflow: hidden;
+  display: block;
+  position: relative;
 }
 
 .project-logo-container img {
-  background-color: red; /* Optional for debugging */
-  max-height: 100%; /* Fit within the container's height */
-  max-width: 100%; /* Fit within the container's width */
-  width: 100%; /* Ensures the image scales proportionally */
-  height: auto; /* Maintain aspect ratio */
-  position: absolute; /* Absolutely position the image */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Adjust for centering */
-  object-fit: contain; /* Ensure it scales to fit within the container */
+  background-color: red;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
 }
 
 .project-tags {
@@ -901,3 +833,4 @@ li {
 /* mobile portrait */
 @media only screen and (max-width: 768px) {
 }
+/* PROJECTS END */
