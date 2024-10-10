@@ -657,7 +657,7 @@ li {
 }
 
 .project-logo-container {
-  height: 10rem;
+  height: clamp(5vh, 10rem, 20%);
   width: 100%;
   padding-top: 1rem;
   display: flex;

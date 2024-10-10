@@ -8,7 +8,7 @@ export default function DesignProjectCard({ project }) {
   return (
     <div className={`${style['design-project-container']} flex column`}>
       <div className={`${style['design-project-screenshot']} project-screenshot`}></div>
-      <div className={`${style['design-project-text-container']}`}>
+      <div className={`${style['design-project-text-container']} project-text-container`}>
         <div className={`${style['design-project-title']}`}>
           {project.logo ? <ProjectLogo project={project} /> : project.title}
         </div>
@@ -28,7 +28,7 @@ export default function DesignProjectCard({ project }) {
           <MainLinkButton targetLink={project.mainLink} />
         </div>
       </div>
-      <div className={`${style['design-buttons-container']}`}>
+      <div className={`${style['design-buttons-container']} buttons-container`}>
         <div className={`${style['design-made-with']}`} style={{ width: '100%' }}>
           <div className={`${style['design-made-with-text']}`}>Tools used:</div>
           <div className={`${style['design-stack-icons-container']} flex`}>
