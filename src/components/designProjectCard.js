@@ -7,17 +7,17 @@ import ProjectLogo from './projectLogo';
 export default function DesignProjectCard({ project }) {
   return (
     <div className={`${style['design-project-container']} flex column`}>
-      <div className={`${style['project-screenshot']}`}></div>
-      <div className={`${style['project-text-container']}`}>
+      <div className={`${style['design-project-screenshot']} project-screenshot`}></div>
+      <div className={`${style['design-project-text-container']}`}>
         <div className={`${style['design-project-title']}`}>
           {project.logo ? <ProjectLogo project={project} /> : project.title}
         </div>
         <div className={`${style['design-project-tags']} flex`}>
-          {project.tags.map(tag => (
+          {/* {project.tags.map(tag => (
             <div className={`${style['design-tag-item']}`} key={tag}>
               {tag}
             </div>
-          ))}
+          ))} */}
         </div>
         <div className={`${style['design-project-about']}`}>
           {project.text.split('\n').map((para, index) => (
@@ -31,7 +31,7 @@ export default function DesignProjectCard({ project }) {
       <div className={`${style['design-buttons-container']}`}>
         <div className={`${style['design-made-with']}`} style={{ width: '100%' }}>
           <div className={`${style['design-made-with-text']}`}>Tools used:</div>
-          <div className={`${style['design-stack-icons-container flex']}`}>
+          <div className={`${style['design-stack-icons-container']} flex`}>
             {project.stack.map(tech => (
               <StackIcon key={tech.name} itemName={tech} />
             ))}

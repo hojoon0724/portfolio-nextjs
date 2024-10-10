@@ -647,9 +647,6 @@ li {
 .project-text-container {
   z-index: 3;
   position: relative;
-  /* max-width: 72ch; */
-  /* background-color: #179fff; */
-  /* mix-blend-mode: multiply; */
 }
 
 /* added design */
@@ -660,24 +657,15 @@ li {
 }
 
 .project-logo-container {
-  max-height: 10rem;
+  height: 10rem;
   width: 100%;
   padding-top: 1rem;
-  overflow: hidden;
-  display: block;
-  position: relative;
+  display: flex;
 }
 
 .project-logo-container img {
-  /* background-color: red; */
   max-height: 100%;
   max-width: 100%;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   object-fit: contain;
 }
 
@@ -686,7 +674,6 @@ li {
   max-width: 72ch;
   flex-wrap: wrap;
   margin: 16px 0px 32px -2px;
-  /* margin-left: -2px; */
 }
 
 /* added design */
