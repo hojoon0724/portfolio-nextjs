@@ -1,8 +1,8 @@
 import style from '@/sections/design.module.css';
 import StackIcon from '@/components/stackIcon';
 import LinkButton from '@/components/linkButton';
-import MainLinkButton from './mainLinkButton';
 import ProjectLogo from './projectLogo';
+import ArrowLinkButton from './arrowLinkButton';
 
 export default function DesignProjectCard({ project }) {
   return (
@@ -12,20 +12,20 @@ export default function DesignProjectCard({ project }) {
         <div className={`${style['design-project-title']}`}>
           {project.logo ? <ProjectLogo project={project} /> : project.title}
         </div>
-        <div className={`${style['design-project-tags']} flex`}>
-          {/* {project.tags.map(tag => (
+        {/* <div className={`${style['design-project-tags']} flex`}>
+          {project.tags.map(tag => (
             <div className={`${style['design-tag-item']}`} key={tag}>
               {tag}
             </div>
-          ))} */}
-        </div>
+          ))}
+        </div> */}
         <div className={`${style['design-project-about']}`}>
           {project.text.split('\n').map((para, index) => (
             <p key={index}>{para}</p>
           ))}
         </div>
         <div className={`${style['design-main-link-container']}`}>
-          <MainLinkButton targetLink={project.mainLink} />
+          <ArrowLinkButton targetLink={project.mainLink} />
         </div>
       </div>
       <div className={`${style['design-buttons-container']} buttons-container`}>

@@ -28,9 +28,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="top-container column center">
-        <Design />
         <Intro />
         <Tech />
+        <Design />
         <About />
         <Contact />
       </div>

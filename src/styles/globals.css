@@ -657,7 +657,7 @@ li {
 }
 
 .project-logo-container {
-  height: clamp(5vh, 10rem, 20%);
+  height: clamp(5vh, 10rem, 200px);
   width: 100%;
   padding-top: 1rem;
   display: flex;
@@ -779,6 +779,26 @@ li {
 
 .main-link-container {
   margin-top: 3rem;
+}
+
+.arrow-icon-container {
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.arrowIconBg {
+  position: absolute;
+}
+
+.arrowIcon {
+  position: absolute;
+  opacity: 0;
+}
+
+.arrowIconHover {
+  opacity: 1;
 }
 
 .button-icon {
