@@ -502,10 +502,9 @@ li {
     hsla(0, 0%, 0%, 0.74) 91.9%,
     hsla(0, 0%, 0%, 0.75) 100%
   );
-  /* background-image: radial-gradient(hsla(0, 0%, 0%, 0.75) 0% hsla(0, 0%, 0%, 0) 100%); */
-  /* background-image: radial-gradient(circle at 0 0, #c21818 0%, #245ba3 62%, #16b119 100%); */
   width: calc(100% + 16px * 2);
   height: calc(150% + 16px * 2);
+  max-height: calc(75svh);
   margin: -16px;
   position: absolute;
   left: 0;
@@ -782,14 +781,19 @@ li {
 }
 
 .arrow-icon-container {
-  width: 38px;
-  height: 38px;
+  width: 30px;
+  height: 30px;
   border-radius: 4px;
   position: relative;
+  box-sizing: content-box;
+  background-color: var(--white);
+  margin: 6px;
 }
 
 .arrowIconBg {
   position: absolute;
+  width: 100%;
+  box-sizing: border-box !important;
 }
 
 .arrowIcon {

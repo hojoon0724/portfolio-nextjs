@@ -12,6 +12,7 @@ import Contact from '@/sections/contact';
 import { iconsData } from '@/data/iconsData';
 
 import ScrollText from '@/sections/scrollText';
+import { Grid } from '@/sections/gridTest';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,9 +29,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="top-container column center">
+        <Grid />
+        <Design />
         <Intro />
         <Tech />
-        <Design />
         <About />
         <Contact />
       </div>
