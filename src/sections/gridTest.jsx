@@ -1,29 +1,14 @@
 import GridLayout from 'react-grid-layout';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const layoutLg = [
-  { i: 'blue-eyes-dragon', x: 0, y: 0, w: 1, h: 1 },
-  { i: 'dark-magician', x: 1, y: 0, w: 1, h: 1 },
-  { i: 'kuriboh', x: 2, y: 0, w: 1, h: 1 },
-  { i: 'spell-caster', x: 0, y: 1, w: 1, h: 1 },
-  { i: 'summoned-skull', x: 1, y: 1, w: 2, h: 1 },
+  { i: 'stupid-flanders', x: 0, y: 0, w: 10, h: 1 },
+  { i: 'get-schwifty', x: 10, y: 0, w: 10, h: 1 },
+  { i: 'brat', x: 20, y: 0, w: 10, h: 1 },
+  { i: 'fried-mints', x: 0, y: 1, w: 10, h: 1 },
+  { i: 'shit-on-the-floor', x: 10, y: 1, w: 20, h: 1 },
 ];
-
-// const layoutMd = [
-//   { i: 'blue-eyes-dragon', x: 0, y: 0, w: 1, h: 1 },
-//   { i: 'dark-magician', x: 0, y: 1, w: 1, h: 1 },
-//   { i: 'kuriboh', x: 1, y: 1, w: 1, h: 1 },
-//   { i: 'spell-caster', x: 0, y: 2, w: 1, h: 1 },
-//   { i: 'summoned-skull', x: 0, y: 3, w: 2, h: 1 },
-// ];
-
-// const layoutSm = [
-//   { i: 'blue-eyes-dragon', x: 0, y: 0, w: 1, h: 1 },
-//   { i: 'dark-magician', x: 0, y: 1, w: 1, h: 1 },
-//   { i: 'kuriboh', x: 0, y: 2, w: 1, h: 1 },
-//   { i: 'spell-caster', x: 0, y: 3, w: 1, h: 1 },
-//   { i: 'summoned-skull', x: 0, y: 4, w: 1, h: 1 },
-// ];
 
 // Styled component for GridLayout
 const StyledGridLayout = styled(GridLayout)`
@@ -34,11 +19,11 @@ const StyledGridLayout = styled(GridLayout)`
 
 const GridItemWrapper = styled.div`
   background: #888888;
-  border-radius: 16px;
+  border-radius: 24px;
 `;
 
 const GridItemContent = styled.div`
-  padding: 8px;
+  padding: 24px;
 `;
 
 const Root = styled.div`
@@ -46,36 +31,38 @@ const Root = styled.div`
   padding: 16px;
   display: flex;
   justify-content: center;
+  height: 100%;
 `;
 
-export const Grid = () => {
+export function Grid() {
   return (
     <div className="section full-width projects-section design scroll-anchor" id="design">
       <Root>
         <StyledGridLayout
-          layout={layoutLg} // Default layout
-          cols={3} // Responsive columns
-          rowHeight={500}
+          layout={layoutLg}
+          cols={30}
+          rowHeight={300}
           width={1200}
-          isResizable={false} // Disable resizing
+          // isDraggable={false}
+          isResizable={false}
         >
-          <GridItemWrapper key="blue-eyes-dragon">
-            <GridItemContent>Blue Eyes Dragon</GridItemContent>
+          <GridItemWrapper key="stupid-flanders">
+            <GridItemContent>stupid flanders</GridItemContent>
           </GridItemWrapper>
-          <GridItemWrapper key="dark-magician">
-            <GridItemContent>Dark Magician</GridItemContent>
+          <GridItemWrapper key="get-schwifty">
+            <GridItemContent>get schwifty</GridItemContent>
           </GridItemWrapper>
-          <GridItemWrapper key="kuriboh">
-            <GridItemContent>Kuriboh</GridItemContent>
+          <GridItemWrapper key="brat">
+            <GridItemContent>brat</GridItemContent>
           </GridItemWrapper>
-          <GridItemWrapper key="spell-caster">
-            <GridItemContent>Spell Caster</GridItemContent>
+          <GridItemWrapper key="fried-mints">
+            <GridItemContent>friend-mints</GridItemContent>
           </GridItemWrapper>
-          <GridItemWrapper key="summoned-skull">
-            <GridItemContent>Summoned Skull</GridItemContent>
+          <GridItemWrapper key="shit-on-the-floor">
+            <GridItemContent>time to get schwifty in here</GridItemContent>
           </GridItemWrapper>
         </StyledGridLayout>
       </Root>
     </div>
   );
-};
+}
