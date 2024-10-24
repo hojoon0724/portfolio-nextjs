@@ -4,7 +4,7 @@ import LinkButton from '@/components/linkButton';
 import ProjectLogo from './projectLogo';
 import ArrowLinkButton from './arrowLinkButton';
 
-export default function DesignProjectCard({ project }) {
+export default function DesignProjectCardLarge({ project }) {
   return (
     <div className={`${style['design-project-container']} flex column`}>
       <div className={`${style['design-project-screenshot']} project-screenshot`}></div>

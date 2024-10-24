@@ -1,12 +1,14 @@
 import GridLayout from 'react-grid-layout';
 import styled from 'styled-components';
+import DesignProjectCardSmall from '@/components/designProjectCardSmall';
 import { motion } from 'framer-motion';
+import { designProjectsData } from '@/data/designProjectsData';
 
 const layoutLg = [
-  { i: 'stupid-flanders', x: 0, y: 0, w: 10, h: 1 },
-  { i: 'get-schwifty', x: 10, y: 0, w: 10, h: 1 },
-  { i: 'brat', x: 20, y: 0, w: 10, h: 1 },
-  { i: 'fried-mints', x: 0, y: 1, w: 10, h: 1 },
+  { i: 'rcnm', x: 0, y: 0, w: 10, h: 1 },
+  { i: 'partner-energy', x: 10, y: 0, w: 10, h: 1 },
+  { i: 'ensrq', x: 20, y: 0, w: 10, h: 1 },
+  { i: 'lamongrel', x: 0, y: 1, w: 10, h: 1 },
   { i: 'shit-on-the-floor', x: 10, y: 1, w: 20, h: 1 },
 ];
 
@@ -35,6 +37,8 @@ const Root = styled.div`
 `;
 
 export function Grid() {
+  const data = designProjectsData;
+
   return (
     <div className="section full-width projects-section design scroll-anchor" id="design">
       <Root>
@@ -46,20 +50,20 @@ export function Grid() {
           // isDraggable={false}
           isResizable={false}
         >
-          <GridItemWrapper key="stupid-flanders">
-            <GridItemContent>stupid flanders</GridItemContent>
+          <GridItemWrapper key="rcnm">
+            <DesignProjectCardSmall project={data[0]} />
           </GridItemWrapper>
-          <GridItemWrapper key="get-schwifty">
-            <GridItemContent>get schwifty</GridItemContent>
+          <GridItemWrapper key="partner-energy">
+            <DesignProjectCardSmall project={data[1]} />
           </GridItemWrapper>
-          <GridItemWrapper key="brat">
-            <GridItemContent>brat</GridItemContent>
+          <GridItemWrapper key="ensrq">
+            <DesignProjectCardSmall project={data[2]} />
           </GridItemWrapper>
-          <GridItemWrapper key="fried-mints">
-            <GridItemContent>friend-mints</GridItemContent>
+          <GridItemWrapper key="lamongrel">
+            <DesignProjectCardSmall project={data[3]} />
           </GridItemWrapper>
           <GridItemWrapper key="shit-on-the-floor">
-            <GridItemContent>time to get schwifty in here</GridItemContent>
+            <DesignProjectCardSmall project={data[3]} />
           </GridItemWrapper>
         </StyledGridLayout>
       </Root>
