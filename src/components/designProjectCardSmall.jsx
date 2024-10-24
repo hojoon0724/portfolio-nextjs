@@ -6,8 +6,8 @@ import ArrowLinkButton from './arrowLinkButton';
 
 export default function DesignProjectCardSmall({ project }) {
   return (
-    <div className="container">
-      <div className="thestuff">{project.title}</div>
+    <div className="design-project-container">
+      <div className="design-project-title">{project.logo ? <ProjectLogo project={project} /> : project.title}</div>
     </div>
   );
 }

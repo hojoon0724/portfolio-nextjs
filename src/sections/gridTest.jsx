@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 import { designProjectsData } from '@/data/designProjectsData';
 
 const layoutLg = [
-  { i: 'rcnm', x: 0, y: 0, w: 10, h: 1 },
-  { i: 'partner-energy', x: 10, y: 0, w: 10, h: 1 },
-  { i: 'ensrq', x: 20, y: 0, w: 10, h: 1 },
-  { i: 'lamongrel', x: 0, y: 1, w: 10, h: 1 },
-  { i: 'shit-on-the-floor', x: 10, y: 1, w: 20, h: 1 },
+  { i: 'rcnm', x: 0, y: 0, w: 1, h: 1 },
+  { i: 'partner-energy', x: 1, y: 0, w: 1, h: 1 },
+  { i: 'ensrq', x: 2, y: 0, w: 1, h: 1 },
+  { i: 'lamongrel', x: 0, y: 1, w: 1, h: 1 },
+  { i: 'shit-on-the-floor', x: 1, y: 1, w: 2, h: 1 },
 ];
 
 // Styled component for GridLayout
@@ -22,9 +22,6 @@ const StyledGridLayout = styled(GridLayout)`
 const GridItemWrapper = styled.div`
   background: #888888;
   border-radius: 24px;
-`;
-
-const GridItemContent = styled.div`
   padding: 24px;
 `;
 
@@ -44,7 +41,7 @@ export function Grid() {
       <Root>
         <StyledGridLayout
           layout={layoutLg}
-          cols={30}
+          cols={3}
           rowHeight={300}
           width={1200}
           // isDraggable={false}
