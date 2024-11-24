@@ -44,7 +44,7 @@ export function Grid() {
           cols={3}
           rowHeight={300}
           width={1200}
-          // isDraggable={false}
+          isDraggable={false}
           isResizable={false}
         >
           <GridItemWrapper key="rcnm">
