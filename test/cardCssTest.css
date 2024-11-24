@@ -1,0 +1,83 @@
+:root {
+  --borderWidth: 2px;
+}
+
+.top-container {
+  background-color: #ddd;
+  width: 100svw;
+  height: 100svh;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+}
+.parent-container {
+  border: var(--borderWidth) solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0);
+
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  color-scheme: dark;
+  cursor: auto;
+  display: block;
+  isolation: isolate;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(1rem);
+}
+
+.parent-container::before {
+  /* background-attachment: scroll; */
+  /* background-clip: border-box; */
+  /* background-color: rgba(0, 0, 0, 0); */
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(0, 0%, 100%, 0.25) 0%,
+    hsla(0, 0%, 100%, 0) 63%,
+    hsla(0, 0%, 100%, 0.15) 100%
+  );
+
+  top: calc(var(--borderWidth) * -1);
+  right: calc(var(--borderWidth) * -1);
+  bottom: calc(var(--borderWidth) * -1);
+  left: calc(var(--borderWidth) * -1);
+
+  padding-bottom: var(--borderWidth);
+  padding-left: var(--borderWidth);
+  padding-right: var(--borderWidth);
+  padding-top: var(--borderWidth);
+
+  border-radius: 16px;
+
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+
+  mask-image: linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px),
+    linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px);
+
+  mask-border-outset: 0;
+  mask-border-repeat: stretch;
+  mask-border-slice: 0;
+  mask-border-source: none;
+  mask-border-width: auto;
+  mask-clip: content-box, border-box;
+  mask-composite: exclude, exclude;
+
+  mask-mode: match-source, match-source;
+  mask-origin: content-box, border-box;
+  mask-repeat: repeat, repeat;
+  mask-size: auto, auto;
+
+  -webkit-mask-clip: content-box, border-box;
+  -webkit-mask-composite: xor, xor;
+  -webkit-mask-position-x: 0%, 0%;
+  -webkit-mask-position-y: 0%, 0%;
+  -webkit-mask-source-type: alpha, alpha;
+
+  pointer-events: none;
+}
