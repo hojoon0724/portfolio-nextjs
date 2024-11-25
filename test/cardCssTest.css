@@ -1,8 +1,9 @@
 :root {
   --borderWidth: 2px;
+  --borderRadius: 32px;
 }
 
-.top-container {
+.static-bg {
   background-color: #ddd;
   width: 100svw;
   height: 100svh;
@@ -11,33 +12,25 @@
 }
 .parent-container {
   border: var(--borderWidth) solid transparent;
-  border-bottom-color: rgba(0, 0, 0, 0);
+  border-radius: var(--borderRadius);
+  box-shadow: 0px 4px 8px 0px hsla(0, 0%, 0%, 0.15);
 
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-
-  box-sizing: border-box;
   color: rgb(255, 255, 255);
-  color-scheme: dark;
-  cursor: auto;
-  display: block;
+
+  background-color: hsla(0, 0%, 30%, 0.5);
+
   isolation: isolate;
   position: relative;
-  -webkit-font-smoothing: antialiased;
-  backdrop-filter: blur(1rem);
+
+  backdrop-filter: blur(3rem);
 }
 
-.parent-container::before {
-  /* background-attachment: scroll; */
-  /* background-clip: border-box; */
-  /* background-color: rgba(0, 0, 0, 0); */
+.parent-container::after {
   background-image: linear-gradient(
     to right bottom,
-    hsla(0, 0%, 100%, 0.25) 0%,
-    hsla(0, 0%, 100%, 0) 63%,
-    hsla(0, 0%, 100%, 0.15) 100%
+    hsla(0, 100%, 100%, 0.25) 0%,
+    hsla(0, 100%, 100%, 0) 63%,
+    hsla(0, 100%, 100%, 0.15) 100%
   );
 
   top: calc(var(--borderWidth) * -1);
@@ -45,14 +38,11 @@
   bottom: calc(var(--borderWidth) * -1);
   left: calc(var(--borderWidth) * -1);
 
-  padding-bottom: var(--borderWidth);
-  padding-left: var(--borderWidth);
-  padding-right: var(--borderWidth);
-  padding-top: var(--borderWidth);
+  padding: var(--borderWidth);
 
-  border-radius: 16px;
+  border-radius: var(--borderRadius);
 
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   content: '';
   display: block;
   position: absolute;
@@ -78,6 +68,15 @@
   -webkit-mask-position-x: 0%, 0%;
   -webkit-mask-position-y: 0%, 0%;
   -webkit-mask-source-type: alpha, alpha;
+}
+.parent {
+  background-color: lightblue;
+  width: 300px;
+  border: 1px solid;
+}
 
-  pointer-events: none;
+.child {
+  background-color: lightcoral;
+  width: 150px;
+  margin-top: 50px;
 }
