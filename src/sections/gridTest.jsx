@@ -13,10 +13,13 @@ const layoutLg = [
 ];
 
 // Styled component for GridLayout
+// const StyledGridLayout = styled.div`
 const StyledGridLayout = styled(GridLayout)`
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  border: 5px solid red;
+  display: grid;
 `;
 
 const GridItemWrapper = styled.div`
@@ -37,7 +40,7 @@ export function Grid() {
   const data = designProjectsData;
 
   return (
-    <div className="section full-width projects-section design scroll-anchor" id="design">
+    <div className="section full-width projects-section design scroll-anchor bg-blue900" id="design">
       <Root>
         <StyledGridLayout
           layout={layoutLg}
