@@ -658,7 +658,7 @@ li {
 .project-logo-container {
   height: clamp(5vh, 10rem, 200px);
   width: 100%;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   display: flex;
 }
 
@@ -861,4 +861,12 @@ li {
 .react-grid-layout .react-draggable-dragging {
   user-select: none;
   -moz-user-select: none;
+}
+
+.react-grid-layout {
+  width: 1200px;
+  margin: 0 auto;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
 }
