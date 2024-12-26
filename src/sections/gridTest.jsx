@@ -4,20 +4,7 @@ import DesignProjectCardSmall from '@/components/designProjectCardSmall';
 import { motion } from 'framer-motion';
 import { designProjectsData } from '@/data/designProjectsData';
 import styles from '@/sections/gridTest.module.css';
-
-const layoutLg = [
-  { i: 'intro', x: 0, y: 0, w: 3, h: 1.5 },
-
-  { i: 'hourglass', x: 0, y: 1, w: 2, h: 1 },
-  { i: 'pacific-serenades', x: 2, y: 1, w: 1, h: 1 },
-  { i: 'blackjack', x: 1, y: 2, w: 2, h: 1 },
-  { i: 'bkmrkd', x: 0, y: 2, w: 1, h: 1 },
-
-  { i: 'rcnm', x: 0, y: 3, w: 2, h: 1 },
-  { i: 'partner-energy', x: 2, y: 3, w: 1, h: 1 },
-  { i: 'ensrq', x: 0, y: 4, w: 1, h: 1 },
-  { i: 'lamongrel', x: 1, y: 4, w: 2, h: 1 },
-];
+import { useState } from 'react';
 
 // Styled component for GridLayout
 // const StyledGridLayout = styled.div`
@@ -47,6 +34,34 @@ const Root = styled.div`
   margin: 0 auto;
 `;
 
+const initialLayout = [
+  { i: 'intro', x: 0, y: 0, w: 3, h: 1.5 },
+
+  { i: 'hourglass', x: 0, y: 1, w: 2, h: 1 },
+  { i: 'pacific-serenades', x: 2, y: 1, w: 1, h: 1 },
+  { i: 'blackjack', x: 1, y: 2, w: 2, h: 1 },
+  { i: 'bkmrkd', x: 0, y: 2, w: 1, h: 1 },
+
+  { i: 'rcnm', x: 0, y: 3, w: 2, h: 1 },
+  { i: 'partner-energy', x: 2, y: 3, w: 1, h: 1 },
+  { i: 'ensrq', x: 0, y: 4, w: 1, h: 1 },
+  { i: 'lamongrel', x: 1, y: 4, w: 2, h: 1 },
+];
+
+const techLayout = [
+  { i: 'hourglass', x: 0, y: 0, w: 2, h: 1 },
+  { i: 'pacific-serenades', x: 2, y: 0, w: 1, h: 1 },
+  { i: 'blackjack', x: 1, y: 1, w: 2, h: 1 },
+  { i: 'bkmrkd', x: 0, y: 1, w: 1, h: 1 },
+
+  { i: 'intro', x: 0, y: 2, w: 3, h: 1.5 },
+
+  { i: 'rcnm', x: 0, y: 3, w: 2, h: 1 },
+  { i: 'partner-energy', x: 2, y: 3, w: 1, h: 1 },
+  { i: 'ensrq', x: 0, y: 4, w: 1, h: 1 },
+  { i: 'lamongrel', x: 1, y: 4, w: 2, h: 1 },
+];
+
 const shortBio = (
   <div>
     <p className="text-mono-small">
@@ -60,19 +75,18 @@ const shortBio = (
 );
 
 export function Grid() {
+  const [layout, setLayout] = useState(initialLayout);
+
   const data = designProjectsData;
 
   return (
     <div className="section full-width projects-section design scroll-anchor bg-blue900" id="design">
+      <div className="reorder-buttons-container flex justify-center w-full">
+        <button onClick={() => setLayout(initialLayout)}>Initial</button>
+        <button onClick={() => setLayout(techLayout)}>Tech</button>
+      </div>
       <Root>
-        <StyledGridLayout
-          layout={layoutLg}
-          cols={3}
-          rowHeight={300}
-          width={1200}
-          isDraggable={false}
-          isResizable={false}
-        >
+        <StyledGridLayout layout={layout} cols={3} rowHeight={300} width={1200} isDraggable={false} isResizable={false}>
           <GridItemWrapper key="hourglass">
             <div className="design-project-container">
               <h2>Hourglass</h2>
