@@ -870,3 +870,7 @@ li {
   /* justify-content: center;
   align-items: center; */
 }
+
+.project-logo-container img {
+  width: 100%;
+}
