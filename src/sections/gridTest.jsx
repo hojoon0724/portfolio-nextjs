@@ -1,4 +1,4 @@
-import GridLayout from 'react-grid-layout';
+import ResponsiveGridLayout from 'react-grid-layout';
 import styled from 'styled-components';
 import DesignProjectCardSmall from '@/components/designProjectCardSmall';
 import { motion } from 'framer-motion';
@@ -8,7 +8,16 @@ import { useState } from 'react';
 
 // Styled component for GridLayout
 // const StyledGridLayout = styled.div`
-const StyledGridLayout = styled(GridLayout)`
+const Root = styled.div`
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+`;
+
+const StyledGridLayout = styled(ResponsiveGridLayout)`
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -17,21 +26,17 @@ const StyledGridLayout = styled(GridLayout)`
 `;
 
 const GridItemWrapper = styled.div`
-  background: #222222;
   border-radius: 24px;
   padding: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-const Root = styled.div`
-  width: 100%;
-  padding: 16px;
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  margin: 0 auto;
+  box-shadow: 0px 4px 8px 0px hsla(0, 0%, 0%, 0.15);
+  color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 60%, 0.25);
+  isolation: isolate;
+  position: relative;
+  backdrop-filter: blur(3rem) saturate(165%);
 `;
 
 const initialLayout = [
@@ -80,13 +85,33 @@ export function Grid() {
   const data = designProjectsData;
 
   return (
-    <div className="section full-width projects-section design scroll-anchor bg-blue900" id="design">
-      <div className="reorder-buttons-container flex justify-center w-full">
+    <div className="section full-width flex column">
+      <div className="reorder-buttons-container flex mt-[56px]">
         <button onClick={() => setLayout(initialLayout)}>Initial</button>
         <button onClick={() => setLayout(techLayout)}>Tech</button>
       </div>
       <Root>
-        <StyledGridLayout layout={layout} cols={3} rowHeight={300} width={1200} isDraggable={false} isResizable={false}>
+        <StyledGridLayout
+          layout={layout}
+          cols={3}
+          rowHeight={300}
+          width={1200}
+          margin={[18, 18]}
+          isDraggable={false}
+          isResizable={false}
+          autoSize={true}
+          listenToWindowResize={true}
+        >
+          <GridItemWrapper key="intro">
+            <div className="design-project-container">
+              <div className={styles.helloContainer}>
+                <div className={`text-mono-small`}>{`Hi, my name is`}</div>
+                <div className={`${styles.hojoon}`}>{`Hojoon Kim`}</div>
+                <div className={`${styles.intro} text-mono-small`}>{`I design and build apps and stuff`}</div>
+                <div className={`${styles.shortBio} text-mono-small`}>{shortBio}</div>
+              </div>
+            </div>
+          </GridItemWrapper>
           <GridItemWrapper key="hourglass">
             <div className="design-project-container">
               <h2>Hourglass</h2>
@@ -121,16 +146,6 @@ export function Grid() {
           </GridItemWrapper>
           <GridItemWrapper key="lamongrel">
             <DesignProjectCardSmall project={data[3]} />
-          </GridItemWrapper>
-          <GridItemWrapper key="intro">
-            <div className="design-project-container">
-              <div className={styles.helloContainer}>
-                <div className={`text-mono-small`}>{`Hi, my name is`}</div>
-                <div className={`${styles.hojoon}`}>{`Hojoon Kim`}</div>
-                <div className={`${styles.intro} text-mono-small`}>{`I design and build apps and stuff`}</div>
-                <div className={`${styles.shortBio} text-mono-small`}>{shortBio}</div>
-              </div>
-            </div>
           </GridItemWrapper>
         </StyledGridLayout>
       </Root>

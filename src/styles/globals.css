@@ -1,7 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* GLOBAL START */
 
 /* VARIABLES START */
 :root {
+  --borderWidth: 2px;
+  --borderRadius: 32px;
   --max-width: 1200px;
   --border-radius: 12px;
 
@@ -74,12 +80,31 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
+  /* background-image: linear-gradient(
+    91.7deg,
+    rgba(135, 206, 235, 1) 7.3%,
+    rgba(255, 154, 139, 1) 40.3%,
+    rgba(255, 195, 160, 1) 57.9%,
+    rgba(255, 215, 0, 1) 93.5%
+  ); */
+  /* background-image: linear-gradient(175.9deg, var(--black) 7%, var(--dark) 93.8%); */
+  background-color:hsla(231,44%,22%,1);
+background-image:
+radial-gradient(at 53% 39%, hsla(147,97%,18%,1) 0px, transparent 50%),
+radial-gradient(at 17% 18%, hsla(240,97%,18%,1) 0px, transparent 50%),
+radial-gradient(at 54% 2%, hsla(44,97%,18%,1) 0px, transparent 50%),
+radial-gradient(at 64% 37%, hsla(236,97%,18%,1) 0px, transparent 50%),
+radial-gradient(at 23% 43%, hsla(106,97%,18%,1) 0px, transparent 50%),
+radial-gradient(at 2% 54%, hsla(64,97%,18%,1) 0px, transparent 50%),
+radial-gradient(at 45% 22%, hsla(145,97%,18%,1) 0px, transparent 50%);
   font-family: var(--font-roboto);
   font-optical-sizing: auto;
   font-weight: 400;
   font-variation-settings: var(--font-variation-default);
   color: var(--white);
+  /* background-image: url(/images/bg2.jpg); */
+  background-size: cover;
 }
 
 a {
@@ -325,8 +350,7 @@ button {
   display: flex;
   width: 100%;
   overflow-y: scroll;
-  justify-content: flex-start;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 
 .top-container > * {
@@ -347,7 +371,7 @@ li {
   align-items: center;
   align-self: center;
   justify-content: center;
-  margin: 32px 0px;
+  /* margin: 32px 0px; */
   min-height: 100%;
   scroll-snap-align: center;
 }
@@ -900,4 +924,71 @@ li {
 
 .project-logo-container img {
   width: 100%;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  stroke: red;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  padding: 10px;
+  margin: 10px;
+  overflow: visible;
+  background-color: var(--white);
+}
+
+.react-grid-item::after {
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(0, 100%, 100%, 0.25) 0%,
+    hsla(0, 100%, 100%, 0) 63%,
+    hsla(0, 100%, 100%, 0.15) 100%
+  );
+
+  top: calc(var(--borderWidth) * -1);
+  right: calc(var(--borderWidth) * -1);
+  bottom: calc(var(--borderWidth) * -1);
+  left: calc(var(--borderWidth) * -1);
+
+  padding: var(--borderWidth);
+
+  border-radius: var(--borderRadius);
+
+  /* box-sizing: border-box; */
+  content: '';
+  display: block;
+  position: absolute;
+
+  mask-image: linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px),
+    linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px);
+
+  mask-border-outset: 0;
+  mask-border-repeat: stretch;
+  mask-border-slice: 0;
+  mask-border-source: none;
+  mask-border-width: auto;
+  mask-clip: content-box, border-box;
+  mask-composite: exclude, exclude;
+
+  mask-mode: match-source, match-source;
+  mask-origin: content-box, border-box;
+  mask-repeat: repeat, repeat;
+  mask-size: auto, auto;
+
+  -webkit-mask-clip: content-box, border-box;
+  -webkit-mask-composite: xor, xor;
+  -webkit-mask-position-x: 0%, 0%;
+  -webkit-mask-position-y: 0%, 0%;
+  -webkit-mask-source-type: alpha, alpha;
+}
+
+.react-grid-item {
+  transition: all 0.3s ease-in-out !important;
+}
+.react-grid-item:hover {
+  transition: all ease-in-out 0.3s !important;
+  /* background-color: var(--dark); */
+  background-color: hsla(0, 0%, 10%, 0.5);
 }

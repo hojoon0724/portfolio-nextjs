@@ -8,6 +8,7 @@ export default function CardWithBorder({}) {
   return (
     <div className="top-container flex justify-center">
       <ArrowLinkButton targetLink={testTargetLink} />
+      <svg className='icon'><use href='/assets/icons.svg#arrow-bold'></use></svg>
     </div>
     // <section className={styles.sectionContainer}>
     //   <div className={styles.cardContainer}>
