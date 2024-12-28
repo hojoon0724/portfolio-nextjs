@@ -6,9 +6,12 @@ export default function CardWithBorder({}) {
   const testTargetLink = { targetLink: 'google.com', openOnNewWindow: false, description: 'text', text: 'Google' };
 
   return (
-    <div className="top-container flex justify-center">
+    <div className="top-container flex justify-center items-center column">
       <ArrowLinkButton targetLink={testTargetLink} />
-      <svg className='icon'><use href='/assets/icons.svg#arrow-bold'></use></svg>
+      <svg className="icon">
+        <use href="/assets/icons.svg#arrow-bold"></use>
+      </svg>
+      <div className="test-box w-12 h-12 "></div>
     </div>
     // <section className={styles.sectionContainer}>
     //   <div className={styles.cardContainer}>

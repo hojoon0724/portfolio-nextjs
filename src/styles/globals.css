@@ -47,6 +47,8 @@
   --success: oklch(50% 0.202 148);
   --error: oklch(45% 0.22 22);
 
+  --aqua900: oklch(15.59% 0.0399 175);
+
   --light-yellow: oklch(88.82% 0.066 107.66);
   --yellow: oklch(89% 46% 95deg);
   --orange: oklch(79.82% 0.197 70.67);
@@ -59,6 +61,10 @@
 
   --tr-slow: ease-in-out 0.5s;
   --tr-fast: ease-in-out 0.3s;
+}
+
+.test-box {
+  background-color: var(--aqua);
 }
 
 *,
@@ -89,15 +95,14 @@ body {
     rgba(255, 215, 0, 1) 93.5%
   ); */
   /* background-image: linear-gradient(175.9deg, var(--black) 7%, var(--dark) 93.8%); */
-  background-color:hsla(231,44%,22%,1);
-background-image:
-radial-gradient(at 53% 39%, hsla(147,97%,18%,1) 0px, transparent 50%),
-radial-gradient(at 17% 18%, hsla(240,97%,18%,1) 0px, transparent 50%),
-radial-gradient(at 54% 2%, hsla(44,97%,18%,1) 0px, transparent 50%),
-radial-gradient(at 64% 37%, hsla(236,97%,18%,1) 0px, transparent 50%),
-radial-gradient(at 23% 43%, hsla(106,97%,18%,1) 0px, transparent 50%),
-radial-gradient(at 2% 54%, hsla(64,97%,18%,1) 0px, transparent 50%),
-radial-gradient(at 45% 22%, hsla(145,97%,18%,1) 0px, transparent 50%);
+  background-color: hsla(231, 44%, 22%, 1);
+  background-image: radial-gradient(at 53% 39%, hsla(147, 97%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 17% 18%, hsla(240, 97%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 54% 2%, hsla(44, 97%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 64% 37%, hsla(236, 97%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 23% 43%, hsla(106, 97%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 2% 54%, hsla(64, 97%, 18%, 1) 0px, transparent 50%),
+    radial-gradient(at 45% 22%, hsla(145, 97%, 18%, 1) 0px, transparent 50%);
   font-family: var(--font-roboto);
   font-optical-sizing: auto;
   font-weight: 400;
