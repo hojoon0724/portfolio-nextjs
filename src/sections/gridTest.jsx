@@ -14,7 +14,7 @@ const Root = styled.div`
   display: flex;
   justify-content: center;
   height: 100%;
-  margin: 0 auto;
+  margin: 3rem auto;
 `;
 
 const StyledGridLayout = styled(ResponsiveGridLayout)`
@@ -67,6 +67,20 @@ const techLayout = [
   { i: 'lamongrel', x: 1, y: 4, w: 2, h: 1 },
 ];
 
+const narrowLayout = [
+  { i: 'intro', x: 0, y: 0, w: 0, h: 1.5 },
+
+  { i: 'hourglass', x: 0, y: 1, w: 2, h: 1 },
+  { i: 'pacific-serenades', x: 2, y: 1, w: 1, h: 1 },
+  { i: 'blackjack', x: 1, y: 2, w: 2, h: 1 },
+  { i: 'bkmrkd', x: 0, y: 2, w: 1, h: 1 },
+
+  { i: 'rcnm', x: 0, y: 3, w: 2, h: 1 },
+  { i: 'partner-energy', x: 2, y: 3, w: 1, h: 1 },
+  { i: 'ensrq', x: 0, y: 4, w: 1, h: 1 },
+  { i: 'lamongrel', x: 1, y: 4, w: 2, h: 1 },
+];
+
 const shortBio = (
   <div>
     <p className="text-mono-small">
@@ -89,6 +103,7 @@ export function Grid() {
       <div className="reorder-buttons-container flex mt-[56px]">
         <button onClick={() => setLayout(initialLayout)}>Initial</button>
         <button onClick={() => setLayout(techLayout)}>Tech</button>
+        <button onClick={() => setLayout(narrowLayout)}>Narrow</button>
       </div>
       <Root>
         <StyledGridLayout
@@ -114,7 +129,16 @@ export function Grid() {
           </GridItemWrapper>
           <GridItemWrapper key="hourglass">
             <div className="design-project-container">
-              <h2>Hourglass</h2>
+              <div className="project-title-card">
+                <h2>Hourglass</h2>
+              </div>
+              <div className="project-card-hover">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ut praesentium unde officia
+                  numquam. Nulla voluptas inventore unde tempore. Harum itaque nam fugiat porro, exercitationem eligendi
+                  dicta at? Vel, assumenda.
+                </p>
+              </div>
             </div>
           </GridItemWrapper>
           <GridItemWrapper key="pacific-serenades">

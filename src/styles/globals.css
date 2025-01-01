@@ -381,7 +381,7 @@ li {
   align-self: center;
   justify-content: center;
   /* margin: 32px 0px; */
-  min-height: 100%;
+  /* min-height: 100%; */
   scroll-snap-align: center;
 }
 
@@ -609,7 +609,7 @@ li {
   font-weight: 400;
   letter-spacing: 0.1ch;
   bottom: 0px;
-  
+
   box-shadow: 0px -4px 8px 0px hsla(0, 0%, 0%, 0.25);
   color: rgb(255, 255, 255);
   background-color: hsla(0, 0%, 60%, 0.25);
@@ -1022,3 +1022,27 @@ li {
   background-color: hsla(0, 0%, 10%, 0.5);
 }
 
+.design-project-container {
+  width: 100%;
+  height: 100%;
+}
+
+.project-title-card {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+  position: absolute;
+}
+.project-card-hover {
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  position: absolute;
+}
+
+.react-grid-item:hover .design-project-container .project-title-card {
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+.react-grid-item:hover .design-project-container .project-card-hover {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+}
