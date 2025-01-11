@@ -958,10 +958,6 @@ li {
 .icon {
   width: 80px;
   height: 80px;
-  stroke: red;
-  stroke-width: 10px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
   padding: 10px;
   margin: 10px;
   overflow: visible;
@@ -1030,8 +1026,6 @@ li {
 .project-title-card {
   opacity: 1;
   transition: all ease-in-out 0.3s;
-  justify-content: center;
-  align-items: center;
   /* position: absolute; */
   /* margin: auto; */
 }

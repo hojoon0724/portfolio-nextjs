@@ -129,8 +129,8 @@ export function Grid() {
             </div>
           </GridItemWrapper>
           <GridItemWrapper key="hourglass">
-            <div className="design-project-container flex justify-center align-center">
-              <div className="project-title-card flex justify-center align-center ">
+            <div className="design-project-container flex justify-center items-center">
+              <div className="project-title-card flex justify-center items-center ">
                 <Image src="/assets/logos/hourglass-logo-white.svg" alt="alt" width={500} height={200} />
               </div>
               <div className="project-card-hover">
@@ -149,7 +149,7 @@ export function Grid() {
           </GridItemWrapper>
           <GridItemWrapper key="blackjack">
             <div className="design-project-container flex justify-center align-top">
-              <div className="project-title-card flex justify-center align-center ">
+              <div className="project-title-card flex justify-center items-center ">
                 <Image src="/assets/logos/blackjackCounterLogo-white.svg" alt="alt" width={400} height={100} />
               </div>
               <div className="project-card-hover">
@@ -162,8 +162,8 @@ export function Grid() {
             </div>
           </GridItemWrapper>
           <GridItemWrapper key="bkmrkd">
-            <div className="design-project-container flex justify-center align-center">
-              <div className="project-title-card flex justify-center align-center ">
+            <div className="design-project-container flex justify-center items-center">
+              <div className="project-title-card flex justify-center items-center ">
                 <Image src="/assets/logos/bkmrkdLogo.svg" alt="alt" width={400} height={100} />
               </div>
               <div className="project-card-hover w-full p-4 h-full">
