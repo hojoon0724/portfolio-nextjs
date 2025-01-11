@@ -3,7 +3,7 @@ import { iconsData } from './iconsData';
 export const techProjectsData = [
   {
     title: 'Hourglass',
-    logo: '/hourglassLettering.svg',
+    logo: '/hourglass-logo-white.svg',
     text: 'I couldn’t find a time tracking app that I liked so I built my own. Hourglass is designed for professionals working on an hourly billing basis (such as consultants, lawyers, tutors, freelancers, and contractors) where users can allocate predetermined hours, deduct hours as the timer runs, and alerts users when client hours approaches the user’s set threshold.\nApp is available for iOS, iPadOS, macOS, and visionOS.',
     stack: [iconsData.xcode, iconsData.swift, iconsData.swiftui, iconsData.swiftdata, iconsData.testflight],
     repoLinks: [

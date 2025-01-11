@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { designProjectsData } from '@/data/designProjectsData';
 import styles from '@/sections/gridTest.module.css';
 import { useState } from 'react';
+import Image from 'next/image';
 
 // Styled component for GridLayout
 // const StyledGridLayout = styled.div`
@@ -128,9 +129,9 @@ export function Grid() {
             </div>
           </GridItemWrapper>
           <GridItemWrapper key="hourglass">
-            <div className="design-project-container">
-              <div className="project-title-card">
-                <h2>Hourglass</h2>
+            <div className="design-project-container flex justify-center align-center">
+              <div className="project-title-card flex justify-center align-center ">
+                <Image src="/assets/logos/hourglass-logo-white.svg" alt="alt" width={500} height={200} />
               </div>
               <div className="project-card-hover">
                 <p>
@@ -147,13 +148,31 @@ export function Grid() {
             </div>
           </GridItemWrapper>
           <GridItemWrapper key="blackjack">
-            <div className="design-project-container">
-              <h2>Blackjack Card Counter</h2>
+            <div className="design-project-container flex justify-center align-top">
+              <div className="project-title-card flex justify-center align-center ">
+                <Image src="/assets/logos/blackjackCounterLogo-white.svg" alt="alt" width={400} height={100} />
+              </div>
+              <div className="project-card-hover">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ut praesentium unde officia
+                  numquam. Nulla voluptas inventore unde tempore. Harum itaque nam fugiat porro, exercitationem eligendi
+                  dicta at? Vel, assumenda.
+                </p>
+              </div>
             </div>
           </GridItemWrapper>
           <GridItemWrapper key="bkmrkd">
-            <div className="design-project-container">
-              <h2>bkmrkd</h2>
+            <div className="design-project-container flex justify-center align-center">
+              <div className="project-title-card flex justify-center align-center ">
+                <Image src="/assets/logos/bkmrkdLogo.svg" alt="alt" width={400} height={100} />
+              </div>
+              <div className="project-card-hover w-full p-4 h-full">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ut praesentium unde officia
+                  numquam. Nulla voluptas inventore unde tempore. Harum itaque nam fugiat porro, exercitationem eligendi
+                  dicta at? Vel, assumenda.
+                </p>
+              </div>
             </div>
           </GridItemWrapper>
           <GridItemWrapper>

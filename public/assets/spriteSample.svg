@@ -1,5 +1,19 @@
 <svg width="1082" height="1963" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
 
+
+
+<svg width="181.0506px" height="374.5px" viewBox="0 0 181.0506 374.5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo-2-Colors">
+            <path d="M179.1899,233.01 L90.7799,374.5 L81.7899,323.52 L81.7899,323.509 L138.3399,233.01 L179.1899,233.01 Z M117.69,152.6499 L131.13,228.8599 L79.63,311.2799 L66.19,235.0699 L117.69,152.6499 Z M167.9796,150.5997 L181.0506,224.7107 L138.8406,224.7107 L125.7696,150.5997 L167.9796,150.5997 Z" id="Combined-Shape" fill="#67DB48"></path>
+            <path d="M42.85,150.5997 L55.92,224.7107 L13.07,224.7107 L0,150.5997 L42.85,150.5997 Z M102.07,64.0299 L115.54,140.4199 L64.04,222.8399 L50.57,146.4499 L102.07,64.0299 Z M90.7803,0 L99.9103,51.79 L99.9003,51.79 L43.3503,142.29 L1.8603,142.29 L90.7803,0 Z" id="Combined-Shape" fill="#4075FF"></path>
+        </g>
+    </g>
+</svg>
+
+
+
+
 <symbol viewBox="0 0 147 143" id="arrow-bold">
   <path d="m92.6.6 53.801 71.2-53.8 71.2H67l25-33c8.2-10.8 15-19.8 22.2-28.8H.801v-19h113.4c-7.2-9-14-17.8-22.2-28.6L67 .6h25.6Z" />
 </symbol>

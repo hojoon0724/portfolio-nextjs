@@ -1030,7 +1030,10 @@ li {
 .project-title-card {
   opacity: 1;
   transition: all ease-in-out 0.3s;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+  /* margin: auto; */
 }
 .project-card-hover {
   opacity: 0;
