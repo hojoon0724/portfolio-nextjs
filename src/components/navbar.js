@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   return (
-    <div className={`${style['nav-bar-container']} flex items-center justify-center`}>
+    <div className={`${style['nav-bar-container']} flex items-center justify-center absolute w-screen`}>
       <div className={`${style['nav-bar']} flex row`}>
         {/* <div className="nav-bar-left">
           <Link href="/">

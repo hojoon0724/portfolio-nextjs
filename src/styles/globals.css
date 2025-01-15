@@ -131,6 +131,15 @@ p {
   margin: 1rem 0rem;
 }
 
+caption {
+  font-family: var(--roboto-flex);
+  font-size: 0.8rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  @apply uppercase;
+}
+
 .text-wide-bold {
   font-family: var(--roboto-flex);
   font-variation-settings: var(--font-variation-wide-bold);
@@ -360,12 +369,13 @@ li {
   display: block;
 }
 
-.section {
+section {
   display: flex;
   align-items: center;
   align-self: center;
   justify-content: center;
   scroll-snap-align: center;
+  margin: 4rem 0rem;
 }
 
 /* BUTTONS STYLING START */
@@ -592,7 +602,6 @@ li {
   font-weight: 400;
   letter-spacing: 0.1ch;
   bottom: 0px;
-
   box-shadow: 0px -4px 8px 0px hsla(0, 0%, 0%, 0.25);
   color: rgb(255, 255, 255);
   background-color: hsla(0, 0%, 60%, 0.25);

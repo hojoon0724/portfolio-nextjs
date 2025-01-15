@@ -8,7 +8,7 @@ import 'react-resizable/css/styles.css';
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="top flex flex-col">
+    <div className="top flex flex-col justify-between">
       <Navbar />
       <Component {...pageProps} />
       <Footer />
