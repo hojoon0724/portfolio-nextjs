@@ -1,11 +1,18 @@
-import ResponsiveGridLayout from 'react-grid-layout';
-import styled from 'styled-components';
-import DesignProjectCardSmall from '@/components/designProjectCardSmall';
-import { motion } from 'framer-motion';
-import { designProjectsData } from '@/data/designProjectsData';
-import styles from '@/sections/gridTest.module.css';
 import { useState } from 'react';
 import Image from 'next/image';
+
+// Styled Components
+import styled from 'styled-components';
+import styles from '@/sections/gridTest.module.css';
+import { motion } from 'framer-motion';
+
+// Data
+import { designProjectsData } from '@/data/designProjectsData';
+import { techProjectsData } from '@/data/techProjectsData';
+
+// UI Components
+import ResponsiveGridLayout from 'react-grid-layout';
+import DesignProjectCardSmall from '@/components/designProjectCardSmall';
 
 // Styled component for GridLayout
 // const StyledGridLayout = styled.div`
@@ -94,13 +101,13 @@ const shortBio = (
   </div>
 );
 
-export function Grid() {
+export function LandingGrid() {
   const [layout, setLayout] = useState(initialLayout);
 
   const data = designProjectsData;
 
   return (
-    <div className="section full-width flex column">
+    <div className="section full-width flex flex-col">
       <div className="reorder-buttons-container flex mt-[56px]">
         <button onClick={() => setLayout(initialLayout)}>Initial</button>
         <button onClick={() => setLayout(techLayout)}>Tech</button>

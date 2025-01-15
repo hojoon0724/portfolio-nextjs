@@ -2,7 +2,7 @@ export default function FontTest() {
   const testString = 'The quick brown fox jumps over the lazy dog';
   return (
     <div className="section flex">
-      <div className="fonts-size-container flex column">
+      <div className="fonts-size-container flex flex-col">
         {/* <div className="font-1">{testString}</div> */}
         <div className="text-wide-bold">{testString}</div>
         {/* <div className="font-2">{testString}</div> */}

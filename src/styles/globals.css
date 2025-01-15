@@ -238,8 +238,18 @@ video {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-variation-settings: 'slnt' 0, 'wdth' 100, 'GRAD' 0, 'XOPQ' 96, 'XTRA' 468, 'YOPQ' 79, 'YTAS' 750, 'YTDE' -203,
-    'YTFI' 738, 'YTLC' 514, 'YTUC' 712;
+  font-variation-settings:
+    'slnt' 0,
+    'wdth' 100,
+    'GRAD' 0,
+    'XOPQ' 96,
+    'XTRA' 468,
+    'YOPQ' 79,
+    'YTAS' 750,
+    'YTDE' -203,
+    'YTFI' 738,
+    'YTLC' 514,
+    'YTUC' 712;
 }
 
 .title-text {
@@ -288,31 +298,6 @@ button {
   font-family: var(--roboto-mono);
   font-weight: 600;
   border-radius: 8px;
-}
-
-.flex {
-  display: flex;
-}
-
-.inline-flex {
-  display: inline-flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.row {
-  flex-direction: row;
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
-}
-
-.grid {
-  display: grid;
 }
 
 .text-yellow {
@@ -380,8 +365,6 @@ li {
   align-items: center;
   align-self: center;
   justify-content: center;
-  /* margin: 32px 0px; */
-  /* min-height: 100%; */
   scroll-snap-align: center;
 }
 

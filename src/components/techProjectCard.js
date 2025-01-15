@@ -6,7 +6,7 @@ import RotatingScreenshots from './rotatingScreenshots';
 
 export default function TechProjectCard({ project }) {
   return (
-    <div className="project-container flex column">
+    <div className="project-container flex flex-col">
       <div className="project-screenshot">
         {/* <RotatingScreenshots folderRoute={project.folder} galleryArray={project.images} /> */}
       </div>

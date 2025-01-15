@@ -10,7 +10,7 @@ export default function PartnerEnergy() {
   };
 
   return (
-    <div className="project-container flex column">
+    <div className="project-container flex flex-col">
       <div className="project-screenshot"></div>
       <div className="project-text-container">
         <div className="project-title">{projectDetails.title}</div>

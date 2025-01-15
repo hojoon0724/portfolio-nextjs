@@ -12,7 +12,7 @@ import Contact from '@/sections/contact';
 import { iconsData } from '@/data/iconsData';
 
 import ScrollText from '@/sections/scrollText';
-import { Grid } from '@/sections/gridTest';
+import { LandingGrid } from '@/sections/landingGrid';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,8 +28,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="top-container flex column">
-        <Grid />
+      <div className="top-container flex flex-col">
+        <LandingGrid />
         {/* <Design />
         <Intro />
         <Tech />
