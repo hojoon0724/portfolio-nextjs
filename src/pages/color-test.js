@@ -2,7 +2,7 @@ import { allColors } from '../../test/vsCodeColorsExport';
 import { orderArray } from '../../test/vsCodeColorsExport';
 import { convertToHSL } from '../../test/vsCodeColorsExport';
 
-export default function ShowAllColors() {
+export default function ColorTest() {
   const colorsRaw = allColors;
   const colors = orderArray(colorsRaw);
   const colorsHSL = colors.map(convertToHSL);

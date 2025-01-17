@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function FontTest() {
   const testString = 'The quick brown fox jumps over the lazy dog';
   return (
