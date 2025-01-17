@@ -26,7 +26,7 @@ const Root = styled.div`
 `;
 
 const StyledGridLayout = styled(ResponsiveGridLayout)`
-  margin: 0 auto;
+  margin: 2rem auto;
   width: 100%;
   max-width: 1200px;
   border: 0px solid red;
@@ -108,11 +108,11 @@ export function LandingGrid() {
 
   return (
     <div className="section full-width flex flex-col">
-      <div className="reorder-buttons-container flex mt-[56px]">
+      {/* <div className="reorder-buttons-container flex mt-[56px]">
         <button onClick={() => setLayout(initialLayout)}>Initial</button>
         <button onClick={() => setLayout(techLayout)}>Tech</button>
         <button onClick={() => setLayout(narrowLayout)}>Narrow</button>
-      </div>
+      </div> */}
       <Root>
         <StyledGridLayout
           layout={layout}
@@ -150,8 +150,17 @@ export function LandingGrid() {
             </div>
           </GridItemWrapper>
           <GridItemWrapper key="pacific-serenades">
-            <div className="design-project-container">
-              <h2>PacSer Website</h2>
+            <div className="design-project-container flex justify-center items-center">
+              <div className="project-title-card flex justify-center items-center ">
+                <h2>PacSer Website</h2>
+              </div>
+              <div className="project-card-hover">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ut praesentium unde officia
+                  numquam. Nulla voluptas inventore unde tempore. Harum itaque nam fugiat porro, exercitationem eligendi
+                  dicta at? Vel, assumenda.
+                </p>
+              </div>
             </div>
           </GridItemWrapper>
           <GridItemWrapper key="blackjack">

@@ -6,8 +6,11 @@ import ArrowLinkButton from './arrowLinkButton';
 
 export default function DesignProjectCardSmall({ project }) {
   return (
-    <div className="design-project-container">
-      <div className="design-project-title">{project.logo ? <ProjectLogo project={project} /> : project.title}</div>
+    <div className="design-project-container flex justify-center align-top">
+
+        {project.logo ? <ProjectLogo project={project} /> : project.title}
+
+      <div className="project-card-hover">&nbsp;</div>
     </div>
   );
 }
