@@ -1,5 +1,5 @@
 import styles from './contact.module.css';
-import SocialButton from '@/components/socialButton';
+import SocialButton from '@/z-notInUse/zBackup/socialButton';
 import { iconsData } from '@/data/iconsData';
 
 export default function Contact() {

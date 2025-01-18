@@ -1,5 +1,5 @@
 import styles from './tech.module.css';
-import TechProjectCard from '@/components/techProjectCard';
+import TechProjectCard from '@/z-notInUse/zBackup/techProjectCard';
 import { techProjectsData } from '@/data/techProjectsData';
 
 export default function Tech() {

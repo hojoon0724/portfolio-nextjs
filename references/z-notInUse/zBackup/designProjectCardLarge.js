@@ -1,8 +1,8 @@
 import style from '@/sections/design.module.css';
-import StackIcon from '@/components/stackIcon';
+import StackIcon from '@/z-notInUse/zBackup/stackIcon';
 import LinkButton from '@/components/linkButton';
 import ProjectLogo from './projectLogo';
-import ArrowLinkButton from './arrowLinkButton';
+import ArrowLinkButton from '../../components/arrowLinkButton';
 
 export default function DesignProjectCardLarge({ project }) {
   return (

@@ -1,5 +1,5 @@
 import styles from './design.module.css';
-import DesignProjectCard from '@/components/designProjectCardLarge';
+import DesignProjectCard from '@/z-notInUse/zBackup/designProjectCardLarge';
 import { designProjectsData } from '@/data/designProjectsData';
 
 export default function Design() {

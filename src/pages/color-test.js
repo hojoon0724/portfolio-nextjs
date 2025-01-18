@@ -1,4 +1,4 @@
-import { allColors } from '../../test/vsCodeColorsExport';
+/*  */import { allColors } from '../../test/vsCodeColorsExport';
 import { orderArray } from '../../test/vsCodeColorsExport';
 import { convertToHSL } from '../../test/vsCodeColorsExport';
 

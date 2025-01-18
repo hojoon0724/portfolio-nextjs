@@ -5,12 +5,6 @@ export default function Navbar() {
   return (
     <div className={`${style['nav-bar-container']} flex items-center justify-center absolute w-screen`}>
       <div className={`${style['nav-bar']} flex row`}>
-        {/* <div className="nav-bar-left">
-          <Link href="/">
-            <div className="logo">Hojoon Kim</div>
-            <div className="subtitle">Design-centered Developer</div>
-          </Link>
-        </div> */}
         <div className={`${style['nav-bar-center']}`}>
           <div className={`${style['nav-btn-container']} flex items-center justify-center`}>
             <div className={`${style['nav-btn']}`}>

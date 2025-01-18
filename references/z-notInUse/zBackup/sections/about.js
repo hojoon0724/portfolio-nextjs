@@ -1,10 +1,10 @@
 import styles from './about.module.css';
 import Scratch from '@/components/scratch';
-import StackIcon from '@/components/stackIcon';
-import SoftwareIcon from '@/components/softwareIcon';
-import SocialButton from '@/components/socialButton';
+import StackIcon from '@/z-notInUse/zBackup/stackIcon';
+import SoftwareIcon from '@/z-notInUse/zBackup/softwareIcon';
+import SocialButton from '@/z-notInUse/zBackup/socialButton';
 import { iconsData } from '@/data/iconsData';
-import Skills from '@/components/skills';
+import Skills from '@/z-notInUse/zBackup/skills';
 
 export default function About() {
   const data = iconsData;

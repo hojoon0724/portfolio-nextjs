@@ -12,7 +12,7 @@ import { techProjectsData } from '@/data/techProjectsData';
 
 // UI Components
 import ResponsiveGridLayout from 'react-grid-layout';
-import DesignProjectCardSmall from '@/components/designProjectCardSmall';
+import DesignProjectCardSmall from '@/z-notInUse/zBackup/designProjectCardSmall';
 
 const Root = styled.div`
   width: 100%;

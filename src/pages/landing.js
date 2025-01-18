@@ -3,16 +3,16 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 
-import Intro from '@/sections/intro';
-import About from '@/sections/about';
-import Design from '@/sections/design';
-import Tech from '@/sections/tech';
-import Contact from '@/sections/contact';
+import Intro from '@/z-notInUse/zBackup/sections/intro';
+import About from '@/z-notInUse/zBackup/sections/about';
+import Design from '@/z-notInUse/zBackup/sections/design';
+import Tech from '@/z-notInUse/zBackup/sections/tech';
+import Contact from '@/z-notInUse/zBackup/sections/contact';
 
 import { iconsData } from '@/data/iconsData';
 
-import ScrollText from '@/sections/scrollText';
-import { LandingGrid } from '@/sections/landingGrid';
+import ScrollText from '@/z-notInUse/zBackup/sections/scrollText';
+import { LandingGrid } from '@/z-notInUse/zBackup/sections/landingGrid';
 
 const inter = Inter({ subsets: ['latin'] });
 

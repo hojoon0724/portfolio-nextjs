@@ -1,19 +1,13 @@
 import { iconsData } from '@/data/iconsData';
-import SoftwareIcon from '@/components/softwareIcon';
+import SoftwareIcon from '@/z-notInUse/zBackup/softwareIcon';
 
 export default function AllIcons() {
   const data = iconsData;
   const keys = Object.keys(data);
 
   return (
-    <div
-      className="section intro flex scroll-anchor"
-      id="icon-test"
-    >
-      <div
-        className="icon-test"
-        style={{ display: 'flex', flexWrap: 'wrap' }}
-      >
+    <div className="section intro flex scroll-anchor" id="icon-test">
+      <div className="icon-test" style={{ display: 'flex', flexWrap: 'wrap' }}>
         {keys.map(key => (
           <div
             className="icon-and-name"

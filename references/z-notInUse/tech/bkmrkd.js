@@ -1,4 +1,4 @@
-import StackIcon from '@/components/stackIcon';
+import StackIcon from '@/z-notInUse/zBackup/stackIcon';
 import RepoLinkButtons from '@/components/linkButtons';
 
 export default function Bkmrkd() {

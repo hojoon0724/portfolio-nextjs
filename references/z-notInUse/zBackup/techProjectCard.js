@@ -1,6 +1,6 @@
-import StackIcon from '@/components/stackIcon';
+import StackIcon from '@/z-notInUse/zBackup/stackIcon';
 import LinkButton from '@/components/linkButton';
-import MainLinkButton from './mainLinkButton';
+import MainLinkButton from '../mainLinkButton';
 import ProjectLogo from './projectLogo';
 import RotatingScreenshots from './rotatingScreenshots';
 
