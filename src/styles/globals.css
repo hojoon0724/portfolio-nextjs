@@ -141,7 +141,9 @@ h6 {
 .top {
   width: 100vw;
   height: 100vh;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  position: relative;
   overflow: scroll;
   font-family: var(--roboto-flex);
   font-variation-settings: var(--font-variation-default);
@@ -153,7 +155,7 @@ h6 {
   width: 100%;
   overflow-y: scroll;
   height: 100%;
-  position: absolute;
+  /* position: absolute; */
   /* padding: 3rem 0rem */
   /* background-color: red; */
   /* scroll-snap-type: y mandatory; */
