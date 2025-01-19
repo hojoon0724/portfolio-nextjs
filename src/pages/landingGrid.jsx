@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 // Styled Components
 import styled from 'styled-components';
-import styles from '@/sections/gridTest.module.css';
+import styles from '@/components/grids/IntroGrid.module.css';
 import { motion } from 'framer-motion';
 
 // Data
@@ -12,7 +12,7 @@ import { techProjectsData } from '@/data/techProjectsData';
 
 // UI Components
 import ResponsiveGridLayout from 'react-grid-layout';
-// import DesignProjectCardSmall from '@/z-notInUse/zBackup/designProjectCardSmall';
+import DesignProjectCardSmall from '@/z-notInUse/zBackup/designProjectCardSmall';
 
 // Styled component for GridLayout
 // const StyledGridLayout = styled.div`
