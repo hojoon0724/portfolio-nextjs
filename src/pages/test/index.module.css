@@ -1,5 +1,5 @@
-.responsiveGridLayout{
-  width: 100%
+.responsiveGridLayout {
+  width: 100%;
 }
 
 .cardContainer {
@@ -35,7 +35,7 @@
 
   padding: var(--borderWidth);
 
-  border-radius: var(--borderRadius);
+  border-radius: 26px;
 
   content: '';
   display: block;
@@ -63,7 +63,6 @@
   -webkit-mask-position-y: 0%, 0%;
   -webkit-mask-source-type: alpha, alpha;
 }
-
 
 .cardContainer .react-draggable-dragging {
   user-select: none;

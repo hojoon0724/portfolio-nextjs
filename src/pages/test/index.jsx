@@ -4,43 +4,58 @@ import style from './index.module.css';
 
 const layouts = {
   lg: [
-    { i: 'a', x: 0, y: 0, w: 4, h: 1 },
-    { i: 'b', x: 4, y: 1, w: 4, h: 1 },
-    { i: 'c', x: 8, y: 2, w: 4, h: 1 },
-    { i: 'd', x: 0, y: 0, w: 4, h: 1 },
-    { i: 'e', x: 4, y: 1, w: 4, h: 1 },
-    { i: 'f', x: 8, y: 2, w: 4, h: 1 },
+    { i: 'a', x: 0, y: 0, w: 4, h: 4 },
+    { i: 'b', x: 4, y: 0, w: 4, h: 4 },
+    { i: 'c', x: 8, y: 0, w: 4, h: 4 },
+    { i: 'd', x: 12, y: 1, w: 4, h: 4 },
+    { i: 'e', x: 0, y: 1, w: 4, h: 4 },
+    { i: 'f', x: 4, y: 1, w: 4, h: 4 },
   ],
   md: [
-    { i: 'a', x: 0, y: 0, w: 3, h: 1 },
-    { i: 'b', x: 3, y: 1, w: 3, h: 1 },
-    { i: 'c', x: 0, y: 1, w: 3, h: 1 },
-    { i: 'd', x: 3, y: 1, w: 3, h: 1 },
-    { i: 'e', x: 0, y: 2, w: 3, h: 1 },
-    { i: 'f', x: 3, y: 2, w: 3, h: 1 },
+    { i: 'a', x: 0, y: 0, w: 4, h: 4},
+    { i: 'b', x: 4, y: 1, w: 4, h: 4},
+    { i: 'c', x: 8, y: 2, w: 4, h: 4},
+    { i: 'd', x: 0, y: 0, w: 4, h: 4},
+    { i: 'e', x: 4, y: 1, w: 4, h: 4},
+    { i: 'f', x: 8, y: 2, w: 4, h: 4},
+  ],
+  sm: [
+    { i: 'a', x: 0, y: 0, w: 4, h: 3},
+    { i: 'b', x: 4, y: 1, w: 4, h: 3},
+    { i: 'c', x: 8, y: 2, w: 4, h: 3},
+    { i: 'd', x: 0, y: 0, w: 4, h: 3},
+    { i: 'e', x: 4, y: 1, w: 4, h: 3},
+    { i: 'f', x: 8, y: 2, w: 4, h: 3},
+  ],
+  xs: [
+    { i: 'a', x: 0, y: 0, w: 3, h: 3 },
+    { i: 'b', x: 3, y: 1, w: 3, h: 3 },
+    { i: 'c', x: 0, y: 1, w: 3, h: 3 },
+    { i: 'd', x: 3, y: 1, w: 3, h: 3 },
+    { i: 'e', x: 0, y: 2, w: 3, h: 3 },
+    { i: 'f', x: 3, y: 2, w: 3, h: 3 },
   ],
   xxs: [
-    { i: 'a', x: 0, y: 0, w: 4, h: 1 },
-    { i: 'b', x: 4, y: 1, w: 4, h: 1 },
-    { i: 'c', x: 8, y: 2, w: 4, h: 1 },
-    { i: 'd', x: 0, y: 0, w: 4, h: 1 },
-    { i: 'e', x: 4, y: 1, w: 4, h: 1 },
-    { i: 'f', x: 8, y: 2, w: 4, h: 1 },
+    { i: 'a', x: 0, y: 0, w: 4, h: 3},
+    { i: 'b', x: 4, y: 1, w: 4, h: 3},
+    { i: 'c', x: 8, y: 2, w: 4, h: 3},
+    { i: 'd', x: 0, y: 0, w: 4, h: 3},
+    { i: 'e', x: 4, y: 1, w: 4, h: 3},
+    { i: 'f', x: 8, y: 2, w: 4, h: 3},
   ],
 };
 
-const ResponsiveGridLayout = WidthProvider(Responsive);
+const ResponsiveGridLayout = WidthProvider(Responsive, { measureBeforeMount: true });
 
 export default function TestPage({}) {
   return (
     <div className="top-container flex flex-col justify-center items-center">
-      <div className="viewport-width">width: </div>
       <ResponsiveGridLayout
         className={style.responsiveGridLayout}
         layouts={layouts}
-        breakpoints={{ lg: 1200, md: 996, xxs: 0 }}
-        cols={{ lg: 12, md: 6, xxs: 1 }}
-        rowHeight={300}
+        breakpoints={{ lg:2400, md: 2000, sm: 1800, xs: 996, xxs: 0 }}
+        cols={{ lg:16, md:12, sm: 12, xs: 6, xxs: 1 }}
+        rowHeight={100}
         width={1200}
         margin={[18, 18]}
         isDraggable={false}

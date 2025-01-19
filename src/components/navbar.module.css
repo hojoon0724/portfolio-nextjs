@@ -31,7 +31,7 @@
 }
 
 .nav-bar-left > *:hover {
-  color: var(--aqua);
+  color: var(--main-color-500);
 }
 
 .logo {
@@ -89,7 +89,7 @@
 
 .nav-btn:hover {
   color: var(--black);
-  background-color: var(--aqua);
+  background-color: var(--main-color-500);
 }
 
 .nav-btn-bg {
