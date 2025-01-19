@@ -8,6 +8,8 @@ import TechGrid from '@/components/grids/TechGrid';
 import DesignGrid from '@/components/grids/DesignGrid';
 import ContactSection from '@/components/grids/ContactGrid';
 
+import styled from 'styled-components';
+
 // Grids
 
 const inter = Inter({ subsets: ['latin'] });

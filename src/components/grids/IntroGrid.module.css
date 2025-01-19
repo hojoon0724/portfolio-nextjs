@@ -1,0 +1,22 @@
+.helloContainer {
+  /* margin: clamp(60px, 20vw, 120px); */
+  font-family: var(--roboto-mono);
+}
+
+.hojoon {
+  font-family: var(--roboto-flex);
+  font-variation-settings: var(--font-variation-wide-bold);
+  font-size: var(--fs-900);
+  margin-bottom: 20px;
+}
+
+.intro {
+  justify-content: center;
+  align-items: center;
+}
+
+.shortBio {
+  max-width: 72ch;
+  line-height: 1.5rem;
+  margin-top: 64px;
+}

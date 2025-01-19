@@ -1,4 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import styled from 'styled-components';
+import { ServerStyleSheet } from 'styled-components';
 
 export default function Document() {
   return (

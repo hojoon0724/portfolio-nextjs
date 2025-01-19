@@ -1,0 +1,4 @@
+.container {
+  background-color: var(--secondary-color-500);
+  @apply p-4
+}

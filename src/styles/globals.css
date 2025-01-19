@@ -8,7 +8,7 @@
 :root {
   --borderWidth: 2px;
   --borderRadius: 32px;
-  --max-width: 1200px;
+
   --border-radius: 12px;
 
   --roboto-flex: 'Roboto Flex', sans-serif;
@@ -58,6 +58,30 @@
   --pink: oklch(70.21% 0.181 328.71);
   --light-green: oklch(82.26% 0.059 134.91);
   --green: oklch(76.04% 0.115 177.18);
+
+  --main-color-950: color(display-p3 0 0.1 0.0567);
+  --main-color-900: color(display-p3 0 0.2 0.1133);
+  --main-color-800: color(display-p3 0 0.4 0.2267);
+  --main-color-700: color(display-p3 0 0.6 0.34);
+  --main-color-600: color(display-p3 0 0.8 0.4533);
+  --main-color-500: color(display-p3 0 1 0.5667);
+  --main-color-400: color(display-p3 0.2 1 0.6533);
+  --main-color-300: color(display-p3 0.4 1 0.74);
+  --main-color-200: color(display-p3 0.6 1 0.8267);
+  --main-color-100: color(display-p3 0.8 1 0.9133);
+  --main-color-50: color(display-p3 0.9 1 0.9567);
+
+  --secondary-color-950: color(display-p3 0 0.0333 0.1);
+  --secondary-color-900: color(display-p3 0 0.0667 0.2);
+  --secondary-color-800: color(display-p3 0 0.1333 0.4);
+  --secondary-color-700: color(display-p3 0 0.2 0.6);
+  --secondary-color-600: color(display-p3 0 0.2667 0.8);
+  --secondary-color-500: color(display-p3 0 0.3333 1);
+  --secondary-color-400: color(display-p3 0.2 0.4667 1);
+  --secondary-color-300: color(display-p3 0.4 0.6 1);
+  --secondary-color-200: color(display-p3 0.6 0.7333 1);
+  --secondary-color-100: color(display-p3 0.8 0.8667 1);
+  --secondary-color-50: color(display-p3 0.9 0.9333 1);
 
   --tr-slow: ease-in-out 0.5s;
   --tr-fast: ease-in-out 0.3s;
@@ -156,13 +180,13 @@ h6 {
   overflow-y: scroll;
   height: 100%;
   /* position: absolute; */
-  /* padding: 3rem 0rem */
+  padding: 3rem 0rem
   /* background-color: red; */
   /* scroll-snap-type: y mandatory; */
 }
 
 .top-container > * {
-  width: clamp(360px, 100%, var(--max-width));
+  width: 100%;
 }
 
 section {

@@ -1,0 +1,150 @@
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.hsl-main-color-50 {
+  background-color: hsl(154 100 5);
+}
+.hsl-main-color-100 {
+  background-color: hsl(154 100 10);
+}
+.hsl-main-color-200 {
+  background-color: hsl(154 100 20);
+}
+.hsl-main-color-300 {
+  background-color: hsl(154 100 30);
+}
+.hsl-main-color-400 {
+  background-color: hsl(154 100 40);
+}
+.hsl-main-color-500 {
+  background-color: hsl(154 100 50);
+}
+.hsl-main-color-600 {
+  background-color: hsl(154 100 60);
+}
+.hsl-main-color-700 {
+  background-color: hsl(154 100 70);
+}
+.hsl-main-color-800 {
+  background-color: hsl(154 100 80);
+}
+.hsl-main-color-900 {
+  background-color: hsl(154 100 90);
+}
+.hsl-main-color-950 {
+  background-color: hsl(154 100 95);
+}
+
+.p3-main-color-50 {
+  background-color: hsl(154 100 5);
+  background-color: color(display-p3 0 0.1 0.0567);
+  background-color: var(--main-color-50);
+}
+.p3-main-color-100 {
+  background-color: hsl(154 100 10);
+  background-color: color(display-p3 0 0.2 0.1133);
+  background-color: var(--main-color-100);
+}
+.p3-main-color-200 {
+  background-color: hsl(154 100 20);
+  background-color: color(display-p3 0 0.4 0.2267);
+  background-color: var(--main-color-200);
+}
+.p3-main-color-300 {
+  background-color: hsl(154 100 30);
+  background-color: color(display-p3 0 0.6 0.34);
+  background-color: var(--main-color-300);
+}
+.p3-main-color-400 {
+  background-color: hsl(154 100 40);
+  background-color: color(display-p3 0 0.8 0.4533);
+  background-color: var(--main-color-400);
+}
+.p3-main-color-500 {
+  background-color: hsl(154 100 50);
+  background-color: color(display-p3 0 1 0.5667);
+  background-color: var(--main-color-500);
+}
+.p3-main-color-600 {
+  background-color: hsl(154 100 60);
+  background-color: color(display-p3 0.2 1 0.6533);
+  background-color: var(--main-color-600);
+}
+.p3-main-color-700 {
+  background-color: hsl(154 100 70);
+  background-color: color(display-p3 0.4 1 0.74);
+  background-color: var(--main-color-700);
+}
+.p3-main-color-800 {
+  background-color: hsl(154 100 80);
+  background-color: color(display-p3 0.6 1 0.8267);
+  background-color: var(--main-color-800);
+}
+.p3-main-color-900 {
+  background-color: hsl(154 100 90);
+  background-color: color(display-p3 0.8 1 0.9133);
+  background-color: var(--main-color-900);
+}
+.p3-main-color-950 {
+  background-color: hsl(154 100 95);
+  background-color: color(display-p3 0.9 1 0.9567);
+  background-color: var(--main-color-950);
+}
+
+.p3-secondary-color-50 {
+  background-color: hsl(220 100 5);
+  background-color: color(display-p3 (0, 0.0333, 0.1));
+  background-color: var(--secondary-color-50);
+}
+.p3-secondary-color-100 {
+  background-color: hsl(220 100 10);
+  background-color: color(display-p3 (0, 0.0667, 0.2));
+  background-color: var(--secondary-color-100);
+}
+.p3-secondary-color-200 {
+  background-color: hsl(220 100 20);
+  background-color: color(display-p3 (0, 0.1333, 0.4));
+  background-color: var(--secondary-color-200);
+}
+.p3-secondary-color-300 {
+  background-color: hsl(220 100 30);
+  background-color: color(display-p3 (0, 0.2, 0.6));
+  background-color: var(--secondary-color-300);
+}
+.p3-secondary-color-400 {
+  background-color: hsl(220 100 40);
+  background-color: color(display-p3 (0, 0.2667, 0.8));
+  background-color: var(--secondary-color-400);
+}
+.p3-secondary-color-500 {
+  background-color: hsl(220 100 50);
+  background-color: color(display-p3 (0, 0.3333, 1));
+  background-color: var(--secondary-color-500);
+}
+.p3-secondary-color-600 {
+  background-color: hsl(220 100 60);
+  background-color: color(display-p3 (0.2, 0.4667, 1));
+  background-color: var(--secondary-color-600);
+}
+.p3-secondary-color-700 {
+  background-color: hsl(220 100 70);
+  background-color: color(display-p3 (0.4, 0.6, 1));
+  background-color: var(--secondary-color-700);
+}
+.p3-secondary-color-800 {
+  background-color: hsl(220 100 80);
+  background-color: color(display-p3 (0.6, 0.7333, 1));
+  background-color: var(--secondary-color-800);
+}
+.p3-secondary-color-900 {
+  background-color: hsl(220 100 90);
+  background-color: color(display-p3 (0.8, 0.8667, 1));
+  background-color: var(--secondary-color-900);
+}
+.p3-secondary-color-950 {
+  background-color: hsl(220 100 95);
+  background-color: color(display-p3 (0.9, 0.9333, 1));
+  background-color: var(--secondary-color-950);
+}

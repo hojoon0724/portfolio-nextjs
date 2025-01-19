@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import '@/styles/globals.css';
 import '@/styles/fontTest.css';
 import Script from 'next/script';
