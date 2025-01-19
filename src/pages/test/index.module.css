@@ -1,66 +1,106 @@
-.sectionContainer {
-  max-width: 1200px;
-  display: flex;
-  margin: 0 auto;
-  background-color: #aaa;
-  height: 50vh;
+.responsiveGridLayout{
+  width: 100%
 }
 
 .cardContainer {
   height: 300px;
   width: 400px;
-  margin: 24px;
+  border-radius: 24px;
+  box-shadow: 0px 4px 8px 0px hsla(0, 0%, 0%, 0.15);
+  color: rgb(255, 255, 255);
+  background-color: hsla(0, 0%, 60%, 0.25);
+  isolation: isolate;
+  position: relative;
+  backdrop-filter: blur(3rem) saturate(165%);
+  border-radius: 24px;
+  padding: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%); */
+  transition: all 0.3s ease-in-out !important;
 }
 
-.cardContent {
-  position: relative;
-  width: 300px;
-  padding: 20px;
-  border-radius: 20px;
-  backdrop-filter: blur(20px) saturate(200%);
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  color: white;
-  text-align: center;
-  /* padding: 20px 60px;
-  border: none;
-  outline: none; 
-  position: relative;
-  border-radius: 12px;
-  background: linear-gradient(to bottom right, hsla(0, 20%, 80%) 0%, hsla(0, 20%, 30%) 62%, hsla(0, 20%, 80%) 100%);
-  outline: hsla(180, 20%, 80%) 4px solid;
-  linear-gradient(to bottom right, hsla(45, 50%, 80%) 0%, hsla(45, 50%, 30%) 62%, hsla(45, 50%, 80%) 100%); */
-}
-.cardContent::after {
+.cardContainer::after {
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(0, 100%, 100%, 0.25) 0%,
+    hsla(0, 100%, 100%, 0) 63%,
+    hsla(0, 100%, 100%, 0.15) 100%
+  );
+
+  top: calc(var(--borderWidth) * -1);
+  right: calc(var(--borderWidth) * -1);
+  bottom: calc(var(--borderWidth) * -1);
+  left: calc(var(--borderWidth) * -1);
+
+  padding: var(--borderWidth);
+
+  border-radius: var(--borderRadius);
+
   content: '';
+  display: block;
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent);
-  z-index: 1;
-  pointer-events: none; /* Prevent interaction */
 
-  /* content: '';
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  bottom: 1px;
-  left: 1px;
-  border-radius: 11px;
-  background-color: hsla(0, 20%, 50%); */
+  mask-image: linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px),
+    linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px);
+
+  mask-border-outset: 0;
+  mask-border-repeat: stretch;
+  mask-border-slice: 0;
+  mask-border-source: none;
+  mask-border-width: auto;
+  mask-clip: content-box, border-box;
+  mask-composite: exclude, exclude;
+
+  mask-mode: match-source, match-source;
+  mask-origin: content-box, border-box;
+  mask-repeat: repeat, repeat;
+  mask-size: auto, auto;
+
+  -webkit-mask-clip: content-box, border-box;
+  -webkit-mask-composite: xor, xor;
+  -webkit-mask-position-x: 0%, 0%;
+  -webkit-mask-position-y: 0%, 0%;
+  -webkit-mask-source-type: alpha, alpha;
 }
 
-.color-test-container {
-  min-width: 100svw;
-  min-height: 100svh;
-  flex-direction: column;
+
+.cardContainer .react-draggable-dragging {
+  user-select: none;
+  -moz-user-select: none;
+}
+
+.cardContainer:hover {
+  transition: all ease-in-out 0.3s !important;
+  background-color: hsla(0, 0%, 10%, 0.5);
+}
+
+.cardContentContainer {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cardContentFront {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
+  position: absolute;
+  /* margin: auto; */
+}
+.cardContentRear {
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  position: absolute;
+}
+
+.cardContainer:hover .cardContentContainer .cardContentFront {
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+.cardContainer:hover .cardContentContainer .cardContentRear {
+  opacity: 1;
+  transition: all ease-in-out 0.3s;
 }

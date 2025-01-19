@@ -12,7 +12,6 @@ import { techProjectsData } from '@/data/techProjectsData';
 
 // UI Components
 import ResponsiveGridLayout from 'react-grid-layout';
-import DesignProjectCardSmall from '@/z-notInUse/zBackup/designProjectCardSmall';
 
 // Styled component for GridLayout
 // const StyledGridLayout = styled.div`
@@ -107,7 +106,8 @@ export default function LandingGrid() {
   const data = designProjectsData;
 
   return (
-    <div className="section full-width flex flex-col">
+
+    <div className="top-container full-width flex flex-col">
       {/* <div className="reorder-buttons-container flex mt-[56px]">
         <button onClick={() => setLayout(initialLayout)}>Initial</button>
         <button onClick={() => setLayout(techLayout)}>Tech</button>
@@ -194,18 +194,10 @@ export default function LandingGrid() {
           <GridItemWrapper>
             <h2>Design Projects</h2>
           </GridItemWrapper>
-          <GridItemWrapper key="rcnm">
-            <DesignProjectCardSmall project={data[0]} />
-          </GridItemWrapper>
-          <GridItemWrapper key="partner-energy">
-            <DesignProjectCardSmall project={data[1]} />
-          </GridItemWrapper>
-          <GridItemWrapper key="ensrq">
-            <DesignProjectCardSmall project={data[2]} />
-          </GridItemWrapper>
-          <GridItemWrapper key="lamongrel">
-            <DesignProjectCardSmall project={data[3]} />
-          </GridItemWrapper>
+          <GridItemWrapper key="rcnm"></GridItemWrapper>
+          <GridItemWrapper key="partner-energy"></GridItemWrapper>
+          <GridItemWrapper key="ensrq"></GridItemWrapper>
+          <GridItemWrapper key="lamongrel"></GridItemWrapper>
         </StyledGridLayout>
       </Root>
     </div>
