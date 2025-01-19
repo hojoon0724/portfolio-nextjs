@@ -1,12 +1,19 @@
 import Image from 'next/image';
-import style from './ProjectCardContainer.module.css'
+import style from './ProjectCardContainer.module.css';
 
 export default function ProjectCardContainer({ children }) {
   return (
     <div className={`${style.container} design-project-container flex justify-center items-center`}>
+      {/* project Logo */}
+
       <div className="project-title-card flex justify-center items-center ">
         <Image src="/assets/logos/hourglass-logo-white.svg" alt="alt" width={500} height={200} />
       </div>
+
+      {/* project Logo */}
+
+      {/* project on hover */}
+
       <div className="project-card-hover">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ut praesentium unde officia numquam. Nulla
@@ -14,7 +21,8 @@ export default function ProjectCardContainer({ children }) {
           assumenda.
         </p>
       </div>
-      {children}
+
+      {/* project on hover */}
     </div>
   );
 }

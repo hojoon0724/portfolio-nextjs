@@ -12,7 +12,7 @@ import { techProjectsData } from '@/data/techProjectsData';
 
 // UI Components
 import ResponsiveGridLayout from 'react-grid-layout';
-import DesignProjectCardSmall from '@/z-notInUse/zBackup/designProjectCardSmall';
+// import DesignProjectCardSmall from '@/z-notInUse/zBackup/designProjectCardSmall';
 
 // Styled component for GridLayout
 // const StyledGridLayout = styled.div`
@@ -101,7 +101,7 @@ const shortBio = (
   </div>
 );
 
-export function LandingGrid() {
+export default function LandingGrid() {
   const [layout, setLayout] = useState(initialLayout);
 
   const data = designProjectsData;
