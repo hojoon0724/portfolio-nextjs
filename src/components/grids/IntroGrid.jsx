@@ -1,13 +1,12 @@
-import style from './IntroGrid.module.css';
-
+import style from './introGrid.module.css';
 
 const shortBioText = (
   <div>
     <p className="text-mono-small">
-      I’m a <span style={{color: 'var(--yellow)'}}>design-centered</span>
-      <span style={{color: 'var(--pink)'}}> software engineer </span>
+      I’m a <span style={{ color: 'var(--yellow)' }}>design-centered</span>
+      <span style={{ color: 'var(--pink)' }}> software engineer </span>
       with a background in
-      <span style={{color: 'var(--light-blue)'}}> design, research, and consulting </span>
+      <span style={{ color: 'var(--light-blue)' }}> design, research, and consulting </span>
       and I build systemic solutions for people.
     </p>
   </div>

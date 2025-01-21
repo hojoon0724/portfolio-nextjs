@@ -1,4 +1,4 @@
-import style from './Contact.module.css';
+import style from './contact.module.css';
 export default function ContactSection({}) {
   return (
     <section className="contact-section">
