@@ -1,4 +1,4 @@
-import style from './Navbar.module.css';
+import style from './navbar.module.css';
 import Link from 'next/link';
 
 export default function Navbar() {
