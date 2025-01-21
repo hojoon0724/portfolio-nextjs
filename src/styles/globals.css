@@ -108,7 +108,7 @@ body {
   scroll-behavior: smooth;
 
   background-color: var(--secondary-color-950);
-  
+
   background-image: radial-gradient(at 53% 39%, var(--main-color-800) 0px, transparent 50%),
     radial-gradient(at 17% 18%, var(--main-color-800) 0px, transparent 40%),
     radial-gradient(at 54% 2%, var(--secondary-color-800) 0px, transparent 70%),
